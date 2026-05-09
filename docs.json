@@ -47,6 +47,13 @@
               "upgrade-1",
               "renewal-1"
             ]
+          },
+          {
+            "group": "Ketentuan",
+            "pages": [
+              "terms-of-service",
+              "privacy-policy"
+            ]
           }
         ]
       },
