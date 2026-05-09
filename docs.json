@@ -13,17 +13,38 @@
       "anchors": [
         {
           "anchor": "Web RaeHost",
-          "icon": "newspaper",
+          "icon": "globe-pointer",
+          "color": {
+            "light": "#153aa3",
+            "dark": "#153aa3"
+          },
           "href": "https://raehost.com"
         },
         {
           "anchor": "Web Panel",
-          "icon": "newspaper",
+          "icon": "gear",
+          "color": {
+            "light": "#153aa3",
+            "dark": "#153aa3"
+          },
           "href": "https://panel.raehost.com"
+        },
+        {
+          "anchor": "Discord",
+          "icon": "messages",
+          "color": {
+            "light": "#153aa3",
+            "dark": "#153aa3"
+          },
+          "href": "https://discord.com/invite/c8zC5Qfkvh"
         },
         {
           "anchor": "Documentation",
           "icon": "book-open-cover",
+          "color": {
+            "light": "#153aa3",
+            "dark": "#153aa3"
+          },
           "href": "https://mintlify.com/docs"
         }
       ]
@@ -49,22 +70,28 @@
             ]
           },
           {
+            "group": "Tipe Server",
+            "pages": [
+              "tes",
+              "basic-vs-premium",
+              "cara-memilih-paket"
+            ]
+          },
+          {
             "group": "Ketentuan",
             "pages": [
               "terms-of-service",
               "privacy-policy"
             ]
-          },
-          {
-            "group": "Tipe Server",
-            "pages": [
-              "tes"
-            ]
           }
         ]
       },
       {
-        "tab": "TUTORIAL"
+        "tab": "TUTORIAL",
+        "icon": "book-open",
+        "pages": [
+          "untitled-page"
+        ]
       }
     ]
   },
