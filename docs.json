@@ -32,45 +32,6 @@
       {
         "tab": "HOME",
         "icon": "house",
-        "products": [
-          {
-            "product": "Upgrade dan Renewal",
-            "pages": [
-              "upgrade",
-              "renewal",
-              {
-                "group": "Upgrade dan Renewal",
-                "pages": [
-                  "untitled-page"
-                ]
-              }
-            ]
-          },
-          {
-            "product": "Explanation",
-            "tabs": [
-              {
-                "tab": "Untitled Tab"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "TUTORIAL",
-        "icon": "book-open",
-        "groups": [
-          {
-            "group": "tes",
-            "pages": [
-              "uhuy"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "HOME",
-        "icon": "house",
         "groups": [
           {
             "group": "Panel vs Website",
@@ -79,8 +40,18 @@
               "website-rae-host",
               "hubungan-keduanya-1"
             ]
+          },
+          {
+            "group": "Upgrade dan Renewal",
+            "pages": [
+              "upgrade-1",
+              "renewal-1"
+            ]
           }
         ]
+      },
+      {
+        "tab": "TUTORIAL"
       }
     ]
   },
