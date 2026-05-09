@@ -28,24 +28,32 @@
         }
       ]
     },
-    "products": [
+    "tabs": [
       {
-        "product": "Panel vs Website",
-        "pages": [
-          "perbedaan-panel-dan-clients",
-          "website-clients",
-          "hubungan-keduanya"
+        "tab": "Untitled Tab",
+        "products": [
+          {
+            "product": "Panel vs Website",
+            "pages": [
+              "perbedaan-panel-dan-clients",
+              "website-clients",
+              "hubungan-keduanya"
+            ]
+          },
+          {
+            "product": "Upgrade dan Renewal",
+            "pages": [
+              "upgrade",
+              "renewal"
+            ]
+          },
+          {
+            "product": "Untitled Product"
+          }
         ]
       },
       {
-        "product": "Upgrade dan Renewal",
-        "pages": [
-          "upgrade",
-          "renewal"
-        ]
-      },
-      {
-        "product": "Untitled Product"
+        "tab": "uhuy"
       }
     ]
   },
