@@ -45,13 +45,28 @@
             "product": "Upgrade dan Renewal",
             "pages": [
               "upgrade",
-              "renewal"
+              "renewal",
+              {
+                "group": "Upgrade dan Renewal",
+                "pages": [
+                  "untitled-page"
+                ]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "TUTORIAL"
+        "tab": "TUTORIAL",
+        "icon": "book-open",
+        "groups": [
+          {
+            "group": "tes",
+            "pages": [
+              "uhuy"
+            ]
+          }
+        ]
       }
     ]
   },
