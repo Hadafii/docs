@@ -54,6 +54,12 @@
               "terms-of-service",
               "privacy-policy"
             ]
+          },
+          {
+            "group": "Tipe Server",
+            "pages": [
+              "tes"
+            ]
           }
         ]
       },
