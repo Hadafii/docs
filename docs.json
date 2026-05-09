@@ -34,14 +34,6 @@
         "icon": "house",
         "products": [
           {
-            "product": "Panel vs Website",
-            "pages": [
-              "perbedaan-panel-dan-clients",
-              "website-clients",
-              "hubungan-keduanya"
-            ]
-          },
-          {
             "product": "Upgrade dan Renewal",
             "pages": [
               "upgrade",
@@ -51,6 +43,14 @@
                 "pages": [
                   "untitled-page"
                 ]
+              }
+            ]
+          },
+          {
+            "product": "Explanation",
+            "tabs": [
+              {
+                "tab": "Untitled Tab"
               }
             ]
           }
@@ -64,6 +64,20 @@
             "group": "tes",
             "pages": [
               "uhuy"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "HOME",
+        "icon": "house",
+        "groups": [
+          {
+            "group": "Panel vs Website",
+            "pages": [
+              "website-panel",
+              "website-rae-host",
+              "hubungan-keduanya-1"
             ]
           }
         ]
