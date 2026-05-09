@@ -30,7 +30,8 @@
     },
     "tabs": [
       {
-        "tab": "Untitled Tab",
+        "tab": "HOME",
+        "icon": "house",
         "products": [
           {
             "product": "Panel vs Website",
@@ -46,14 +47,11 @@
               "upgrade",
               "renewal"
             ]
-          },
-          {
-            "product": "Untitled Product"
           }
         ]
       },
       {
-        "tab": "uhuy"
+        "tab": "TUTORIAL"
       }
     ]
   },
