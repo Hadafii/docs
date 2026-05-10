@@ -39,13 +39,13 @@
           "href": "https://discord.com/invite/c8zC5Qfkvh"
         },
         {
-          "anchor": "Documentation",
+          "anchor": "External Links",
           "icon": "book-open-cover",
           "color": {
             "light": "#153aa3",
             "dark": "#153aa3"
           },
-          "href": "https://mintlify.com/docs"
+          "href": "https://raehost.com/links"
         }
       ]
     },
