@@ -78,6 +78,12 @@
             ]
           },
           {
+            "group": "Tiket di Website vs di Discord",
+            "pages": [
+              "perbedaan-tiket-di-web-dan-discord"
+            ]
+          },
+          {
             "group": "Ketentuan",
             "pages": [
               "terms-of-service",
@@ -90,7 +96,7 @@
         "tab": "TUTORIAL",
         "icon": "book-open",
         "pages": [
-          "untitled-page"
+          "cara-membeli-server"
         ]
       }
     ]
