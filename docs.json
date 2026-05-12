@@ -96,7 +96,8 @@
         "tab": "TUTORIAL",
         "icon": "book-open",
         "pages": [
-          "cara-membeli-server"
+          "cara-membeli-server",
+          "cara-join-server"
         ]
       }
     ]
