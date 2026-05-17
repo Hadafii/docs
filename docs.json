@@ -98,11 +98,16 @@
         "icon": "book-open",
         "pages": [
           "cara-membeli-server",
-          "cara-join-server"
+          "cara-join-server",
+          {
+            "group": "Java",
+            "pages": []
+          },
+          {
+            "group": "Bedrock",
+            "pages": []
+          }
         ]
-      },
-      {
-        "tab": "uhuy"
       }
     ]
   },
