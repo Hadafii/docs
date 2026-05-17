@@ -1,0 +1,55 @@
+---
+title: "Cara Backup"
+---
+
+## Manual
+
+<Steps>
+  <Step title="Login ke Panel">
+    Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu.
+
+    <Frame>
+      <img
+        src="/images/image-57.png"
+        alt="Image"
+        title="Image"
+        className="mx-auto"
+      />
+    </Frame>
+  </Step>
+  <Step title="Klik tab Backup">
+    <Frame>
+      ![Image](/images/image-68.png)
+    </Frame>
+
+    Untuk melakukan backup, klik tab `Backups` seperti yang ditunjukkan pada nomor 1. Kemudian klik tombol `Create backup` seperti yang ditunjukkan pada nomor 2.
+
+    <Frame>
+      <img
+        src="/images/image-69.png"
+        alt="Image"
+        title="Image"
+        className="mx-auto"
+        style={{ width:"92%" }}
+      />
+    </Frame>
+
+    1. Backup Name \
+    Tulis nama backup kamu, contoh `backup_28okt`(biar gampang dikenali kalau mau restore nanti).
+    2. Ignored Files & Directories 
+    Biarkan kosong kalau mau backup semua file. Kalau mau _skip_ folder tertentu, isi misalnya: `logs` `cache` `old_world`
+    3. Locked 
+    Aktifkan toggle ini kalau kamu **tidak ingin backup-nya terhapus otomatis.**
+    4. Tombol `Start Backup` 
+    Setelah klik, backup akan tersimpan seperti gambar berikut:
+  </Step>
+  <Step title="Backup Berhasil">
+    Tunggu beberapa menit hingga file tersimpan seperti berikut:
+
+    <Frame>
+      ![Image](/images/image-70.png)
+    </Frame>
+  </Step>
+</Steps>
+
+## Schedule

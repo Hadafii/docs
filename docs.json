@@ -101,7 +101,8 @@
           "cara-join-server",
           "cara-crack-join-server",
           "cara-whitelist",
-          "cara-reset-dunia"
+          "cara-reset-dunia",
+          "cara-backup"
         ]
       }
     ]
