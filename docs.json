@@ -63,13 +63,6 @@
             ]
           },
           {
-            "group": "Upgrade dan Renewal",
-            "pages": [
-              "upgrade-1",
-              "renewal-1"
-            ]
-          },
-          {
             "group": "Tipe Server",
             "pages": [
               "tes",
@@ -97,6 +90,13 @@
         "tab": "TUTORIAL",
         "icon": "book-open",
         "pages": [
+          {
+            "group": "Upgrade dan Renewal",
+            "pages": [
+              "upgrade-1",
+              "renewal-1"
+            ]
+          },
           "cara-membeli-server",
           "cara-join-server",
           {
