@@ -1,0 +1,59 @@
+---
+title: "Ga Bisa Menghancurkan Blok? Cara Menonaktifkan Spawn Protection di Server Minecraft"
+---
+
+> Fitur ini melindungi area di sekitar titik spawn agar tidak bisa diganggu oleh pemain _non-OP._
+
+Berikut adalah langkah-langkah yang dapat kamu lakukan jika kamu tidak dapat menghancurkan atau menempatkan blok di area spawn:
+
+<Steps>
+  <Step title="Login ke Panel">
+    Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu.
+
+    <Frame>
+      <img
+        src="/images/image-57.png"
+        alt="Image"
+        title="Image"
+        className="mx-auto"
+      />
+    </Frame>
+  </Step>
+  <Step title="Buka File Manager">
+    Pergi ke tab `Files` dan cari file `server.properties` seperti yang ditampilkan oleh gambar berikut:
+
+    <Frame>
+      ![Image](/images/image-62.png)
+    </Frame>
+  </Step>
+  <Step title="Ubah Spawn Protection">
+    Temukan baris spawn protection
+
+    <Frame>
+      ![Image](/images/image-82.png)
+    </Frame>
+
+    Ubah menjadi 0 seperi yang ditampilkan oleh nomor 1 dan klik `save content` seperti yang ditampilkan oleh nomor 2.
+
+    <Frame>
+      ![Image](/images/image-83.png)
+    </Frame>
+  </Step>
+  <Step title="Restart Server">
+    Setelahnya, pergi ke tab `Console` seperti yang ditunjukkan pada nomor 1. Kemudian klik `Restart` seperti yang ditunjukkan pada nomor 2. Spawn Protection sudah mati.
+
+    <Frame>
+      ![Image](/images/image-60.png)
+    </Frame>
+  </Step>
+</Steps>
+
+> - Angka 16 berarti radius 16 blok dari titik spawn tidak bisa diubah oleh pemain biasa.
+> - Jika diubah ke 0, area spawn akan bebas dimodifikasi sesuai permission pemain.
+> - Setelah diubah, pemain tidak perlu menjadi OP untuk menghancurkan atau menempatkan blok di area spawn.
+
+<Info>
+  ### **Masih belum bisa hancurkan blok di spawn?**
+
+  Coba pastikan tidak ada plugin seperti WorldGuard atau GriefPrevention yang melindungi area tersebut.
+</Info>

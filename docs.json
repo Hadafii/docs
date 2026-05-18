@@ -102,7 +102,9 @@
           "cara-crack-join-server",
           "cara-whitelist",
           "cara-reset-dunia",
-          "cara-backup"
+          "cara-backup",
+          "cara-restore-backup",
+          "cara-menonaktifkan-spawn-protection-di-server-minecraft"
         ]
       }
     ]
