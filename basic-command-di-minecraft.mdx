@@ -1,0 +1,119 @@
+---
+title: "Basic Command di Minecraft"
+---
+
+> Jika username mu berupa 1 kata, masukkan langsung username Minecraft mu, contoh `op bangRey`. Jika lebih dari 1 kata, masukkan username dengan ditandai petik, contoh `op "bang Rey".`
+
+## Bedrock Edition
+
+### Perintah Admin atau OP
+
+| Command | Contoh | Kegunaan |
+| --- | --- | --- |
+| `op <player>` | `op bangRey` | Memberikan akses OP ke player |
+| `deop <player>` | `deop bangRey` | Menghapus akses OP dari player |
+| `whitelist add <player>` | `whitelist add bangRey` | Menambahkan player ke whitelist |
+| `whitelist remove <player>` | `whitelist remove bangRey` | Menghapus player dari whitelist |
+| `kick <player>` | `kick bangRey` | Mengeluarkan player dari server |
+| `ban <player>` | `ban bangRey` | Ban player dari server |
+| `pardon <player>` | `pardon bangRey` | Membuka ban player |
+
+### Kontrol Dunia
+
+| Command | Kegunaan |
+| --- | --- |
+| `difficulty peaceful` | Mengubah difficulty menjadi peaceful |
+| `difficulty easy` | Mengubah difficulty menjadi easy |
+| `difficulty normal` | Mengubah difficulty menjadi normal |
+| `difficulty hard` | Mengubah difficulty menjadi hard |
+| `time set day` | Mengubah waktu menjadi siang |
+| `time set night` | Mengubah waktu menjadi malam |
+| `time set noon` | Mengubah waktu menjadi sore |
+| `time set midnight` | Mengubah waktu menjadi tengah malam |
+| `weather clear` | Menghilangkan hujan |
+| `weather rain` | Mengaktifkan hujan |
+| `weather thunder` | Mengaktifkan petir |
+| `setworldspawn` | Ubah titik spawn dunia |
+| `spawnpoint <player>` | Ubah spawn pemain |
+
+### Gamerule (Atur Dunia)
+
+| Command | Kegunaan |
+| --- | --- |
+| `gamerule keepInventory true` | Item tidak hilang saat mati |
+| `gamerule keepInventory false` | Menonaktifkan keep inventory |
+| `gamerule doDaylightCycle false` | Menghentikan siklus siang malam |
+| `gamerule doWeatherCycle false` | Menghentikan perubahan cuaca |
+| `gamerule mobGriefing false` | Mencegah creeper/enderman merusak block. |
+| `gamerule doMobSpawning false` | Menonaktifkan spawn mob alami |
+| `gamerule doFireTick false` | Api tidak menyebar |
+
+### Creative & Utility
+
+| Command | Contoh | Kegunaan |
+| --- | --- | --- |
+| `give <player> <item> [jumlah]` | `give bangRey diamond 64` | Memberi item kepada player lain |
+| `effect <nama> <efek> <durasi>` | `effect bangRey speed 60 2` | Efek potion |
+| `tp <nama> <x> <y> <z>` | `tp bangRey 100 64 -200` | Teleportasi |
+| `gamemode creative` |  | Mengubah gamemode menjadi Creative |
+| `gamemode survival` |  | Mengubah gamemode menjadi survival |
+| `clear <player>` | `clear bangRey` | Hapus inventaris pemain |
+
+## Java Edition
+
+### Perintah Admin atau OP
+
+| Command | Contoh | Kegunaan |
+| --- | --- | --- |
+| `op <player>` | `op bangRey` | Memberikan akses OP ke player |
+| `deop <player>` | `deop bangRey` | Menghapus akses OP dari player |
+| `whitelist add <player>` | `whitelist add bangRey` | Menambahkan player ke whitelist |
+| `whitelist remove <player>` | `whitelist remove bangRey` | Menghapus player dari whitelist |
+| `kick <player>` | `kick bangRey` | Mengeluarkan player dari server |
+| `ban <player>` | `ban bangRey` | Ban player dari server |
+| `pardon <player>` | `pardon bangRey` | Membuka ban player |
+| `ban-ip <IP>` | `ban-ip 203.0.113.10` | Ban IP |
+| `pardon-ip <IP>` | `pardon-ip 203.0.113.10` | Unban IP |
+
+### Kontrol Dunia
+
+| Command | Contoh | Kegunaan |
+| --- | --- | --- |
+| `difficulty peaceful` |  | Mengubah difficulty menjadi peaceful |
+| `difficulty easy` |  | Mengubah difficulty menjadi easy |
+| `difficulty normal` |  | Mengubah difficulty menjadi normal |
+| `difficulty hard` |  | Mengubah difficulty menjadi hard |
+| `time set day` |  | Mengubah waktu menjadi siang |
+| `time set night` |  | Mengubah waktu menjadi malam |
+| `time set noon` |  | Mengubah waktu menjadi sore |
+| `time set midnight` |  | Mengubah waktu menjadi tengah malam |
+| `weather clear` |  | Menghilangkan hujan |
+| `weather rain` |  | Mengaktifkan hujan |
+| `weather thunder` |  | Mengaktifkan petir |
+| `setworldspawn <x> <y> <z>` | `setworldspawn 0 64 0` | Ubah titik spawn dunia |
+| `spawnpoint <player> <x> <y> <z>` | `spawnpoint bangRey 100 65 200` | Ubah spawn pemain |
+
+### Gamerule (Atur Dunia)
+
+| Command | Kegunaan |
+| --- | --- |
+| `gamerule keepInventory true` | Item tidak hilang saat mati |
+| `gamerule keepInventory false` | Menonaktifkan keep inventory |
+| `gamerule doDaylightCycle false` | Menghentikan siklus siang malam |
+| `gamerule doWeatherCycle false` | Menghentikan perubahan cuaca |
+| `gamerule mobGriefing false` | Mencegah creeper/enderman merusak block. |
+| `gamerule doMobSpawning false` | Menonaktifkan spawn mob alami |
+| `gamerule doFireTick false` | Api tidak menyebar |
+| `gamerule randomTickSpeed 0` | Hentikan pertumbuhan tanaman |
+
+### Creative & Utility
+
+| Command | Contoh | Kegunaan |
+| --- | --- | --- |
+| `give <player> <item> [jumlah]` | `give bangRey diamond 64` | Memberi item kepada player lain |
+| `effect <nama> <efek> <durasi>` | `effect bangRey speed 60 2` | Efek potion |
+| `tp <nama> <x> <y> <z>` | `tp bangRey 100 64 -200` | Teleportasi |
+| `tp <player1> <player2>` | `tp bangRey Player123` | Memindahkan satu player ke lokasi player lain |
+| `gamemode creative` |  | Mengubah gamemode menjadi Creative |
+| `gamemode survival` |  | Mengubah gamemode menjadi survival |
+| `clear <player>` | `clear bangRey` | Hapus inventaris pemain |
