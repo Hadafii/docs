@@ -57,23 +57,138 @@ title: "Cara Backup"
 </Tip>
 
 <Steps>
-  <Step title="Bikin Jadwal">
-    <Steps>
-      <Step title="Login ke Panel">
-        Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu.
+  <Step title="Login ke Panel">
+    Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu.
 
-        <Frame>
-          <img
-            src="/images/image-57.png"
-            alt="Image"
-            title="Image"
-            className="mx-auto"
-          />
-        </Frame>
-      </Step>
-      <Step title="Klik Schedules">
-      </Step>
-    </Steps>
+    <Frame>
+      <img
+        src="/images/image-57.png"
+        alt="Image"
+        title="Image"
+        className="mx-auto"
+      />
+    </Frame>
+  </Step>
+  <Step title="Membuat Jadwal">
+    Klik tab `Schedules` seperti yang ditunjukkan pada nomor 1. Kemudian klik tombol `Create schedule`
+
+    <Frame>
+      ![Image](/images/image-71.png)
+    </Frame>
+  </Step>
+  <Step title="Isi Data">
+    Isi kebutuhan seperti berikut:
+
+    <Frame>
+      <img
+        src="/images/image-72.png"
+        alt="Image"
+        title="Image"
+        className="mx-auto"
+        style={{ width:"83%" }}
+      />
+    </Frame>
+
+    > Artinya backup ini akan dilakukan setiap hari di jam 00.00
+
+    <Frame>
+      <img
+        src="/images/image-73.png"
+        alt="Image"
+        title="Image"
+        className="mx-auto"
+        style={{ width:"80%" }}
+      />
+    </Frame>
+
+    Penjelasan untuk gambar diatas:
+
+    1. Nomor 1 menjelaskan apakah jadwal backup hanya berjalan jika server sedang online. (Better off aja, jadi kalau lagi offline pun di backup)
+    2. Nomor 2 menjelaskan apakah setiap backup di eksekusi akan diberikan notifikasi melalui email. (Better off aja, biar ga terlalu banyak email)
+    3. Nomor 3 menjelaskan apakah jadwal akan terus berjalan. (Nyalakan saja agar selalu di backup)
+    4. Nomor 4 merupakan tombol untuk membuat jadwal.
+  </Step>
+  <Step title="Jadwal Terbuat">
+    Setelah kami klik `create schedule` maka jadwal akan tersimpan.
+
+    <Frame>
+      ![Image](/images/image-74.png)
+    </Frame>
+  </Step>
+</Steps>
+
+Jika kamu ingin mengubah jadwal yang sudah ada, kamu mengubahnya dengan cara seperti ini:
+
+<Steps>
+  <Step title="Klik Jadwal">
+    Untuk mengubah jadwal, kamu dapat klik jadwal yang sudah ada
+
+    <Frame>
+      ![Image](/images/image-74.png)
+    </Frame>
+  </Step>
+  <Step title="Klik tombol Edit">
+    <Frame>
+      ![Image](/images/image-75.png)
+    </Frame>
+  </Step>
+  <Step title="Isi Data ">
+    Setelah klik tombol `Edit`, akan muncul form yang dapat kamu ubah isinya seperti berikut:
+
+    <Frame>
+      <img
+        src="/images/image-72.png"
+        alt="Image"
+        title="Image"
+        className="mx-auto"
+        style={{ width:"83%" }}
+      />
+    </Frame>
+
+    <Frame>
+      ![Image](/images/image-76.png)
+    </Frame>
+  </Step>
+  <Step title="Data Berubah">
+    Jika sudah klik tombol `Save Changes`. Data pun berubah.
+  </Step>
+</Steps>
+
+Jika kamu ingin membuat task terjadawal bisa menggunakan `Task Scheduler` memungkinkan kamu membuat aksi otomatis untuk server, seperti menjalankan command, restart server, membuat backup, atau membersihkan file lama secara terjadwal.
+
+<Steps>
+  <Step title="Klik New Task">
+    Untuk membuat task baru, kamu dapat klik tombol `New Task`
+
+    <Frame>
+      ![Image](/images/image-78.png)
+    </Frame>
+  </Step>
+  <Step title="Isi Data">
+    <Frame>
+      <img
+        src="/images/image-77.png"
+        alt="Image"
+        className="mx-auto"
+        style={{ width:"87%" }}
+      />
+    </Frame>
+
+    Berikut penjelasan untuk gambar diatas:
+
+    1. Nomor 1 berisi action untuk task yang dapat dikerjakan seperti:
+       1. **Send command** → menjalankan command otomatis
+       2. **Send power action** → restart/stop/start server
+       3. **Create backup** → membuat backup server
+       4. **Cleanup old files** → menghapus file lama secara otomatis
+    2. Nomor 2 berguna untuk menentukan jeda waktu sebelum task ini dijalankan setelah task sebelumnya selesai.
+    3. Nomor 3 berisi data atau perintah yang akan dijalankan sesuai action yang dipilih. Contoh: `say Server restarting in 5 minutes` `restart`
+    4. Nomor 4 merupakan tombol yang jika diaktifkan, task berikutnya tetap akan berjalan meskipun task ini gagal dijalankan.
+    5. Nomor 5 berguna untuk cancel task yang ingin dibuat.
+    6. Nomor 6 berguna untuk membuat task.
+  </Step>
+  <Step title="Task Akan Tersimpan">
+    Jika kamu klik tombol `Create Task`, maka task akan tersimpan dan akan dijalankan oleh sistem sesuai jadwal.
   </Step>
 </Steps>
 
