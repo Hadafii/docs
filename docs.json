@@ -109,18 +109,6 @@
           {
             "group": "MINECRAFT",
             "pages": [
-              {
-                "group": "You Need a Java Edition Account to Play on This Server",
-                "pages": [
-                  "cara-setup-geyser"
-                ]
-              },
-              {
-                "group": "Failed to Verify Username",
-                "pages": [
-                  "cara-crack-join-server"
-                ]
-              },
               "cara-aktifin",
               "cara-ganti-seed",
               "cara-merubah-versi",
@@ -128,12 +116,9 @@
               "cara-install-simple-voice-chat",
               "cara-reset-dunia",
               "cara-whitelist",
-              {
-                "group": "Ga Bisa Menghancurkan Blok",
-                "pages": [
-                  "cara-menonaktifkan-spawn-protection-di-server-minecraft"
-                ]
-              }
+              "cara-setup-geyser",
+              "cara-crack-join-server",
+              "cara-menonaktifkan-spawn-protection-di-server-minecraft"
             ]
           },
           {
