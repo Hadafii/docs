@@ -113,7 +113,7 @@
       }
     ]
   },
-  "logo": "images/Frame25(2).png",
+  "logo": "/images/CopyofRaehostTitle2.png",
   "navbar": {
     "links": [
       {
@@ -148,12 +148,7 @@
       "website": "https://raehost.com/"
     }
   },
-  "banner": {
-    "content": "RaeHost Documentation",
-    "dismissible": false,
-    "color": {
-      "light": "#3966e0",
-      "dark": "#0b1c4b"
-    }
+  "appearance": {
+    "default": "system"
   }
 }
