@@ -125,3 +125,51 @@ title: "Cara Setup Geyser! You need a Java Edition account to play on this serve
     </Frame>
   </Step>
 </Steps>
+
+## **"You need a Java Edition account to play on this server"**
+
+Hal ini dapat disebkan karena Bedrock player dianggap belum “terautentikasi” karena Geyser belum diset ke mode Floodgate. Berikut adalah solusinya:
+
+<Steps>
+  <Step title="Login ke Panel">
+    Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu.
+
+    <Frame>
+      <img
+        src="/images/image-57.png"
+        alt="Image"
+        title="Image"
+        className="mx-auto"
+      />
+    </Frame>
+  </Step>
+  <Step title="Buka file ">
+    <Frame>
+      ![File Config](/images/file-config.png)
+    </Frame>
+
+    1. Masuk ke tab `Files` 
+    2. Buka file `/plugins/Geyser-Spigot/config.yml`
+    3. Cari `auth-type: online` 
+
+    <Frame>
+      ![Floodgate](/images/floodgate.png)
+    </Frame>
+
+    1. Ubah menjadi `auth-type: floodgate` seperti gambar diatas
+    2. Setelahnya klik Save Content
+  </Step>
+  <Step title="Restart Server">
+    Setelahnya, pergi ke tab `Console` seperti yang ditunjukkan pada nomor 1. Kemudian klik `Restart` seperti yang ditunjukkan pada nomor 2. Spawn Protection sudah mati.
+
+    <Frame>
+      ![Image](/images/image-60.png)
+    </Frame>
+  </Step>
+</Steps>
+
+<Note>
+  Restart server setiap kali ubah **config**
+</Note>
+
+<iframe src="https://www.youtube.com/embed/HEjdOFR6JS8" title="YouTube video player" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
