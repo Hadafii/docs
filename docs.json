@@ -105,7 +105,6 @@
               "cara-restore-backup"
             ]
           },
-          "cara-crack-join-server",
           "cara-whitelist",
           "cara-reset-dunia",
           "cara-menonaktifkan-spawn-protection-di-server-minecraft",
@@ -113,9 +112,20 @@
           "basic-command-di-minecraft",
           "cara-merubah-versi",
           "cara-pindah-migrasi-server",
-          "cara-setup-geyser",
           "cara-ganti-seed",
-          "cara-aktifin"
+          "cara-aktifin",
+          {
+            "group": "Failed to Verify Username",
+            "pages": [
+              "cara-crack-join-server"
+            ]
+          },
+          {
+            "group": "You Need a Java Edition Account to Play on This Server",
+            "pages": [
+              "cara-setup-geyser"
+            ]
+          }
         ]
       }
     ]
