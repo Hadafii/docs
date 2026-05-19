@@ -1,0 +1,72 @@
+---
+title: "Upload World Minecraft PC ke Server RaeHost (Java Edition)"
+---
+
+> Pengen pakai world dari singleplayer ke server RaeHost kamu? Ikuti langkah berikut supaya world bisa ter-upload dengan aman dan tidak error.
+
+<Steps>
+  <Step title="Siapkan World dari Komputer">
+    <Steps>
+      <Step title="Buka folder Minecraft:">
+        `%appdata%\.minecraft\saves`
+      </Step>
+      <Step title="Setiap folder di dalam saves adalah world Minecraft kamu">
+        Pilih world yang ingin di-upload ke server
+      </Step>
+      <Step title="Klik kanan folder world → Send to / Kirim ke → Compressed (ZIP) Folder">
+      </Step>
+      <Step title="Pastikan hasil akhirnya berupa file .zip">
+      </Step>
+    </Steps>
+
+    Contoh yang dihasilkan: MyWorld.zip
+  </Step>
+  <Step title="Login ke Panel">
+    Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu. Kemudian stop server dengan menekan tombol `Stop` seperti yang ditunjukkan oleh nomor 1.
+
+    <Frame>
+      ![Image](/images/image-64.png)
+    </Frame>
+  </Step>
+  <Step title="Upload World">
+    <Frame>
+      ![Upload World](/images/upload-world.png)
+    </Frame>
+
+    Masuk ke tab `Files`. Klik tombol `Upload` seperti nomor 2. Pilih file world `.zip` yang sudah dibuat. Tunggu hingga upload selesai.
+  </Step>
+  <Step title="Extract / Unarchive World">
+    <Steps>
+      <Step title="Setelah upload selesai, klik kanan file .zip">
+      </Step>
+      <Step title="Pilih Unarchive atau Extract">
+      </Step>
+      <Step title="Setelah berhasil, akan muncul folder world baru">
+      </Step>
+    </Steps>
+
+    Contoh yang dihasilkan: MyWorld
+  </Step>
+  <Step title="Atur Nama World di Startup">
+    <Steps>
+      <Step title="Buka tab Startup">
+      </Step>
+      <Step title="Cari variable WORLD">
+      </Step>
+      <Step title="Ganti nilainya sesuai nama folder world yang di-upload">
+        (huruf besar/kecil harus sama / case-sensitive). Contoh:
+
+        `WORLD=MyWorld`
+      </Step>
+      <Step title="Klik Save">
+      </Step>
+    </Steps>
+  </Step>
+  <Step title="Restart Server">
+    Setelahnya, pergi ke tab `Console` seperti yang ditunjukkan pada nomor 1. Kemudian klik `Restart` seperti yang ditunjukkan pada nomor 2. 
+
+    <Frame>
+      ![Image](/images/image-60.png)
+    </Frame>
+  </Step>
+</Steps>

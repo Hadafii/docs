@@ -127,13 +127,14 @@
               "basic-command-di-minecraft",
               "cara-install-simple-voice-chat",
               "cara-reset-dunia",
-              "cara-whitelist"
-            ]
-          },
-          {
-            "group": "Ga Bisa Menghancurkan Blok",
-            "pages": [
-              "cara-menonaktifkan-spawn-protection-di-server-minecraft"
+              "cara-whitelist",
+              {
+                "group": "Ga Bisa Menghancurkan Blok",
+                "pages": [
+                  "cara-menonaktifkan-spawn-protection-di-server-minecraft"
+                ]
+              },
+              "upload-world-minecraft-pc-ke-server-rae-host-java-edition"
             ]
           }
         ]
