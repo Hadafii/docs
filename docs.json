@@ -105,25 +105,35 @@
               "cara-restore-backup"
             ]
           },
-          "cara-whitelist",
-          "cara-reset-dunia",
-          "cara-menonaktifkan-spawn-protection-di-server-minecraft",
-          "cara-install-simple-voice-chat",
-          "basic-command-di-minecraft",
-          "cara-merubah-versi",
           "cara-pindah-migrasi-server",
-          "cara-ganti-seed",
-          "cara-aktifin",
           {
-            "group": "Failed to Verify Username",
+            "group": "MINECRAFT",
             "pages": [
-              "cara-crack-join-server"
+              {
+                "group": "You Need a Java Edition Account to Play on This Server",
+                "pages": [
+                  "cara-setup-geyser"
+                ]
+              },
+              {
+                "group": "Failed to Verify Username",
+                "pages": [
+                  "cara-crack-join-server"
+                ]
+              },
+              "cara-aktifin",
+              "cara-ganti-seed",
+              "cara-merubah-versi",
+              "basic-command-di-minecraft",
+              "cara-install-simple-voice-chat",
+              "cara-reset-dunia",
+              "cara-whitelist"
             ]
           },
           {
-            "group": "You Need a Java Edition Account to Play on This Server",
+            "group": "Ga Bisa Menghancurkan Blok",
             "pages": [
-              "cara-setup-geyser"
+              "cara-menonaktifkan-spawn-protection-di-server-minecraft"
             ]
           }
         ]
