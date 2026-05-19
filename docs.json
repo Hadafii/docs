@@ -89,6 +89,8 @@
         "tab": "TUTORIAL",
         "icon": "book-open",
         "pages": [
+          "cara-membeli-server",
+          "cara-join-server",
           {
             "group": "Upgrade dan Renewal",
             "pages": [
@@ -96,19 +98,23 @@
               "renewal-1"
             ]
           },
-          "cara-membeli-server",
-          "cara-join-server",
+          {
+            "group": "Backup",
+            "pages": [
+              "cara-backup",
+              "cara-restore-backup"
+            ]
+          },
           "cara-crack-join-server",
           "cara-whitelist",
           "cara-reset-dunia",
-          "cara-backup",
-          "cara-restore-backup",
           "cara-menonaktifkan-spawn-protection-di-server-minecraft",
           "cara-install-simple-voice-chat",
           "basic-command-di-minecraft",
           "cara-merubah-versi",
           "cara-pindah-migrasi-server",
-          "cara-setup-geyser"
+          "cara-setup-geyser",
+          "cara-ganti-seed"
         ]
       }
     ]
