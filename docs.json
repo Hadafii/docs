@@ -141,9 +141,19 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/raehost_id",
+      "discord": "https://discord.gg/c8zC5Qfkvh",
+      "youtube": "https://www.youtube.com/@raehost",
+      "instagram": "https://www.instagram.com/raehost",
+      "website": "https://raehost.com/"
+    }
+  },
+  "banner": {
+    "content": "RaeHost Documentation",
+    "dismissible": false,
+    "color": {
+      "light": "#3966e0",
+      "dark": "#0b1c4b"
     }
   }
 }
