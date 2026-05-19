@@ -133,8 +133,14 @@
                 "pages": [
                   "cara-menonaktifkan-spawn-protection-di-server-minecraft"
                 ]
-              },
-              "upload-world-minecraft-pc-ke-server-rae-host-java-edition"
+              }
+            ]
+          },
+          {
+            "group": "Upload World",
+            "pages": [
+              "upload-world-minecraft-pc-ke-server-rae-host-java-edition",
+              "minecraft-bedrock-ke-server-rae-host"
             ]
           }
         ]

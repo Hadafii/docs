@@ -1,0 +1,69 @@
+---
+title: "Minecraft Bedrock ke Server RaeHost"
+---
+
+Pengen pindahin world dari Minecraft Bedrock (HP/PC) ke server RaeHost? Ikuti langkah berikut supaya world bisa berjalan dengan benar di server.
+
+## Dari PC
+
+<Steps>
+  <Step title="Cari Folder World">
+    <Steps>
+      <Step title="Tekan Windows + R">
+      </Step>
+      <Step title="Ketik path berikut:">
+        `%LocalAppData%\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\minecraftWorlds`
+      </Step>
+      <Step title="Setiap folder di dalam minecraftWorlds adalah 1 world Minecraft Bedrock">
+      </Step>
+      <Step title="Nama folder biasanya acak, contohnya">
+        Contoh: 4d8s2A==
+      </Step>
+      <Step title="Untuk mengetahui nama world">
+        1. Buka folder tersebut
+        2. Cari file: levelname.txt
+        3. Buka file itu untuk melihat nama dunia Minecraft kamu
+      </Step>
+    </Steps>
+  </Step>
+  <Step title="Kompres Folder World">
+    <Steps>
+      <Step title="Klik kanan folder world">
+      </Step>
+      <Step title="Pilih Send to → Compressed (zipped) folder">
+      </Step>
+      <Step title="Hasil akhirnya akan menjadi file .zip">
+        Contoh yang Dihasilkan: [MyWorld.zip](http://MyWorld.zip)
+      </Step>
+    </Steps>
+
+    > ZIP folder world-nya langsung, bukan isi di dalam foldernya.
+  </Step>
+  <Step title="Upload ke Panel RaeHost">
+    <Steps>
+      <Step title="Login ke Panel">
+        Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu. Kemudian stop server dengan menekan tombol `Stop` seperti yang ditunjukkan oleh nomor 1.
+
+        <Frame>
+          ![Image](/images/image-64.png)
+        </Frame>
+      </Step>
+      <Step title="Upload World">
+        <Frame>
+          ![Upload World](/images/upload-world.png)
+        </Frame>
+
+        Masuk ke tab `Files`. Klik tombol `Upload` seperti nomor 2. Pilih file world `.zip` yang sudah dibuat. Tunggu hingga upload selesai.
+      </Step>
+      <Step title="Pilih file MyWorld.zip">
+        Tunggu proses upload selesai
+      </Step>
+      <Step title="Klik kanan file .zip → pilih Unarchive / Extract">
+      </Step>
+    </Steps>
+  </Step>
+  <Step title="Atur LEVEL_NAME">
+  </Step>
+</Steps>
+
+## Dari HP
