@@ -106,6 +106,7 @@
             ]
           },
           "cara-pindah-migrasi-server",
+          "ganti-ip-menjadi-domain",
           {
             "group": "MINECRAFT",
             "pages": [
@@ -128,7 +129,12 @@
               "minecraft-bedrock-ke-server-rae-host"
             ]
           },
-          "ganti-ip-menjadi-domain"
+          {
+            "group": "HYTALE",
+            "pages": [
+              "cara"
+            ]
+          }
         ]
       }
     ]
