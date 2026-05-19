@@ -1,0 +1,40 @@
+---
+title: "Ganti IP Menjadi Domain"
+---
+
+Biar pemain cukup masuk pakai `play.namadomainkamu.com`, tanpa IP panjang kayak `basic.raehost.com:25565`
+
+<Steps>
+  <Step title="Buat A Record">
+    A Record = menghubungkan domain ke IP server kamu. Isi seperti ini: 
+
+    ```text
+    Type: A
+    Name: play
+    IPv4 Address: IP server kamu (contoh: 202.1.31.134)
+    TTL: Auto
+    ```
+
+    Hasil: `play.namadomainkamu.com` → menuju IP server kamu.
+  </Step>
+  <Step title="Buat SRV Record (Untuk Port Minecraft)">
+    SRV Record = supaya pemain gak perlu nulis port lagi.
+
+    ```text
+    Type: SRV
+    Name: _minecraft._tcp.play
+    Priority: 1
+    Weight: 10
+    Port: 25565 (ganti dengan port server kamu)
+    Target: basic.raehost.com (tanpa port)
+    TTL: Auto
+    ```
+  </Step>
+  <Step title="Berhasil Deh">
+    Sekarang kalau mau join udah bisa pakai `play.namadomainkamu.com` tanpa perlu nulis port lagi.
+  </Step>
+</Steps>
+
+<Frame>
+  ![Screenshot 2025 10 28 111127](/images/Screenshot_2025-10-28_111127.png)
+</Frame>
