@@ -1,0 +1,118 @@
+---
+title: "Cara Upload File Besar Menggunakan SFTP"
+---
+
+Kalau kamu mau upload file besar (di atas 100 MB) atau banyak file sekaligus, pakai **SFTP** jauh lebih cepat dan stabil daripada File Manager di panel.
+
+<Steps>
+  <Step title="Download Software SFTP">
+    Contoh: 
+
+    - FileZilla
+    - WinSCP
+    - Termius
+  </Step>
+  <Step title="Login ke Panel">
+    Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu.
+
+    <Frame>
+      <img
+        src="/images/image-57.png"
+        alt="Image"
+        title="Image"
+        className="mx-auto"
+      />
+    </Frame>
+  </Step>
+  <Step title="Stop Server">
+    Klik tombol `Stop` seperti yang ditampilkan oleh nomor 1. Jika sudah di stop, maka server akan `offline` seperti yang ditampilkan oleh nomor 2.
+
+    <Frame>
+      ![Image](/images/image-86.png)
+    </Frame>
+  </Step>
+  <Step title="Masuk ke Tab Settings dan Hubungkan SFTP dengan Panel">
+    ## Instan
+
+    <Steps>
+      <Step title="Masuk ke tab Settings. Kemudian klik tombol Launch SFTP pada SFTP DETAILS">
+        <Frame>
+          ![Launch Sftp](/images/launch-sftp.png)
+        </Frame>
+      </Step>
+      <Step title="Akan muncul pop up. Klik Open">
+        <Frame>
+          ![Pop Up](/images/pop-up.png)
+        </Frame>
+      </Step>
+      <Step title="Isi Password">
+        Masukkan password panel mu. Kemudian klik tombol OK.
+
+        <Frame>
+          ![Masukin Pass](/images/masukin-pass.png)
+        </Frame>
+
+        <Info>
+          Jika kamu login menggunakan Google pada website, maka kamu bisa atur password disini: [https://clients.raehost.com/profile](https://clients.raehost.com/profile)
+        </Info>
+      </Step>
+    </Steps>
+
+    ## Manual
+
+    Buka software SFTP. Isi informasi yang di dapat di `Panel > Settings` pada bagian `SFTP DETAILS`
+
+    <Frame>
+      ![Connect Acc](/images/connect-acc.png)
+    </Frame>
+
+    1. Isi `Host name` dengan `Server Address` pada panel. Ditulis tanpa port.
+    2. Port dimasukkan pada bagian `Port Number`
+    3. `Username` diisi sesuai dengan username panel
+    4. `Password` yang dimasukkan juga sesuai dengan password panel
+
+    <Info>
+      Jika kamu login menggunakan Google pada website, maka kamu bisa atur password disini: [https://clients.raehost.com/profile](https://clients.raehost.com/profile)
+    </Info>
+
+    5. Klik tombol `Login`
+  </Step>
+  <Step title="Drag and Drop File zip ke SFTP Server">
+    <Frame>
+      ![Upload File](/images/upload_file.png)
+    </Frame>
+  </Step>
+  <Step title="Buka Panel > Files">
+    Cari folder yang sudah di upload, kemudian klik `Unarchive`
+
+    <Frame>
+      ![Unarchive2](/images/unarchive2.png)
+    </Frame>
+
+    Folder sudah terunzip
+
+    <Frame>
+      ![Tutorial](/images/tutorial.png)
+    </Frame>
+
+    <Info>
+      Untuk Java world bisa langsung di direktori utama. Sedangkan untuk Bedrock, world harus diletakkan di folder `worlds`.
+    </Info>
+  </Step>
+  <Step title="Set Level Name ">
+    Masuk ke tab `MC Config`, isi `LEVEL NAME` dengan nama folder yang diupload. Karena tadi folder bernama `tutorial` maka isi `tutorial`.
+
+    <Frame>
+      ![Set Level Name](/images/set-level-name.png)
+    </Frame>
+  </Step>
+  <Step title="Start Server">
+    Kembali ke tab `Console` seperti pada nomor 1. 
+
+    <Frame>
+      ![Image](/images/image-99.png)
+    </Frame>
+  </Step>
+</Steps>
+
+<iframe src="https://www.youtube.com/embed/u3FhJgZrZwA" title="YouTube video player" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
