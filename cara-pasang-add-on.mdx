@@ -54,6 +54,232 @@ Kamu harus tau dulu perbedaan resource pack dan behaviour pack
   </Column>
 </Columns>
 
+## Melalui Panel
+
 ## Manual
 
-## Melalui Panel
+<Steps>
+  <Step title="Download Add On">
+    > Disarankan menggunakan website yang credible ya. Jangan yang **ilegal**. Contoh web yang dapat digunakan adalah [https://www.curseforge.com/](https://www.curseforge.com/)
+
+    Untuk behavior pack, akan ditandai dengan badge bertuliskan `Addons` seperti berikut:
+
+    <Frame>
+      <img
+        src="/images/file-behavior-packs.png"
+        alt="File Behavior Packs"
+        title="File Behavior Packs"
+        className="mx-auto"
+        style={{ width:"83%" }}
+      />
+    </Frame>
+
+    Untuk behavior pack, akan ditandai dengan badge bertuliskan `Textrue Packs`seperti berikut:
+
+    <Frame>
+      <img
+        src="/images/file-resource-packs.png"
+        alt="File Resource Packs"
+        title="File Resource Packs"
+        className="mx-auto"
+        style={{ width:"80%" }}
+      />
+    </Frame>
+
+    File akan terdownload dengan tipe `MCPACK` seperti yang ditunjuk oleh nomor 1. Kemudian extract file tersebut menjasi folder biasa seperti pada nomor 2.
+
+    <Frame>
+      ![Download File](/images/download-file.png)
+    </Frame>
+
+    Ubah folder tersebut menjadi .zip seperti berikut
+
+    <Frame>
+      <img
+        src="/images/zip-file.png"
+        alt="Zip File"
+        title="Zip File"
+        className="mx-auto"
+        style={{ width:"95%" }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Login ke Panel">
+    Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu.
+
+    <Frame>
+      <img
+        src="/images/image-57.png"
+        alt="Image"
+        title="Image"
+        className="mx-auto"
+      />
+    </Frame>
+  </Step>
+  <Step title="Stop Server">
+    Klik tombol `Stop` seperti yang ditampilkan oleh nomor 1. Jika sudah di stop, maka server akan `offline` seperti yang ditampilkan oleh nomor 2.
+
+    <Frame>
+      ![Image](/images/image-86.png)
+    </Frame>
+  </Step>
+  <Step title="Masukkan File Add On">
+    Cek dulu apakah sudah ada `resource_packs` dan `behaviour_packs`
+
+    <Frame>
+      <img
+        src="/images/cek-bp-rp.png"
+        alt="Cek Bp Rp"
+        title="Cek Bp Rp"
+        className="mx-auto"
+      />
+    </Frame>
+
+    <Card title="Jika belum, silahkan buat terlebih dahulu seperti ini" icon="sparkles">
+      1. Klik tombol `Create Directory`
+         <Frame>
+           ![Create Directory](/images/create-directory.png)
+         </Frame>
+      2. Isi seperti ini
+         <Frame>
+           <img
+             src="/images/create-file.png"
+             alt="Create File"
+             title="Create File"
+             className="mx-auto"
+             style={{ width:"70%" }}
+           />
+         </Frame>
+    </Card>
+
+    ### Resource Pack
+
+    Buka file `/home/container/resource_packs` seperti pada nomor 1. Kemudian drag and drop file zip atau bisa menggunakan tombol `Upload` seperti nomor 2. Setelah folder masuk, klik icon detail seperti pada nomor 3. Kemudian klik menu `Unarchive` seperti nomor 4.
+
+    <Frame>
+      ![Add File Rp](/images/add-file-rp.png)
+    </Frame>
+
+    File mu sudah berhasil di unarchive.
+
+    <Frame>
+      ![Unarchive](/images/unarchive.png)
+    </Frame>
+  </Step>
+  <Step title="Masukkan ke World">
+    Masuk ke file `/home/container/worlds/<nama_world>` . Kemudian klik tombol `New File`.
+
+    <Frame>
+      ![New File](/images/new-file.png)
+    </Frame>
+
+    Buat file dengan nama: `world_behaviour_packs.json`. Kemudian klik `Create File`. Seperti ini:
+
+    <Frame>
+      ![Create Rp](/images/create-rp.png)
+    </Frame>
+
+    Klik tombol `Create File` 
+
+    <Frame>
+      ![Create File2](/images/create-file2.png)
+    </Frame>
+
+    Isi dengan code berikut ini:
+
+    ```text
+         [
+           { "pack_id": "UUID-RESOURCE", "version": [1,0,0] }
+         ]
+    ```
+
+    Tambahkan entry baru sesuai UUID & version di manifest.json addon pada file add on
+
+    <Frame>
+      <img
+        src="/images/open-manifest-rp.png"
+        alt="Open Manifest Rp"
+        title="Open Manifest Rp"
+        className="mx-auto"
+        style={{ width:"81%" }}
+      />
+    </Frame>
+
+    Isi file sesuai ini
+
+    <Frame>
+      ![Isi Rp](/images/isi-rp.png)
+    </Frame>
+
+    Klik tombol `Save Content` 
+
+    <Frame>
+      ![Save Rp](/images/save-rp.png)
+    </Frame>
+
+    ### Behaviour Pack
+
+    Buka file `/home/container/behaviour_packs`. Kemudian drag and drop file zip atau bisa menggunakan tombol `Upload`. Setelah folder masuk, klik icon detail seperti pada nomor 2. Kemudian klik menu `Unarchive` seperti nomor 3.
+
+    <Frame>
+      ![Unarchive Bp](/images/unarchive-bp.png)
+    </Frame>
+
+    File mu sudah berhasil di unarchive.
+
+    <Frame>
+      ![Udah Kebuka](/images/udah-kebuka.png)
+    </Frame>
+  </Step>
+  <Step title="Masukkan ke World">
+    Masuk ke file `/home/container/worlds/<nama_world>` . Kemudian klik tombol `New File`.
+
+    <Frame>
+      ![New File](/images/new-file.png)
+    </Frame>
+
+    Buat file dengan nama: `world_behaviour_packs.json`. Kemudian klik `Create File`. Seperti ini:
+
+    <Frame>
+      ![Create Bp](/images/create-bp.png)
+    </Frame>
+
+    Klik tombol `Create File` 
+
+    <Frame>
+      ![Create File2](/images/create-file2.png)
+    </Frame>
+
+    Isi dengan code berikut ini:
+
+    ```text
+         [
+           { "pack_id": "UUID-RESOURCE", "version": [1,0,0] }
+         ]
+    ```
+
+    Tambahkan entry baru sesuai UUID & version di manifest.json addon pada file add on
+
+    <Frame>
+      <img
+        src="/images/open-manifest-rp.png"
+        alt="Open Manifest Rp"
+        title="Open Manifest Rp"
+        className="mx-auto"
+        style={{ width:"81%" }}
+      />
+    </Frame>
+
+    Isi file sesuai ini
+
+    <Frame>
+      ![Isi Rp](/images/isi-rp.png)
+    </Frame>
+
+    Klik tombol `Save Content` 
+
+    <Frame>
+      ![Save Rp](/images/save-rp.png)
+    </Frame>
+  </Step>
+</Steps>
