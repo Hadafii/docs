@@ -1,0 +1,39 @@
+---
+title: "Auth Login Device Selalu Muncul Saat Restart?"
+---
+
+> Ini terjadi karena **auth belum disimpan secara persistent**. Jadi setiap kali server restart atau crash, sesi login dianggap hilang dan server minta autentikasi ulang.
+
+Berikut adalah solusi agar tidak selalu login untuk Auth:
+
+<Steps>
+  <Step title="Pastikan Device Sudah Ter-Auth">
+    Login ke akun **Hytale** di server. Pastikan proses login **berhasil.**
+  </Step>
+  <Step title="Set Auth Jadi Persistent">
+    Ketik perintah berikut di **console server**:
+
+    ```text
+    auth persistence Encrypted
+    ```
+
+    Command tersebut berguna untuk:
+
+     
+
+    - Menyimpan data autentikasi secara **persistent**
+    - Menggunakan metode **terenkripsi (Encrypted)**
+    - Mencegah login ulang setiap server restart
+  </Step>
+  <Step title="Akun Sudah Tidak Perlu Auth Lagi">
+    Setelah menuliskan command diatas pada console, akunmu sudah tidak perlu melakukan autentikasi lagi.
+  </Step>
+</Steps>
+
+<Warning>
+  ### **Catatan Penting**
+
+  - Jangan jalankan perintah ini **sebelum** server benar-benar login ke akun Hytale
+  - Jika auth belum valid, persistence **tidak akan bekerja**
+  - Cukup dijalankan **satu kali**, tidak perlu diulang setiap restart
+</Warning>

@@ -132,7 +132,8 @@
           {
             "group": "HYTALE",
             "pages": [
-              "cara"
+              "cara",
+              "auth-login-device-selalu-muncul-saat-restart"
             ]
           }
         ]
