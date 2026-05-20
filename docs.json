@@ -110,27 +110,27 @@
           {
             "group": "MINECRAFT",
             "pages": [
+              "basic-command-di-minecraft",
+              "cara-crack-join-server",
+              "cara-setup-geyser",
+              "cara-pasang-add-on",
+              "cara-1",
+              "cara-merubah-versi",
+              "cara-reset-dunia",
               "cara-aktifin",
               "cara-ganti-seed",
-              "cara-merubah-versi",
-              "basic-command-di-minecraft",
               "cara-install-simple-voice-chat",
-              "cara-reset-dunia",
               "cara-whitelist",
-              "cara-setup-geyser",
-              "cara-crack-join-server",
               "cara-menonaktifkan-spawn-protection-di-server-minecraft",
-              "cara-pasang-add-on",
               "cara-ganti-icon",
-              "cara-1",
-              "cara-upload-file-besar-menggunakan-sftp"
-            ]
-          },
-          {
-            "group": "Upload World",
-            "pages": [
-              "upload-world-minecraft-pc-ke-server-rae-host-java-edition",
-              "minecraft-bedrock-ke-server-rae-host"
+              "cara-upload-file-besar-menggunakan-sftp",
+              {
+                "group": "Upload World",
+                "pages": [
+                  "upload-world-minecraft-pc-ke-server-rae-host-java-edition",
+                  "minecraft-bedrock-ke-server-rae-host"
+                ]
+              }
             ]
           },
           {
