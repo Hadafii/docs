@@ -145,7 +145,10 @@
       }
     ]
   },
-  "logo": "/images/CopyofRaehostTitle2.png",
+  "logo": {
+    "light": "/images/CopyofRaehostTitle2(dark).png",
+    "dark": "/images/CopyofRaehostTitle2.png"
+  },
   "navbar": {
     "links": [
       {
