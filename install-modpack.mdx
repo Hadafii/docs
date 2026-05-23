@@ -1,0 +1,155 @@
+# Cara Install Modpack
+
+Terdapat dua cara untuk menginstall Modpack di server kamu: **melalui Panel** (lebih mudah) atau **secara Manual** menggunakan SFTP.
+
+---
+
+## Di Panel
+
+<Steps>
+  <Step title="Pergi ke halaman Modpack">
+    Buka halaman **Modpack** di Panel server kamu.
+
+    <Frame>
+      ![Screenshot 2026 05 23 142927](/images/Screenshot-2026-05-23-142927.png)
+    </Frame>
+  </Step>
+  <Step title="Pilih Modpack">
+    Pilih Modpack yang ingin digunakan.
+  </Step>
+  <Step title="Pilih Version Modpack">
+    Pilih versi Modpack yang ingin digunakan.
+
+    <Frame>
+      ![Screenshot 2026 05 23 141511](/images/Screenshot-2026-05-23-141511.png)
+    </Frame>
+  </Step>
+  <Step title="Aktifkan Delete Existing Files">
+    Aktifkan opsi **Delete existing files** untuk menghapus semua file yang ada di server sebelumnya.
+
+    <Frame>
+      ![Screenshot 2026 05 23 141333](/images/Screenshot-2026-05-23-141333.png)
+    </Frame>
+  </Step>
+  <Step title="Install Modpack">
+    Klik tombol **Install Modpack** dan tunggu hingga proses instalasi selesai.
+
+    <Frame>
+      ![Screenshot 2026 05 23 141300](/images/Screenshot-2026-05-23-141300.png)
+    </Frame>
+  </Step>
+  <Step title="Ganti Egg">
+    Setelah selesai, pergi ke **Egg Changer** dan sesuaikan dengan software yang digunakan oleh modpack tersebut (Forge / NeoForge / Fabric).
+
+    <Frame>
+      ![Screenshot 2026 05 23 141655](/images/Screenshot-2026-05-23-141655.png)
+    </Frame>
+  </Step>
+  <Step title="Ubah Versi di Startup">
+    <Frame>
+      ![Screenshot 2026 05 23 142531](/images/Screenshot-2026-05-23-142531.png)
+    </Frame>
+
+    Masuk ke tab **Startup**, lalu ubah versi dan samakan dengan versi Minecraft dari Modpack. Selain itu, sesuaikan juga **Versi Java** berdasarkan tabel berikut:
+
+    | Versi Minecraft | Java yang Dibutuhkan |
+    | --- | --- |
+    | 1.8 – 1.16.5 | Java 8 |
+    | 1.17 | Java 16 |
+    | 1.17.1 - 1.20.4 | Java 17 |
+    | 1.20.5 - 1.21.x | Java 21 |
+    | 1.21.11 - 1.26\+ | Java 25 |
+
+    <Note>
+      Pastikan versi Java sudah sesuai. Java yang salah dapat menyebabkan server gagal start.
+    </Note>
+  </Step>
+  <Step title="Reinstall Server">
+    <Frame>
+      ![Screenshot 2026 05 23 142723](/images/Screenshot-2026-05-23-142723.png)
+    </Frame>
+
+    Setelah semuanya di-set, pergi ke halaman **Settings** lalu klik tombol **Reinstall**.
+  </Step>
+  <Step title="Start Server">
+    Setelah proses reinstall selesai, **Start server** kembali. Selesai! 🎉
+  </Step>
+</Steps>
+
+---
+
+## Manual via CurseForge
+
+<Warning>
+  Pastikan **Files di panel kosong** terlebih dahulu sebelum memulai proses instalasi manual.
+</Warning>
+
+<Steps>
+  <Step title="Buka CurseForge">
+    Pergi ke website [CurseForge](https://www.curseforge.com) dan cari Modpack yang ingin digunakan.
+  </Step>
+  <Step title="Buka Halaman Modpack">
+    <Frame>
+      ![Screenshot 2026 05 23 143344](/images/Screenshot-2026-05-23-143344.png)
+    </Frame>
+
+    Setelah menemukan modpack yang diinginkan, klik ke halaman Modpack dan pergi ke bagian **Files**.
+  </Step>
+  <Step title="Pilih Versi Modpack">
+    Pilih versi Modpack yang ingin digunakan, lalu klik (jangan download dulu).
+  </Step>
+  <Step title="Cek Additional Files">
+    <Frame>
+      ![Screenshot 2026 05 23 143452](/images/Screenshot-2026-05-23-143452.png)
+    </Frame>
+
+    Di bagian **File Details**, cari tab **Additional Files**. Periksa apakah tersedia **Server Pack**.
+
+    - Jika **ada** → Download file dari Additional Files.
+    - Jika **tidak ada** → Download langsung dari halaman utama tanpa masuk ke Additional Files.
+  </Step>
+  <Step title="Upload via SFTP">
+    <Frame>
+      ![Screenshot 2026 05 23 144110](/images/Screenshot-2026-05-23-144110.png)
+    </Frame>
+
+    Setelah selesai download, buka aplikasi **WinSCP** atau **FileZilla**, lalu hubungkan ke server menggunakan SFTP. Drag and drop file Modpack ke dalam direktori server.
+
+    <iframe src="https://www.youtube.com/embed/u3FhJgZrZwA" title="YouTube video player" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+
+    <Info>
+      Cara Menggunakan SFTP bisa Check di video ini ya
+    </Info>
+  </Step>
+  <Step title="Ekstrak File">
+    <Frame>
+      ![Screenshot 2026 05 23 144224](/images/Screenshot-2026-05-23-144224.png)
+    </Frame>
+
+    Setelah upload selesai, pergi ke **Panel → Files**, lalu **Ekstrak** file Modpack yang sudah diupload.
+  </Step>
+  <Step title="Ganti Egg">
+    Pergi ke **Egg Changer** dan sesuaikan dengan software yang digunakan oleh modpack tersebut (Forge / NeoForge / Fabric).
+  </Step>
+  <Step title="Ubah Versi di Startup">
+    Masuk ke tab **Startup**, lalu ubah versi dan samakan dengan versi Minecraft dari Modpack. Selain itu, sesuaikan juga **Versi Java** berdasarkan tabel berikut:
+
+    | Versi Minecraft | Java yang Dibutuhkan |
+    | --- | --- |
+    | 1.8 – 1.16.5 | Java 8 |
+    | 1.17 | Java 16 |
+    | 1.17.1 – 1.20.4 | Java 17 |
+    | 1.20.5 – 1.21.x | Java 21 |
+    | 1.21.11 - 1.26\+ | Java 25 |
+
+    <Note>
+      Pastikan versi Java sudah sesuai. Java yang salah dapat menyebabkan server gagal start.
+    </Note>
+  </Step>
+  <Step title="Reinstall Server">
+    Setelah semuanya di-set, pergi ke halaman **Settings** lalu klik tombol **Reinstall**.
+  </Step>
+  <Step title="Start Server">
+    Setelah proses reinstall selesai, **Start server** kembali. Selesai! 🎉
+  </Step>
+</Steps>
