@@ -1,0 +1,154 @@
+---
+title: "Cara Install Plugin"
+---
+
+Plugin digunakan untuk menambahkan fitur tambahan ke server Minecraft Java kamu, seperti ekonomi, proteksi wilayah, mini-games, dan banyak lagi.
+
+<Warning>
+  Plugin hanya bisa digunakan di server dengan software **Bukkit**, **Spigot**, **Paper**, atau turunannya. Plugin **tidak bisa** digunakan di server Vanilla, Fabric, atau Forge.
+</Warning>
+
+Pilih cara install yang ingin kamu gunakan:
+
+- [Lewat Panel (Direkomendasikan)](#lewat-panel)
+- [Manual via File Manager](#manual-via-file-manager)
+- [Manual via SFTP](#manual-via-sftp)
+
+---
+
+## Lewat Panel
+
+Cara termudah untuk install plugin langsung dari Panel tanpa perlu download file terlebih dahulu.
+
+<Steps>
+  <Step title="Buka halaman Plugins">
+    Di sidebar Panel, klik menu **Plugins**.
+
+    <Frame>
+      ![Screenshot 2026 05 31 050207](/images/Screenshot-2026-05-31-050207.png)
+    </Frame>
+  </Step>
+  <Step title="Pilih Sumber Plugin">
+    Di bagian kiri atas, klik dropdown sumber dan pilih dari mana plugin ingin dicari:
+
+    <Frame>
+      ![Screenshot 2026 05 31 050323](/images/Screenshot-2026-05-31-050323.png)
+    </Frame>
+
+    | Sumber | Keterangan |
+    | --- | --- |
+    | **Modrinth** | Platform modern, banyak plugin aktif dikembangkan di sini |
+    | **SpigotMC** | Sumber terbesar dan terlama untuk plugin Bukkit/Spigot/Paper |
+    | **CurseForge** | Populer untuk mod dan plugin berbagai platform |
+    | **Hangar** | Platform resmi dari tim PaperMC |
+
+    Kamu juga bisa menggunakan fitur **Search**, filter **All Versions**, dan **Sort** untuk mempermudah pencarian.
+  </Step>
+  <Step title="Pilih Plugin">
+    Cari dan klik plugin yang ingin kamu install.
+  </Step>
+  <Step title="Pilih Versi Plugin">
+    Pilih versi plugin yang sesuai dengan versi Minecraft server kamu.
+
+    <Frame>
+      ![Screenshot 2026 05 31 050552](/images/Screenshot-2026-05-31-050552.png)
+    </Frame>
+  </Step>
+  <Step title="Install Plugin">
+    Klik tombol **Install Plugin** dan tunggu hingga proses selesai.
+
+    <Frame>
+      ![Screenshot 2026 05 31 050532](/images/Screenshot-2026-05-31-050532.png)
+    </Frame>
+  </Step>
+  <Step title="Restart Server">
+    Setelah instalasi selesai, **restart server** agar plugin aktif.
+  </Step>
+</Steps>
+
+---
+
+## Manual via File Manager
+
+Install plugin secara manual dengan mengupload file `.jar` langsung melalui File Manager di Panel.
+
+<Steps>
+  <Step title="Download Plugin">
+    Download file plugin (`.jar`) dari sumber terpercaya seperti:
+
+    - [SpigotMC](https://www.spigotmc.org/resources/)
+    - [Modrinth](https://modrinth.com/plugins)
+    - [Hangar](https://hangar.papermc.io/)
+
+    <Warning>
+      Pastikan versi plugin sesuai dengan versi Minecraft dan software server kamu (Spigot, Paper, dll).
+    </Warning>
+  </Step>
+  <Step title="Buka File Manager">
+    Di Panel, pergi ke **Files** lalu masuk ke folder `plugins`.
+
+    <Frame>
+      ![Screenshot 2026 05 31 052300](/images/Screenshot-2026-05-31-052300.png)
+    </Frame>
+
+    <Note>
+      Jika folder `plugins` belum ada, pastikan server sudah pernah di-start minimal sekali dengan software yang mendukung plugin (Paper, Spigot, dll).
+    </Note>
+  </Step>
+  <Step title="Upload File Plugin">
+    Klik tombol **Upload** lalu pilih file `.jar` plugin yang sudah kamu download.
+  </Step>
+  <Step title="Restart Server">
+    Kembali ke tab **Console**, lalu **restart server** agar plugin terload.
+  </Step>
+</Steps>
+
+---
+
+## Manual via SFTP
+
+Cocok untuk mengupload banyak plugin sekaligus atau file berukuran besar.
+
+<Steps>
+  <Step title="Download Plugin">
+    Download file plugin (`.jar`) dari sumber terpercaya seperti:
+
+    - [SpigotMC](https://www.spigotmc.org/resources/)
+    - [Modrinth](https://modrinth.com/plugins)
+    - [Hangar](https://hangar.papermc.io/)
+  </Step>
+  <Step title="Hubungkan SFTP ke Server">
+    Sambungkan aplikasi SFTP (FileZilla, WinSCP, atau Termius) ke server kamu.
+
+    Panduan lengkap cara menghubungkan SFTP bisa dilihat di sini: [Cara Upload File Besar Menggunakan SFTP](/cara-upload-file-besar-menggunakan-sftp)
+  </Step>
+  <Step title="Navigasi ke Folder plugins">
+    Setelah terhubung, masuk ke folder `plugins` di direktori server.
+  </Step>
+  <Step title="Upload File Plugin">
+    Drag and drop file `.jar` plugin dari komputer kamu ke folder `plugins` di SFTP.
+  </Step>
+  <Step title="Restart Server">
+    Setelah upload selesai, kembali ke **Panel → Console** lalu **restart server** agar plugin terload.
+  </Step>
+</Steps>
+
+---
+
+## Setelah Install Plugin
+
+Setelah server restart, plugin akan aktif secara otomatis. Kamu bisa cek daftar plugin yang aktif dengan menjalankan command berikut di Console:
+
+```text
+plugins
+```
+
+Atau bisa juga menggunakan:
+
+```text
+pl
+```
+
+<Note>
+  Beberapa plugin membutuhkan konfigurasi tambahan setelah pertama kali di-install. Cek folder `plugins/<nama-plugin>/` di File Manager untuk melihat file konfigurasinya.
+</Note>
