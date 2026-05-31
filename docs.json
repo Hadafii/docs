@@ -124,6 +124,7 @@
               "cara-menonaktifkan-spawn-protection-di-server-minecraft",
               "cara-ganti-icon",
               "cara-upload-file-besar-menggunakan-sftp",
+              "install-modpack",
               {
                 "group": "Upload World",
                 "pages": [
@@ -131,7 +132,9 @@
                   "minecraft-bedrock-ke-server-rae-host"
                 ]
               },
-              "install-modpack"
+              "untitled-pages",
+              "asd",
+              "untitled-pages-1"
             ]
           },
           {
