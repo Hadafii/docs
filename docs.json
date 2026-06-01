@@ -90,7 +90,6 @@
         "icon": "book-open",
         "pages": [
           "cara-membeli-server",
-          "cara-join-server",
           {
             "group": "Upgrade dan Renewal",
             "pages": [
@@ -110,6 +109,7 @@
           {
             "group": "MINECRAFT",
             "pages": [
+              "cara-join-server",
               "basic-command-di-minecraft",
               "cara-crack-join-server",
               "cara-setup-geyser",
@@ -132,9 +132,9 @@
                   "minecraft-bedrock-ke-server-rae-host"
                 ]
               },
-              "untitled-pages",
-              "asd",
-              "untitled-pages-1"
+              "cara-setting-server.properties",
+              "cara-install-plugin",
+              "cara-pasang-datapack"
             ]
           },
           {
