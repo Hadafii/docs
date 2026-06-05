@@ -58,13 +58,13 @@
             "pages": [
               "website-panel",
               "website-rae-host",
-              "hubungan-keduanya-1"
+              "hubungan-keduanya"
             ]
           },
           {
             "group": "Tipe Server",
             "pages": [
-              "tes",
+              "panduan-memilih-server",
               "basic-vs-premium",
               "cara-memilih-paket"
             ]
@@ -73,7 +73,7 @@
             "group": "Tiket di Website vs di Discord",
             "pages": [
               "perbedaan-tiket-di-web-dan-discord",
-              "bantuaan"
+              "bantuan"
             ]
           },
           {
@@ -90,12 +90,11 @@
         "icon": "book-open",
         "pages": [
           "cara-membeli-server",
-          "cara-join-server",
           {
             "group": "Upgrade dan Renewal",
             "pages": [
-              "upgrade-1",
-              "renewal-1"
+              "upgrade",
+              "renewal"
             ]
           },
           {
@@ -110,11 +109,12 @@
           {
             "group": "MINECRAFT",
             "pages": [
+              "cara-join-server",
               "basic-command-di-minecraft",
               "cara-crack-join-server",
               "cara-setup-geyser",
               "cara-pasang-add-on",
-              "cara-1",
+              "cara-pasang-mod",
               "cara-merubah-versi",
               "cara-reset-dunia",
               "cara-aktifin",
@@ -124,6 +124,7 @@
               "cara-menonaktifkan-spawn-protection-di-server-minecraft",
               "cara-ganti-icon",
               "cara-upload-file-besar-menggunakan-sftp",
+              "install-modpack",
               {
                 "group": "Upload World",
                 "pages": [
@@ -131,15 +132,17 @@
                   "minecraft-bedrock-ke-server-rae-host"
                 ]
               },
-              "install-modpack"
+              "cara-setting-server.properties",
+              "cara-install-plugin",
+              "cara-pasang-datapack"
             ]
           },
           {
             "group": "HYTALE",
             "pages": [
-              "cara",
+              "cara-bikin-server-hytale",
               "auth-login-device-selalu-muncul-saat-restart",
-              "untitled-page"
+              "cara-pasang-mod-hytale"
             ]
           },
           "troubleshooting"
@@ -152,18 +155,13 @@
     "dark": "/images/CopyofRaehostTitle2.png"
   },
   "navbar": {
-    "links": [
-      {
-        "href": "https://discord.com/servers/raehost-community-845302933527855155",
-        "label": "Discord Raehost"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+  "links": [
+    {
+      "href": "https://discord.com/servers/raehost-community-845302933527855155",
+      "label": "Discord Raehost"
     }
-  },
+  ]
+},
   "contextual": {
     "options": [
      "copy",

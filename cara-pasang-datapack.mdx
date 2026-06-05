@@ -1,0 +1,117 @@
+---
+title: "Cara Pasang Datapack"
+---
+
+Datapack adalah cara untuk menambahkan atau mengubah fitur di server Minecraft tanpa menggunakan mod atau plugin. Datapack berjalan di atas vanilla Minecraft dan bisa digunakan di server **Java Edition**.
+
+<Note>
+  Datapack **hanya tersedia di Minecraft Java Edition**. Bedrock Edition menggunakan Behavior Pack, bukan datapack.
+</Note>
+
+Pilih cara pemasangan yang ingin kamu gunakan:
+
+- [Manual via File Manager](#manual-via-file-manager)
+- [Manual via SFTP](#manual-via-sftp)
+
+---
+
+## Manual via File Manager
+
+<Steps>
+  <Step title="Download Datapack">
+    Download file datapack (`.zip`) dari sumber terpercaya seperti:
+
+    - [Modrinth](https://modrinth.com/datapacks)
+    - [CurseForge](https://www.curseforge.com/minecraft/search?class=data-packs&page=1&pageSize=20&sortBy=relevancy)
+    - [Planet Minecraft](https://www.planetminecraft.com/data-packs/)
+    - [van3ssa.me](https://mc.van3ssa.me/)
+
+    <Warning>
+      Jangan di-extract dulu. File datapack harus tetap dalam format `.zip` saat diupload.
+    </Warning>
+  </Step>
+  <Step title="Buka Folder Datapack di File Manager">
+    Di Panel, pergi ke **Files** lalu navigasi ke folder:
+
+    ```text
+    /world/datapacks/
+    ```
+
+    <Note>
+      Nama folder dunia menyesuaikan `level-name` di `server.properties`. Default-nya adalah `world`.
+    </Note>
+  </Step>
+  <Step title="Upload File Datapack">
+    Klik tombol **Upload** lalu pilih file `.zip` datapack yang sudah kamu download.
+  </Step>
+  <Step title="Restart Server">
+    Kembali ke tab **Console**, lalu **restart server** agar datapack terload.
+  </Step>
+</Steps>
+
+---
+
+## Manual via SFTP
+
+Cocok jika kamu ingin mengupload banyak datapack sekaligus atau file berukuran besar.
+
+<Steps>
+  <Step title="Download Datapack">
+    Download file datapack (`.zip`) dari sumber terpercaya seperti:
+
+    - [Modrinth](https://modrinth.com/datapacks)
+    - [CurseForge](https://www.curseforge.com/minecraft/search?class=data-packs&page=1&pageSize=20&sortBy=relevancy)
+    - [Planet Minecraft](https://www.planetminecraft.com/data-packs/)
+    - [van3ssa.me](https://mc.van3ssa.me/)
+  </Step>
+  <Step title="Hubungkan SFTP ke Server">
+    Sambungkan aplikasi SFTP (FileZilla, WinSCP, atau Termius) ke server kamu.
+
+    Panduan lengkap cara menghubungkan SFTP bisa dilihat di sini: [Cara Upload File Besar Menggunakan SFTP](/cara-upload-file-besar-menggunakan-sftp)
+  </Step>
+  <Step title="Navigasi ke Folder Datapack">
+    Masuk ke folder berikut di direktori server:
+
+    ```text
+    /world/datapacks/
+    ```
+  </Step>
+  <Step title="Upload File Datapack">
+    Drag and drop file `.zip` datapack dari komputer kamu ke folder `datapacks` di SFTP.
+
+    <Warning>
+      Jangan di-extract. File datapack harus tetap dalam format `.zip`.
+    </Warning>
+  </Step>
+  <Step title="Restart Server">
+    Setelah upload selesai, kembali ke **Panel → Console** lalu **restart server** agar datapack terload.
+  </Step>
+</Steps>
+
+---
+
+## Cek Datapack Aktif
+
+Setelah server restart, kamu bisa memverifikasi datapack sudah terpasang dengan menjalankan command berikut di Console atau in-game:
+
+```text
+datapack list
+```
+
+Datapack yang aktif akan muncul dengan prefix `[file/nama-datapack]`.
+
+---
+
+## Menonaktifkan Datapack
+
+Untuk menonaktifkan datapack tanpa menghapusnya, jalankan command berikut:
+
+```text
+datapack disable "file/nama-datapack"
+```
+
+Untuk mengaktifkan kembali:
+
+```text
+datapack enable "file/nama-datapack"
+```
