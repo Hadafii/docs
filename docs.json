@@ -82,6 +82,12 @@
               "terms-of-service",
               "privacy-policy"
             ]
+          },
+          {
+            "group": "Status Server",
+            "pages": [
+              "status-server"
+            ]
           }
         ]
       },
