@@ -86,7 +86,7 @@
           {
             "group": "Status Server",
             "pages": [
-              "suspend-terminate-dan-cancellation"
+              "status-server"
             ]
           }
         ]
