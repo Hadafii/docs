@@ -4,114 +4,179 @@ title: "Troubleshooting Koneksi Server"
 
 Jika kamu mengalami masalah seperti:
 
+- Tidak bisa join server
 - Ping tinggi
 - Lag / delay saat bermain
 - Rubberbanding
 - Disconnect sendiri
 - Packet loss
 
-Silakan lakukan pengecekan jaringan menggunakan **WinMTR** agar kami bisa membantu analisis jalur koneksi kamu ke server.
+Silakan lakukan pengecekan jaringan terlebih dahulu agar kami dapat membantu analisis masalah koneksi yang kamu alami.
 
-> Sebelumnya silahkan cek apakah provider mu sedang bermasalah atau tidak disini: [https://downdetector.id/en/](https://downdetector.id/en/)
+> Sebelumnya silakan cek apakah provider internet kamu sedang mengalami gangguan melalui: [https://downdetector.id/en/](https://downdetector.id/en/)
 
 Grafik pada Downdetector menunjukkan jumlah laporan gangguan yang diterima dari pengguna. Semakin tinggi grafiknya, semakin banyak pengguna yang melaporkan masalah pada layanan tersebut.
 
 <Frame>
-  ![START](/images/START.jpg)
+  ![Downdetector](/images/START.jpg)
 </Frame>
 
----
+## Tidak Bisa Join Server?
+
+Jika server tidak dapat diakses sama sekali, misalnya:
+
+- Stuck di "Connecting to Server"
+- Muncul pesan `Connection Timed Out`
+- Muncul pesan `Can't Connect to Server`
+- Server terlihat online tetapi tidak bisa diakses
+
+Kemungkinan jalur koneksi dari provider internet kamu ke server sedang mengalami kendala.
+
+Sebelum melakukan tes jaringan, silakan coba menggunakan **Cloudflare WARP** terlebih dahulu.
+
+### Cara Menggunakan Cloudflare WARP
+
+<Steps>
+  <Step title="Download Cloudflare WARP">
+    Download melalui website resmi:
+
+    [https://one.one.one.one/](https://one.one.one.one/)
+  </Step>
+  <Step title="Aktifkan WARP">
+    Buka aplikasi, aktifkan seperti berikut: 
+
+    <Frame>
+      <img
+        src="/images/disconnect.png"
+        alt="Disconnect"
+        title="Disconnect"
+        className="mr-auto"
+        style={{ width:"39%" }}
+      />
+    </Frame>
+
+    Kemudian tunggu hingga muncul seperti ini:
+
+    <Frame>
+      <img
+        src="/images/connect.png"
+        alt="Connect"
+        title="Connect"
+        style={{ width:"45%" }}
+      />
+    </Frame>
+  </Step>
+  <Step title="Coba Join Kembali">
+    Setelah WARP aktif, coba akses server kembali.
+  </Step>
+</Steps>
+
+<Note>
+  Cloudflare WARP hanya mengubah jalur koneksi internet menuju server. Dalam banyak kasus, masalah routing dari ISP dapat teratasi setelah menggunakan WARP.
+</Note>
+
+Jika setelah menggunakan WARP server masih tidak dapat diakses, silakan lanjutkan ke langkah tes jaringan di bawah dan kirim hasilnya kepada tim support.
 
 ## Cara Melakukan Tes MTR
 
 <Steps>
   <Step title="Buka WinMTR">
-    Jika belum punya silahkan download terlebih dahulu disini: [https://winmtr.net/](https://winmtr.net/)
+    Jika belum memiliki WinMTR, silakan download terlebih dahulu:
+
+    [https://winmtr.net/](https://winmtr.net/)
   </Step>
   <Step title="Masukkan Host Tujuan">
-    Pada bagian host, masukkan host kamu. Contoh:
+    Pada bagian host, masukkan host server kamu. Contoh:
 
     ```text
     premium.raehost.com
     ```
   </Step>
   <Step title="Klik Start">
-    Tunggu selama **minimal** 10 menit. Semakin lama tes berjalan, semakin akurat hasil analisisnya.
+    Tunggu selama **minimal 10 menit**.
+
+    Semakin lama tes berjalan, semakin akurat hasil analisisnya.
   </Step>
   <Step title="Klik Stop">
   </Step>
   <Step title="Kirim Hasil Tes">
     Klik:
 
-    ```txt
+    ```text
     Copy Text to clipboard
     ```
 
-    Lalu kirim hasilnya ke channel Discord berikut:
-
-    [https://discord.com/channels/845302933527855155/1417878971739148443](https://discord.com/channels/845302933527855155/1417878971739148443)
+    Lalu kirim hasilnya ke channel Discord support.
   </Step>
 </Steps>
 
 Contoh:
 
 <Frame>
-  ![Winmtr](/images/winmtr-1.png)
+  ![WinMTR](/images/winmtr-1.png)
 </Frame>
-
----
 
 ## Cara Melakukan Tes Menggunakan Command Prompt
 
 <Steps>
   <Step title="Buka Command Prompt (CMD)">
   </Step>
-  <Step title="Tulis Command ">
-    Tulis command berikut mengikuti host mu
+  <Step title="Jalankan Pathping">
+    Tulis command berikut sesuai host server kamu:
 
     ```text
     pathping premium.raehost.com
     ```
 
-    Enter dan akan tampil seperti ini
+    Tekan Enter dan akan tampil seperti berikut:
 
     <Frame>
       ![Pathping](/images/pathping.png)
     </Frame>
   </Step>
-  <Step title="Tunggu selama 5 menit ">
-    Akan muncul `Computing statistics for 275 seconds`. Silahkan tunggu selama 275 detik atau 5 menit.
+  <Step title="Tunggu Hingga Selesai">
+    Akan muncul pesan:
+
+    ```text
+    Computing statistics for 275 seconds
+    ```
+
+    Silakan tunggu hingga proses selesai.
   </Step>
-  <Step title="Hasil">
-    Hasil akan muncul seperti ini, tunggu hingga muncul tulisan `Trace complete`
+  <Step title="Hasil Tes">
+    Tunggu hingga muncul tulisan:
+
+    ```text
+    Trace complete
+    ```
+
+    Contoh:
 
     <Frame>
       ![Trace Complete](/images/trace-complete.png)
     </Frame>
   </Step>
   <Step title="Kirim Hasil Tes">
-    Jika sudah selesai. Kirim hasilnya ke channel Discord berikut:
-
-    [https://discord.com/channels/845302933527855155/1417878971739148443](https://discord.com/channels/845302933527855155/1417878971739148443)
+    Kirim hasil lengkapnya ke channel Discord support.
   </Step>
 </Steps>
 
----
-
 ## Informasi yang Wajib Disertakan
 
-Saat mengirim hasil MTR, mohon sertakan juga:
+Saat mengirim hasil tes, mohon sertakan informasi berikut:
 
-- Nama ISP / Provider internet\
-  Contoh:
-  - IndiHome
-  - Biznet
-  - MyRepublic
-  - First Media
-  - XL
-  - Telkomsel
-  - dll
+- Nama ISP / Provider internet
+- Host server yang digunakan
+- Waktu terjadinya masalah
+
+Contoh:
+
+```text
+Provider : IndiHome
+Host     : premium.raehost.com
+Waktu    : 20:15 WIB
+```
 
 <Note>
-  Jika memungkinkan, lakukan tes saat masalah sedang terjadi agar hasil lebih akurat.
+  Jika memungkinkan, lakukan tes saat masalah sedang terjadi agar hasil yang diperoleh lebih akurat dan mempermudah proses analisis.
 </Note>
