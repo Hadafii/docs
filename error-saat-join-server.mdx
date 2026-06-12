@@ -1,0 +1,390 @@
+---
+title: "Error Saat Join Server"
+---
+
+Halaman ini berisi daftar error yang sering muncul saat join server Minecraft beserta cara mengatasinya.
+
+Langsung lompat ke edisi yang kamu gunakan:
+
+- [Minecraft Java Edition](#minecraft-java-edition)
+- [Minecraft Bedrock Edition](#minecraft-bedrock-edition)
+
+---
+
+## Minecraft Java Edition
+
+### Connection Refused
+
+<Frame>
+  <img
+    src="/images/68747470733a2f2f692e6779617a6f2e636f6d2f32666661646331396564633564303531343039653837653864323561626439612e706e67.png"
+    alt="68747470733a2f2f692e6779617a6f2e636f6d2f32666661646331396564633564303531343039653837653864323561626439612e706e67"
+    title="68747470733a2f2f692e6779617a6f2e636f6d2f32666661646331396564633564303531343039653837653864323561626439612e706e67"
+    className="mx-auto"
+  />
+</Frame>
+
+```text
+java.net.ConnectException: Connection refused
+```
+
+**Penyebab:** Server sedang tidak berjalan atau port salah.
+
+**Solusi:**
+
+- Tutup Minecraft lalu buka kembali.
+- Pastikan server dalam kondisi **Running** di Panel.
+- Pastikan IP dan port yang digunakan sudah benar.
+- Coba restart server dari Panel.
+
+---
+
+### Connection Timed Out
+
+<Frame>
+  ![Image](/images/image-106.png)
+</Frame>
+
+```text
+java.net.ConnectException: Connection timed out
+```
+
+**Penyebab:** Client tidak bisa menjangkau server dalam waktu yang ditentukan.
+
+**Solusi:**
+
+- Tutup Minecraft lalu buka kembali.
+- Pastikan server sedang **Running** di Panel dan pastikan ping server terdeteksi.
+- Periksa koneksi internet kamu.
+- Pastikan IP server yang digunakan sudah benar.
+- Coba beberapa saat lagi, mungkin server sedang dalam proses start.
+
+---
+
+### Outdated Client / Outdated Server
+
+<Frame>
+  ![Outdated Client](/images/Outdated_client.webp)
+</Frame>
+
+```text
+Outdated client! Please use 1.x.x
+```
+
+```text
+Outdated server! I'm still on 1.x.x
+```
+
+**Penyebab:** Versi Minecraft client tidak cocok dengan versi server.
+
+**Solusi:**
+
+- Samakan versi Minecraft client dengan versi yang digunakan server.
+- Jika server menggunakan versi lama, ganti versi client di Minecraft Launcher.
+
+---
+
+### Not Authenticated with [Minecraft.net](http://Minecraft.net)
+
+<Frame>
+  ![PU Jq Vl Bx Lnv Zz5a C40ZR Ysou Qu6mg Hv Bf PNMZ Ibb Nwv J Jgoi Vp R9og Omv Oc W5o Fum Jgx Qur MG Rq](/images/PUJqVlBxLnvZZ5aC40ZRYsouQu6MGHvBfPNMZIbbNwvJJgoiVpR9ogOmvOcW5oFumJgxQurMGRq.webp)
+</Frame>
+
+```text
+Failed to verify username!
+```
+
+```text
+Not authenticated with Minecraft.net
+```
+
+**Penyebab:** Server menggunakan `online-mode=true` tapi client tidak bisa diverifikasi ke server Mojang.
+
+**Solusi:**
+
+- Pastikan kamu login menggunakan akun Minecraft yang valid di Launcher.
+- Coba logout lalu login kembali di Minecraft Launcher.
+- Periksa koneksi internet — verifikasi akun butuh akses ke server Mojang.
+- Jika server memang untuk mode cracked, lihat panduan [Cara Crack Join Server](/cara-crack-join-server#cara-crack-join-server).
+
+---
+
+### Not Whitelisted
+
+<Frame>
+  ![Help Minecraft Realms Tells Invited Players Theyre Not V0 Mfg0zkd5aj931](/images/help-minecraft-realms-tells-invited-players-theyre-not-v0-mfg0zkd5aj931.webp)
+</Frame>
+
+```text
+You are not whitelisted on this server!
+```
+
+**Penyebab:** Server mengaktifkan whitelist dan username kamu belum ditambahkan.
+
+**Solusi (untuk Admin):**
+
+- Lihat panduan lengkap di [Cara Whitelist](/cara-whitelist#cara-whitelist).
+
+**Solusi (untuk Pemain):**
+
+- Hubungi admin server untuk meminta akses whitelist.
+
+---
+
+### You Are Banned
+
+<Frame>
+  ![Ban Unban Thumbnail](/images/ban-unban-thumbnail.png)
+</Frame>
+
+```text
+You are banned from this server.
+Reason: <alasan>
+```
+
+**Penyebab:** Akun atau IP kamu di-ban oleh admin server.
+
+**Solusi (untuk Admin):**
+
+- Unban pemain via Console:
+  ```text
+  pardon <username>
+  ```
+- Unban IP via Console:
+  ```text
+  pardon-ip <ip-address>
+  ```
+
+**Solusi (untuk Pemain):**
+
+- Hubungi admin server untuk meminta unban.
+
+---
+
+### Flying is Not Enabled
+
+<Frame>
+  ![Having Trouble With The Jump Spell Via Ars Nouveau Mod In A V0 Z5c2wwmpybza1](/images/having-trouble-with-the-jump-spell-via-ars-nouveau-mod-in-a-v0-z5c2wwmpybza1.webp)
+</Frame>
+
+```text
+Flying is not enabled on this server
+```
+
+**Penyebab:** Pemain terdeteksi terbang, tapi `allow-flight` dinonaktifkan di server.
+
+**Solusi (untuk Admin):**
+
+- Set `allow-flight=true` di `server.properties` lalu restart server.
+- Atau install plugin anti-cheat yang lebih akurat untuk mengurangi false positive.
+
+---
+
+### Kicked for Spam
+
+<Frame>
+  ![2017 01 17 19 58 00](/images/2017-01-17_19.58.00.png)
+</Frame>
+
+```text
+disconnect.spam
+```
+
+**Penyebab:** Pemain mengirim terlalu banyak pesan chat dalam waktu singkat.
+
+**Solusi:**
+
+- Kurangi frekuensi mengirim chat.
+- Admin bisa install plugin chat management untuk mengatur rate limit chat.
+
+---
+
+### Internal Exception
+
+<Frame>
+  ![122244361 379531530085319 1659862123042933208 N](/images/122244361_379531530085319_1659862123042933208_n.png)
+</Frame>
+
+```text
+Internal Exception: io.netty.handler.codec.DecoderException
+```
+
+**Penyebab:** Terjadi error komunikasi antara client dan server, biasanya karena plugin yang tidak kompatibel atau versi yang tidak cocok.
+
+**Solusi:**
+
+- Pastikan versi client dan server cocok.
+- Coba disable plugin satu per satu untuk mencari plugin yang bermasalah.
+- Restart server dari Panel.
+
+---
+
+## Minecraft Bedrock Edition
+
+Minecraft Bedrock Edition menggunakan nama-nama unik (diambil dari nama item/mob Minecraft) sebagai kode error. Berikut daftar error yang paling sering ditemui.
+
+### Solusi Umum (Coba Ini Dulu)
+
+Sebelum melihat error spesifik, coba langkah-langkah berikut yang sering menyelesaikan banyak masalah:
+
+- Tutup Minecraft sepenuhnya lalu buka kembali
+- Restart perangkat kamu
+- Periksa koneksi internet
+- Logout lalu login kembali ke akun Microsoft/Xbox
+- Nonaktifkan VPN jika sedang aktif
+- Update Minecraft ke versi terbaru
+- Pastikan server sedang **Running** di Panel
+
+---
+
+### Unable to Connect to World
+
+<Frame>
+  ![Minecraft](/images/minecraft.png)
+</Frame>
+
+**Penyebab:** Client tidak bisa menjangkau server.
+
+**Solusi:**
+
+- Pastikan server dalam kondisi **Running** di Panel.
+- Pastikan IP dan port yang digunakan sudah benar.
+- Tutup Minecraft lalu buka kembali dan pastikan ping server terdeteksi.
+- Periksa koneksi internet kamu.
+- Pastikan tidak ada firewall atau VPN yang memblokir koneksi.
+
+---
+
+### Could Not Connect: Outdated Client / Outdated Server
+
+<Frame>
+  ![I Keep Getting An Outdated Client Error Even If My Client V0 J0v5p8bnploc1](/images/i-keep-getting-an-outdated-client-error-even-if-my-client-v0-j0v5p8bnploc1.webp)
+</Frame>
+
+**Penyebab:** Versi Minecraft Bedrock client tidak cocok dengan versi server.
+
+**Solusi:**
+
+- Update Minecraft Bedrock Edition kamu ke versi terbaru.
+- Atau minta admin untuk update versi server agar sesuai.
+
+---
+
+### Not Allowed to Join (Allow List)
+
+<Frame>
+  ![Minecraft Bedrock Edition Allowlist Dk4bb6h6 2c EH6T](/images/minecraft-bedrock-edition-allowlist.Dk4BB6h6_2cEH6T.webp)
+</Frame>
+
+**Penyebab:** Server mengaktifkan `allow-list=true` dan gamertag kamu belum ditambahkan.
+
+**Solusi (untuk Admin):**
+
+- Tambahkan pemain ke allow list via Console:
+  ```text
+  allowlist add <gamertag>
+  ```
+
+**Solusi (untuk Pemain):**
+
+- Hubungi admin server untuk meminta akses.
+
+---
+
+### You Are Not Permitted to Play Here (Banned)
+
+**Penyebab:** Akun kamu di-ban dari server.
+
+**Solusi (untuk Admin):**
+
+- Hapus entri ban secara manual dari file `banned-players.json` di File Manager.
+
+**Solusi (untuk Pemain):**
+
+- Hubungi admin server untuk meminta unban.
+
+---
+
+### Named Error Codes (Bedrock)
+
+Berikut daftar lengkap error berkode nama di Minecraft Bedrock beserta artinya:
+
+#### 🔐 Error Sign-in & Akun Microsoft/Xbox
+
+| Error | Penyebab | Solusi |
+| --- | --- | --- |
+| **Axolotl** | Gagal login ke akun | Logout lalu login kembali ke akun Microsoft |
+| **Bamboo** | Autentikasi gagal | Restart game, coba login kembali |
+| **Blaze** | Masalah akun Microsoft | Update Xbox app, logout lalu login kembali |
+| **Cauldron** | Server autentikasi tidak bisa dijangkau | Periksa koneksi internet, coba lagi setelah beberapa menit |
+| **Cobblestone** | Akun kemungkinan di-ban | Cek notifikasi akun Microsoft, hubungi support Minecraft |
+| **Creaking** | Error jaringan saat login ke Microsoft | Periksa koneksi internet, restart game |
+| **Crossbow** | Error sementara saat sign-in | Restart game, tunggu beberapa menit lalu coba lagi |
+| **Dirt** | Error sign-in sementara | Tunggu beberapa menit lalu coba lagi |
+| **Drowned** | Error unknown saat sign-in | Tutup Minecraft sepenuhnya, restart perangkat, coba lagi |
+| **Elder Guardian** | Error autentikasi | Logout lalu login kembali ke akun Microsoft/Xbox |
+| **End Stone** | Masalah sinkronisasi akun | Logout lalu login kembali |
+| **Ghast** | Konflik kredensial akun | Sign out dari Xbox Live, lalu sign in kembali |
+| **Glowstone** | Error proses sign-in | Restart game atau tunggu layanan Xbox pulih |
+| **Guardian** | Error sign-in Microsoft | Logout lalu login kembali, restart game |
+| **Honeycomb** | Error saat percobaan sign-in | Tunggu beberapa menit, coba login kembali |
+| **Lava** | Error sign-in | Restart game, login kembali ke akun Microsoft |
+| **Llama** | Error sign-in sekunder | Logout dan login kembali ke semua akun |
+| **Mooshroom** | Masalah akun Microsoft (PC/Xbox) | Update Xbox app, logout lalu login kembali |
+| **Obsidian** | Error sign-in | Restart game, verifikasi akun Microsoft di browser |
+| **Piglin** | Error sign-in | Logout lalu login kembali ke akun Microsoft/Xbox |
+| **Pufferfish** | Error sign-in | Restart game, login kembali |
+| **Sand** | Error sign-in Microsoft/Xbox | Logout lalu login kembali |
+
+---
+
+#### 🌐 Error Koneksi Server / Dunia
+
+| Error | Penyebab | Solusi |
+| --- | --- | --- |
+| **Armadillo** | Terputus dari server | Periksa koneksi internet, restart game dan coba join kembali |
+| **Bat** | Koneksi server terputus tiba-tiba | Periksa koneksi, coba join kembali |
+| **Clay** | Server tidak ditemukan | Pastikan IP dan port sudah benar, pastikan server Running |
+| **Creeper** | Error jaringan saat join | Periksa koneksi internet, restart router, nonaktifkan VPN |
+| **Emerald** | Error koneksi ke dunia | Periksa koneksi internet, coba join kembali |
+| **Evoker** | Terputus karena AFK atau koneksi | Pastikan koneksi stabil, atur `player-idle-timeout` di server.properties |
+| **Feather** | Terputus dari server | Periksa koneksi, coba join kembali |
+| **Fox** | IP address diblokir | Nonaktifkan VPN, coba koneksi berbeda |
+| **Goat** | Dunia sudah tidak tersedia | Pastikan server masih berjalan dan bisa diakses |
+| **Hopper** | Server penuh | Tunggu ada slot kosong atau minta admin menambah `max-players` |
+| **Kelp** | Koneksi timeout | Periksa koneksi internet, pastikan ping stabil |
+| **NetherNet** | Error koneksi multiplayer | Periksa koneksi internet, nonaktifkan VPN, restart game |
+| **Silverfish** | Koneksi ke server gagal | Periksa koneksi internet, pastikan server Running |
+| **Snowball** | Error koneksi ke server | Restart game, periksa koneksi internet |
+
+---
+
+#### 📦 Error Storage & File Game
+
+| Error | Penyebab | Solusi |
+| --- | --- | --- |
+| **Block** | Error transfer data Minecraft | Bersihkan cache game, reinstall jika perlu |
+| **Breeze** | Versi dunia lebih baru dari versi game | Update Minecraft ke versi terbaru |
+| **Chain** | Versi Minecraft tidak cocok | Samakan versi client dengan server |
+| **Chest** | Storage perangkat hampir penuh | Bebaskan setidaknya beberapa GB ruang penyimpanan |
+| **Rabbit** | Masalah resource pack | Hapus resource pack yang bermasalah, restart game |
+
+---
+
+#### 🔒 Error Multiplayer & Izin
+
+| Error | Penyebab | Solusi |
+| --- | --- | --- |
+| **Coal** | Masalah split-screen (konsol) | Pastikan semua akun split-screen sudah login dengan benar |
+| **Deep Ocean** | Error sign-in di Minecraft Launcher (PC) | Logout dari Launcher, login kembali, atau reinstall Launcher |
+| **Door** | Error koneksi multiplayer | Periksa koneksi internet, pastikan multiplayer diizinkan di pengaturan akun |
+| **Gold** | Masalah layanan multiplayer | Cek status Xbox Live, coba lagi beberapa saat |
+| **Haybale** | Masalah layanan Xbox (PC/Xbox) | Periksa status Xbox Live, update Xbox app |
+| **Panda** | Server lokal (LAN) tidak ditemukan | Pastikan berada di jaringan yang sama, aktifkan LAN di game |
+| **Spyglass** | Pembatasan akun anak / parental control | Sesuaikan pengaturan privasi Xbox di account.xbox.com |
+
+---
+
+<Note>
+  Jika error yang kamu temui tidak ada di daftar ini, coba cek log server di **Panel → Console** untuk informasi lebih detail, atau hubungi tim support RaeHost.
+</Note>

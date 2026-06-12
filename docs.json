@@ -140,7 +140,9 @@
               },
               "cara-setting-server.properties",
               "cara-install-plugin",
-              "cara-pasang-datapack"
+              "cara-pasang-datapack",
+              "error-saat-join-server",
+              "Cara-Mengaktifkan-Experimental-Features"
             ]
           },
           {
