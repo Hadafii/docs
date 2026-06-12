@@ -1,0 +1,68 @@
+---
+title: "Suspend, Terminate, dan Cancellation"
+---
+
+## Suspend
+
+Server akan berstatus **Suspend** mulai dari tanggal kedaluwarsa (expired) hingga **3 hari setelah masa expired (H\+3)**.
+
+Pada status ini:
+
+- Server tidak dapat diakses maupun dijalankan.
+- Data server masih tersimpan di sistem kami.
+- Kamu masih dapat melakukan **renewal/perpanjangan layanan** untuk mengaktifkan kembali server.
+- Setelah renewal berhasil dibayar, server akan aktif kembali seperti biasa.
+
+Untuk membantu menghindari suspend, kami akan mengirimkan email pengingat pada:
+
+| Waktu | Masa |
+| --- | --- |
+| H-7 | Sebelum expired |
+| H-3 | Sebelum expired |
+| H-1 | Sebelum expired |
+| Hari H | Tanggal expired |
+| H\+1 | Setelah expired |
+| H-2 | Setelah Expired (FINAL WARNING) |
+| H\+3 | **Server Terminated** |
+
+> Selain melalui email, tanggal kedaluwarsa layanan juga dapat dilihat pada kolom **Expires** di Client Area atau bisa klik link ini [https://clients.raehost.com/server](https://clients.raehost.com/server)
+
+## Terminate
+
+Jika server tidak diperpanjang hingga melewati masa suspend (lebih dari H\+2 setelah expired), maka server akan otomatis berstatus **Terminate**.
+
+Pada status ini:
+
+- Seluruh data server akan dihapus secara permanen.
+- Backup yang tersimpan pada panel juga akan dihapus.
+- Layanan tidak dapat dipulihkan kembali.
+- Data yang telah dihapus tidak dapat direstore.
+
+## Cancellation
+
+Selain terhapus secara otomatis karena melewati masa tenggang setelah expired, server juga dapat dihapus secara manual melalui menu **Cancellation** pada Client Area.
+
+### Sebelum Mengajukan Cancellation
+
+Saat mengajukan cancellation, pengguna akan diminta untuk:
+
+- Memilih opsi **Immediate Termination**.
+- Mengisi alasan pembatalan layanan.
+- Mengetik nama server sebagai konfirmasi.
+- Mengirimkan permintaan dengan menekan tombol **Request Cancellation**.
+
+Langkah-langkah tersebut dibuat untuk memastikan bahwa permintaan penghapusan dilakukan secara sadar oleh pemilik layanan.
+
+### Konsekuensi Cancellation
+
+Setelah permintaan cancellation dikirim:
+
+- Server akan dihapus secara permanen.
+- Seluruh data server akan terhapus dan tidak dapat dipulihkan.
+- Backup yang tersimpan pada panel juga akan dihapus.
+- Permintaan cancellation tidak dapat dibatalkan atau ditarik kembali.
+- RaeHost tidak memiliki kewajiban untuk memulihkan data yang telah dihapus akibat permintaan cancellation yang diajukan oleh pengguna (selengkapnya dapat kamu baca di [https://docs.raehost.com/terms-of-service#perpanjangan-dan-penghentian-layanan](https://docs.raehost.com/terms-of-service#perpanjangan-dan-penghentian-layanan))
+
+<Warning>
+  Dengan mengirimkan permintaan cancellation, pengguna dianggap telah memahami dan menyetujui bahwa seluruh data layanan akan dihapus secara permanen.
+</Warning>
