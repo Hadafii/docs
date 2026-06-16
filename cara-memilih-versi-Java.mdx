@@ -1,0 +1,61 @@
+---
+title: "Cara Memilih Versi Java"
+keywords: ["versi java minecraft", "java version server", "ganti versi java", "docker image startup", "server gagal start java", "java 8 17 21 minecraft", "java 8 17 21 minecraft"]
+---
+
+Setiap versi Minecraft Java Edition membutuhkan versi Java yang berbeda. Menggunakan versi Java yang salah akan menyebabkan server gagal start.
+
+---
+
+## Cara Mengubah Versi Java
+
+<Steps>
+  <Step title="Buka Panel RaeHost">
+    Login dan buka Panel server kamu di RaeHost.
+  </Step>
+  <Step title="Pergi ke Startup">
+    <Frame>
+      ![Screenshot 2026 06 16 095952](/images/Screenshot-2026-06-16-095952.png)
+    </Frame>
+
+    Di sidebar Panel, klik menu **Startup**.
+  </Step>
+  <Step title="Pilih Versi Java">
+    <Frame>
+      ![Screenshot 2026 06 16 100046](/images/Screenshot-2026-06-16-100046.png)
+    </Frame>
+
+    <Frame>
+      <img
+        src="/images/Screenshot-2026-06-16-100130.png"
+        alt="Screenshot 2026 06 16 100130"
+        title="Screenshot 2026 06 16 100130"
+      />
+    </Frame>
+
+    Di bagian **Docker Image**, pilih versi Java yang sesuai dengan versi Minecraft server kamu.
+
+    <Note>
+      Lihat tabel di bawah untuk mengetahui versi Java yang tepat untuk versi Minecraft kamu.
+    </Note>
+  </Step>
+  <Step title="Restart Server">
+    Setelah memilih Docker Image, **restart server** agar perubahan berlaku.
+  </Step>
+</Steps>
+
+---
+
+## Tabel Versi Minecraft & Java
+
+| Versi Minecraft | Java yang Dibutuhkan |
+| --- | --- |
+| 1.8 – 1.16.5 | Java 8 |
+| 1.17 | Java 16 |
+| 1.17.1 – 1.20.4 | Java 17 |
+| 1.20.5 – 1.21.x | Java 21 |
+| 1.21.11 – 1.26\+ | Java 25 |
+
+<Warning>
+  Pastikan versi Java sudah sesuai dengan versi Minecraft yang digunakan. Java yang salah akan menyebabkan server gagal start.
+</Warning>
