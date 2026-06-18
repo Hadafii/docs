@@ -1,0 +1,121 @@
+---
+title: "Cara Mengaktifkan Experimental Features"
+---
+
+Experimental Features adalah fitur-fitur yang masih dalam tahap pengembangan di Minecraft Bedrock Edition. Fitur ini berguna untuk membuat addon, script, atau mencoba konten terbaru sebelum dirilis secara resmi.
+
+<Warning>
+  Experimental Features masih dalam tahap pengembangan dan dapat menyebabkan perilaku tidak terduga atau bug pada server. Aktifkan hanya fitur yang benar-benar kamu butuhkan.
+</Warning>
+
+---
+
+## Cara Mengaktifkan
+
+<Steps>
+  <Step title="Matikan Server">
+    Pastikan server dalam kondisi **Offline** sebelum mengubah pengaturan. Klik tombol **Stop** di Panel jika server masih berjalan.
+
+    <Warning>
+      Jangan mengubah pengaturan Experimental saat server sedang berjalan. Perubahan tidak akan tersimpan dengan benar dan dapat menyebabkan masalah.
+    </Warning>
+  </Step>
+  <Step title="Buka MC Configs">
+    <Frame>
+      <img
+        src="/images/Screenshot-2026-06-12-235751.png"
+        alt="Screenshot 2026 06 12 235751"
+        title="Screenshot 2026 06 12 235751"
+        className="mx-auto"
+        style={{ width:"55%" }}
+      />
+    </Frame>
+
+    Di sidebar Panel, klik menu **MC Configs**.
+  </Step>
+  <Step title="Pilih Experiments">
+    <Frame>
+      ![Screenshot 2026 06 12 235834](/images/Screenshot-2026-06-12-235834.png)
+    </Frame>
+
+    Klik dropdown yang menampilkan **Server Properties**, lalu ganti ke **Experiments**.
+  </Step>
+  <Step title="Aktifkan Fitur yang Dibutuhkan">
+    Aktifkan toggle untuk fitur Experimental yang ingin kamu gunakan. Lihat penjelasan setiap fitur di bawah.
+  </Step>
+  <Step title="Simpan dan Jalankan Server">
+    Klik **Save**, lalu **Start** server kembali. Fitur Experimental yang dipilih akan aktif saat server berjalan.
+  </Step>
+</Steps>
+
+---
+
+## Penjelasan Fitur Experimental
+
+### Beta APIs
+
+> Enables Beta APIs (GameTest Framework) for addon scripting
+
+Mengaktifkan akses ke API scripting versi beta untuk pembuatan addon menggunakan JavaScript. Diperlukan jika kamu menggunakan addon atau script yang memanfaatkan `@minecraft/server` atau module scripting lainnya yang masih dalam tahap beta.
+
+<Note>
+  Wajib diaktifkan jika addon kamu menggunakan Scripting API seperti `@minecraft/server`, `@minecraft/server-ui`, atau `@minecraft/server-gametest`.
+</Note>
+
+---
+
+### Custom Biomes
+
+> Enables custom biome definitions through JSON
+
+Mengaktifkan dukungan untuk biome kustom yang didefinisikan melalui file JSON. Diperlukan jika kamu menggunakan addon yang menambahkan biome baru ke dunia.
+
+---
+
+### Upcoming Creator Features
+
+> Enables experimental creator features before official release
+
+Mengaktifkan fitur-fitur creator yang sudah selesai dikembangkan namun belum dirilis secara resmi. Cocok untuk addon developer yang ingin mencoba fitur terbaru lebih awal.
+
+---
+
+### Villager Trade Rebalancing
+
+> Enables rebalanced villager trading
+
+Mengaktifkan sistem perdagangan villager yang sudah diseimbangkan ulang oleh Mojang. Perubahan ini mempengaruhi harga dan jenis item yang bisa diperdagangkan dengan villager di dunia.
+
+<Note>
+  Mengaktifkan fitur ini akan mengubah sistem trading di dunia yang sudah ada. Pertimbangkan dampaknya jika server kamu sudah punya ekonomi berbasis villager trade.
+</Note>
+
+---
+
+### Experimental Creator Camera Features
+
+> Enables experimental camera features for creators
+
+Mengaktifkan fitur kamera eksperimental untuk keperluan pembuatan konten dan addon. Termasuk kemampuan untuk mengontrol sudut kamera dan perspektif secara lebih fleksibel melalui addon.
+
+---
+
+### Data-Driven Jigsaw Structures
+
+> Enables data-driven jigsaw structure generation
+
+Mengaktifkan sistem generasi struktur jigsaw yang dikendalikan melalui data (JSON). Diperlukan untuk addon yang menambahkan struktur kustom seperti bangunan atau dungeon yang di-generate secara prosedural di dunia.
+
+---
+
+### Drop 3 2025
+
+> Enables features from the 2025 Drop 3 update
+
+Mengaktifkan konten dan fitur dari update Drop 3 tahun 2025. Aktifkan jika kamu ingin mencoba fitur-fitur terbaru dari update ini sebelum tersedia secara penuh di versi stabil.
+
+---
+
+<Note>
+  Setelah mengaktifkan Experimental Features, pastikan semua pemain yang join ke server menggunakan versi Minecraft yang sama dan sudah mendukung fitur tersebut.
+</Note>

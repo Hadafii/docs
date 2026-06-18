@@ -86,7 +86,7 @@
           {
             "group": "Status Server",
             "pages": [
-              "suspend-terminate-dan-cancellation"
+              "status-server"
             ]
           }
         ]
@@ -142,6 +142,8 @@
               "cara-install-plugin",
               "cara-pasang-datapack",
               "cara-menggunakan-plasmo-voice"
+              "error-saat-join-server",
+              "Cara-Mengaktifkan-Experimental-Features"
             ]
           },
           {
