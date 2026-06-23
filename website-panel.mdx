@@ -2,7 +2,9 @@
 title: "Website Panel"
 ---
 
-Pada halaman Panel, kamu dapat mengatur seluruh kebutuhan server Minecraft kamu. Disini kamu bisa:
+Pada halaman Panel, kamu dapat mengatur seluruh kebutuhan server Minecraft kamu.
+
+Melalui panel ini, kamu bisa:
 
 - Mengakses Console server secara langsung
 - Upload world, plugin, addon, atau mod
@@ -11,5 +13,297 @@ Pada halaman Panel, kamu dapat mengatur seluruh kebutuhan server Minecraft kamu.
 - Melihat penggunaan resource server
 - Mengelola file server melalui File Manager
 - Restart, stop, atau start server kapan saja
+- Membuat backup server
+- Mengelola database
+- Memberikan akses kepada pengguna lain
 
 Panel digunakan untuk seluruh **pengaturan teknis** server Minecraft kamu.
+
+---
+
+# Menu pada Panel
+
+## 🖥️ Console
+
+Digunakan untuk melihat aktivitas server secara real-time dan menjalankan command Minecraft.
+
+**Contoh penggunaan:**
+
+- Menjalankan command. Lengkapnya bisa dibaca [disini](https://docs.raehost.com/basic-command-di-minecraft)
+- Melihat error plugin atau mod
+- Memantau aktivitas pemain
+
+---
+
+## 📁 Files
+
+Digunakan untuk mengelola seluruh file server.
+
+**Fitur yang tersedia:**
+
+- Upload file
+- Download file
+- Edit file
+- Membuat folder baru
+- Menghapus file
+
+**Contoh penggunaan:**
+
+- Upload plugin `.jar`
+- Upload world
+- Mengubah `server.properties`. Lengkapnya dapat dibaca [disini](https://docs.raehost.com/cara-setting-server.properties).
+
+> ⚠️ Hati-hati saat menghapus file karena dapat menyebabkan server gagal berjalan.
+
+---
+
+## 🗄️ Databases
+
+Digunakan untuk membuat dan mengelola database MySQL.
+
+Biasanya digunakan oleh plugin seperti:
+
+- LuckPerms
+- CoreProtect
+- Tebex
+- VotingPlugin
+
+---
+
+## ⏰ Schedules
+
+Digunakan untuk membuat tugas otomatis.
+
+**Contoh:**
+
+- Restart server otomatis setiap hari
+- Menjalankan command secara berkala
+- Backup otomatis
+
+Lengkapnya bisa dibaca [disini](https://docs.raehost.com/cara-backup#schedule)
+
+---
+
+## 👥 Users
+
+Menu **Users** digunakan untuk memberikan akses panel kepada pengguna lain agar mereka dapat membantu mengelola server.
+
+### Cara Menambahkan User
+
+<Steps>
+  <Step title="Klik New User">
+    Pada menu Users, klik tombol  untuk menambahkan pengguna baru.
+  </Step>
+  <Step title="Masukkan Email Pengguna">
+    Masukkan alamat email akun pengguna yang ingin diberikan akses ke server.
+  </Step>
+  <Step title="Pilih Permission">
+    Centang izin (permission) yang ingin diberikan, seperti akses Console, Files, Backups, atau fitur lainnya sesuai kebutuhan.
+  </Step>
+  <Step title="Klik Invite User">
+    Setelah semua izin sudah sesuai, klik  untuk mengirimkan akses kepada pengguna tersebut.
+  </Step>
+</Steps>
+
+> 💡 Gunakan fitur ini jika server dikelola oleh beberapa orang, seperti teman, staff, atau developer yang membutuhkan akses ke panel. **Berikan hanya permission yang diperlukan. Hindari memberikan akses penuh kepada orang yang tidak dipercaya karena mereka dapat mengubah konfigurasi server atau menghapus data.**
+
+---
+
+## 💾 Backups
+
+Digunakan untuk membuat dan memulihkan backup server.
+
+**Fungsi:**
+
+- Membuat backup manual. Lengkapnya dapat dibaca [disini](https://docs.raehost.com/cara-backup).
+- Mengembalikan data server dari backup sebelumnya. Lengkapnya dapat dibaca [disini](https://docs.raehost.com/cara-restore-backup).
+
+> ⚠️ Restore backup akan mengganti data server saat ini dengan data dari backup yang dipilih.
+
+---
+
+## 🌐 Network
+
+Menampilkan informasi port dari server. Jika kamu membutuhnya 2 port atau lebih untuk kebutuhan bermain, silahkan hubungi kami melalui tiket discord maupun tiket di website.
+
+---
+
+## 👤 Players
+
+Menu **Players** digunakan untuk melihat dan mengelola pemain yang pernah bergabung ke server.
+
+Melalui menu ini, kamu dapat:
+
+- Melihat daftar seluruh pemain yang pernah masuk ke server.
+- Melihat status pemain seperti Operator (OP) dan Whitelist.
+- Mencari pemain menggunakan fitur pencarian.
+- Melihat informasi pemain seperti Username dan UUID/XUID.
+- Melakukan tindakan langsung kepada pemain tanpa perlu mengetik command di Console.
+
+**Fitur yang Tersedia**
+
+**Moderation**
+
+- **Kick** — Mengeluarkan pemain dari server.
+- **Kill** — Menghilangkan karakter pemain di dalam game.
+
+**Permissions**
+
+- **Whitelist** — Menambahkan atau menghapus pemain dari whitelist server.
+- **Make OP** — Memberikan hak administrator (Operator/OP) kepada pemain.
+
+**Gameplay**
+
+- **Teleport** — Teleport ke pemain atau memindahkan pemain ke lokasi tertentu.
+- **Gamemode** — Mengubah mode permainan pemain.
+- **Whisper** — Mengirim pesan pribadi kepada pemain.
+- **Give Item** — Memberikan item langsung kepada pemain.
+
+**Attributes**
+
+- **Set XP Level** — Mengatur level XP pemain.
+- **Apply Effect** — Memberikan efek tertentu kepada pemain.
+- **Clear Effects** — Menghapus seluruh efek aktif pada pemain.
+
+**Data**
+
+- **Clear Inventory** — Menghapus seluruh item yang dimiliki pemain.
+
+> 💡 Menu ini mempermudah pengelolaan pemain tanpa perlu mengetik command Minecraft secara manual di Console.
+
+---
+
+## 🔧 Mods
+
+Khusus untuk server modded seperti:
+
+- Forge
+- NeoForge
+- Fabric
+
+Digunakan untuk mengelola mod yang terpasang pada server. Lengkapnya dapat dibaca [disini](https://docs.raehost.com/cara-pasang-mod).
+
+---
+
+## 📦 Modpacks
+
+Digunakan untuk menginstal modpack secara otomatis.
+
+Contoh:
+
+- Better MC
+- All The Mods
+- Prominence
+
+Lengkapnya dapat dibaca [disini](https://docs.raehost.com/install-modpack).
+
+---
+
+## 🔌 Plugins
+
+Khusus untuk server Paper, Spigot, dan Purpur. Digunakan untuk menginstal plugin server.
+
+Contoh plugin:
+
+- EssentialsX
+- LuckPerms
+- ViaVersion
+- CoreProtect
+
+Lengkapnya dapat dibaca [disini](https://docs.raehost.com/cara-install-plugin).
+
+---
+
+## 📱 Bedrock Addons
+
+Khusus Minecraft Bedrock Edition. Digunakan untuk mengelola:
+
+- Behavior Pack
+- Resource Pack
+
+Lengkapnya dapat dibaca [disini](https://docs.raehost.com/cara-pasang-add-on)
+
+---
+
+## 🛠️ MC Configs
+
+Memudahkan perubahan konfigurasi Minecraft tanpa perlu mengedit file secara manual.
+
+Contohnya:
+
+- Difficulty
+- Gamemode
+- Online Mode
+- Experimental
+- View Distance
+
+---
+
+## 🚀 Startup
+
+Digunakan untuk mengatur cara server dijalankan. Contoh penggunaan adalah mengganti versi server. Lengkapnya dapat dibaca [disini](https://docs.raehost.com/cara-merubah-versi).
+
+> ⚠️ Jangan mengubah pengaturan pada menu ini kecuali kamu memahami fungsinya.
+
+---
+
+## 🌎 Importer
+
+Digunakan untuk mengimpor data server dari sumber lain. Contoh penggunaan adalah migrasi server. Lengkapnya dapat dibaca [disini](https://docs.raehost.com/cara-pindah-migrasi-server).
+
+---
+
+## 🥚 Egg Changer
+
+Digunakan untuk mengganti software server. Kenali egg yang harusnya kamu pilih [disini](https://docs.raehost.com/panduan-memilih-server).
+
+Contoh:
+
+- Vanilla Minecraft → Paper
+- Paper → Purpur
+- Forge → NeoForge
+
+> ⚠️ Selalu buat backup sebelum mengganti software server.
+
+<Card title="Perbedaan Vanilla di Egg Changer" type="info">
+  **Vanilla Minecraft** → Vanilla untuk Java version 
+
+  **Vanilla Bedrock** → Vanilla untuk Bedrock version
+</Card>
+
+---
+
+## ⚙️ Settings
+
+Berisi pengaturan umum server seperti:
+
+- Nama server
+- Reinstall server
+- SFTP Detail
+
+> SFTP Detail dapat digunakan untuk mengupload file besar menggunakan SFTP, lengkapnya dapat dibaca [disini](https://docs.raehost.com/cara-upload-file-besar-menggunakan-sftp). Atau SFTP Detail juga berguna sebagai identitas untuk migrasi dari server satu ke server lain, lengkapnya bisa dibaca [disini](https://docs.raehost.com/cara-pindah-migrasi-server).
+
+---
+
+## 📋 Activity
+
+Menampilkan riwayat aktivitas yang terjadi pada server.
+
+Contoh:
+
+- Upload file
+- Penghapusan file
+- Perubahan konfigurasi
+- Aktivitas pengguna
+
+---
+
+## 🛡️ Access Requests
+
+Menampilkan permintaan akses dari pengguna lain yang ingin bergabung mengelola server.
+
+---
+
+# Butuh Bantuan?
+
+Jika mengalami kendala saat menggunakan panel, silakan hubungi tim support RaeHost melalui Discord atau tiket support yang tersedia.
