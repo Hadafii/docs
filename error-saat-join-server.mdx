@@ -300,10 +300,23 @@ Sebelum melihat error spesifik, coba langkah-langkah berikut yang sering menyele
   ![Minecraft Bedrock Edition Allowlist Dk4bb6h6 2c EH6T](/images/minecraft-bedrock-edition-allowlist.Dk4BB6h6_2cEH6T.webp)
 </Frame>
 
-**Penyebab:** Server mengaktifkan `allow-list=true` dan gamertag kamu belum ditambahkan.
+**Penyebab:** Server mengaktifkan `allow-list=true`.
+
+**1. ONLINE-MODE=TRUE**
+- Matikan allow list via Console:
+  ```text
+  allowlist off
+  ```
+
+<Warning>
+  Jika online-mode mu false, maka jangan gunakan `allowlist off` karena semua orang bisa join server kamu selama mereka sudah punya server address dan port. 
+</Warning>
+
+
+**2. ONLINE-MODE=FALSE (CRACK)**
+Jika kamu menggunakan Minecraft crack, maka add username minecraft seluruh pemain.
 
 **Solusi (untuk Admin):**
-
 - Tambahkan pemain ke allow list via Console:
   ```text
   allowlist add <gamertag>
