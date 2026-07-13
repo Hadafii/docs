@@ -1,13 +1,20 @@
 ---
-title: "Cara Memilih Versi Java"
-keywords: ["versi java minecraft", "java version server", "ganti versi java", "docker image startup", "server gagal start java", "java 8 17 21 minecraft", "java 8 17 21 minecraft"]
+title: "Cara Memilih Versi Java & Versi Server"
+description: "Panduan memilih dan mengubah versi Java serta versi Minecraft untuk server Paper, Forge, NeoForge, dan Fabric di RaeHost."
 ---
 
-Setiap versi Minecraft Java Edition membutuhkan versi Java yang berbeda. Menggunakan versi Java yang salah akan menyebabkan server gagal start.
+Setiap versi Minecraft dan jenis server loader membutuhkan konfigurasi yang berbeda di bagian **Startup**. Panduan ini mencakup cara mengubah versi untuk Paper, Forge, NeoForge, dan Fabric.
+
+Langsung lompat ke loader yang kamu gunakan:
+
+- [Paper](#paper)
+- [Forge](#forge)
+- [NeoForge](#neoforge)
+- [Fabric](#fabric)
 
 ---
 
-## Cara Mengubah Versi Java
+## Paper
 
 <Steps>
   <Step title="Buka Panel RaeHost">
@@ -15,32 +22,146 @@ Setiap versi Minecraft Java Edition membutuhkan versi Java yang berbeda. Menggun
   </Step>
   <Step title="Pergi ke Startup">
     <Frame>
-      ![Screenshot 2026 06 16 095952](/images/Screenshot-2026-06-16-095952.png)
+      <img
+        src="https://mintcdn.com/raehost/midwZbg9MPetzy7U/images/Screenshot-2026-06-16-095952.png?fit=max&auto=format&n=midwZbg9MPetzy7U&q=85&s=c292d1f9ae7dfdeab0c2c803dc82cc2a"
+        alt="Screenshot 2026 06 16 095952"
+        width="1376"
+        height="851"
+      />
     </Frame>
 
     Di sidebar Panel, klik menu **Startup**.
   </Step>
   <Step title="Pilih Versi Java">
     <Frame>
-      ![Screenshot 2026 06 16 100046](/images/Screenshot-2026-06-16-100046.png)
+      <img
+        src="https://mintcdn.com/raehost/midwZbg9MPetzy7U/images/Screenshot-2026-06-16-100046.png?fit=max&auto=format&n=midwZbg9MPetzy7U&q=85&s=fdf30bb4958a4c5f816e9eac777f21d0"
+        alt="Screenshot 2026 06 16 100046"
+        width="1301"
+        height="717"
+      />
     </Frame>
 
     <Frame>
       <img
-        src="/images/Screenshot-2026-06-16-100130.png"
+        src="https://mintcdn.com/raehost/midwZbg9MPetzy7U/images/Screenshot-2026-06-16-100130.png?fit=max&auto=format&n=midwZbg9MPetzy7U&q=85&s=3e4d8767649ab3fc068934f07cb49599"
         alt="Screenshot 2026 06 16 100130"
-        title="Screenshot 2026 06 16 100130"
+        width="428"
+        height="327"
       />
     </Frame>
 
-    Di bagian **Docker Image**, pilih versi Java yang sesuai dengan versi Minecraft server kamu.
-
-    <Note>
-      Lihat tabel di bawah untuk mengetahui versi Java yang tepat untuk versi Minecraft kamu.
-    </Note>
+    Di bagian **Docker Image**, pilih versi Java yang sesuai. Lihat tabel di bawah untuk referensi versi Java yang tepat.
   </Step>
   <Step title="Restart Server">
     Setelah memilih Docker Image, **restart server** agar perubahan berlaku.
+  </Step>
+</Steps>
+
+---
+
+## Forge
+
+<Steps>
+  <Step title="Pergi ke Startup">
+    Di sidebar Panel, klik menu **Startup**.
+
+    <Frame>
+      ![Image](/images/image-108.png)
+    </Frame>
+  </Step>
+  <Step title="Ubah Minecraft Version">
+    Di bagian **Variables**, isi field **Minecraft Version** dengan versi Minecraft yang ingin digunakan. Contoh: `1.20.1`
+  </Step>
+  <Step title="Ubah Forge Version">
+    Isi field **Forge Version** dengan versi Forge yang ingin digunakan, menggunakan format:
+
+    ```text
+    (Versi Minecraft)-(Build Forge)
+    ```
+
+    Contoh: `1.20.1-47.4.20`
+
+    <Note>
+      Cek daftar versi Forge yang tersedia di [files.minecraftforge.net](https://files.minecraftforge.net/net/minecraftforge/forge/). Pastikan versi yang dimasukkan valid — jika salah, proses install akan gagal.
+    </Note>
+  </Step>
+  <Step title="Ubah Build Type">
+    Di field **Build Type**, pilih tipe build yang ingin digunakan:
+
+    | Nilai | Keterangan |
+    | --- | --- |
+    | `recommended` | Versi stabil yang direkomendasikan |
+    | `latest` | Versi terbaru (bisa belum stabil) |
+  </Step>
+  <Step title="Pilih Versi Java">
+    Di bagian **Docker Image**, pilih versi Java yang sesuai dengan versi Minecraft. Lihat tabel di bawah untuk referensi.
+  </Step>
+  <Step title="Restart Server">
+    Setelah semua diisi, **restart server** agar perubahan berlaku.
+  </Step>
+</Steps>
+
+---
+
+## NeoForge
+
+<Steps>
+  <Step title="Pergi ke Startup">
+    Di sidebar Panel, klik menu **Startup**.
+
+    <Frame>
+      ![Preview](/images/preview.webp)
+    </Frame>
+  </Step>
+  <Step title="Ubah Minecraft Version">
+    Di bagian **Variables**, isi field **Minecraft Version** dengan versi Minecraft yang ingin digunakan. Contoh: `1.21.1`
+  </Step>
+  <Step title="Ubah NeoForge Version">
+    Isi field **NeoForge Version** dengan versi NeoForge yang lengkap dan spesifik. Contoh: `21.1.233`
+
+    <Note>
+      Cek daftar versi NeoForge yang tersedia di [projects.neoforged.net](https://projects.neoforged.net/neoforged/neoforge). Pastikan versi yang dimasukkan valid — jika salah, proses install akan gagal.
+    </Note>
+  </Step>
+  <Step title="Pilih Versi Java">
+    Di bagian **Docker Image**, pilih versi Java yang sesuai dengan versi Minecraft. Lihat tabel di bawah untuk referensi.
+  </Step>
+  <Step title="Restart Server">
+    Setelah semua diisi, **restart server** agar perubahan berlaku.
+  </Step>
+</Steps>
+
+---
+
+## Fabric
+
+<Steps>
+  <Step title="Pergi ke Startup">
+    Di sidebar Panel, klik menu **Startup**.
+
+    <Frame>
+      ![Preview (1)](/images/preview-\(1\).webp)
+    </Frame>
+  </Step>
+  <Step title="Ubah Minecraft Version">
+    Di bagian **Variables**, isi field **Minecraft Version** dengan versi Minecraft yang ingin digunakan. Contoh: `1.20.1`
+
+    <Note>
+      Gunakan `latest` untuk install versi terbaru secara otomatis, atau `snapshot` untuk versi snapshot terbaru.
+    </Note>
+  </Step>
+  <Step title="Ubah Fabric Version">
+    Isi field **Fabric Version** dengan versi Fabric yang ingin digunakan. Isi dengan `latest` untuk menggunakan versi terbaru.
+  </Step>
+  <Step title="Ubah Fabric Loader Version">
+    Isi field **Fabric Loader Version** dengan versi Fabric Loader yang ingin digunakan. Isi dengan `latest` untuk menggunakan versi terbaru.
+  </Step>
+  <Step title="Pilih Versi Java">
+    Di bagian **Docker Image**, pilih versi Java yang sesuai dengan versi Minecraft. Lihat tabel di bawah untuk referensi.
+  </Step>
+  <Step title="Restart Server">
+    Setelah semua diisi, **restart server** agar perubahan berlaku.
   </Step>
 </Steps>
 
@@ -59,3 +180,11 @@ Setiap versi Minecraft Java Edition membutuhkan versi Java yang berbeda. Menggun
 <Warning>
   Pastikan versi Java sudah sesuai dengan versi Minecraft yang digunakan. Java yang salah akan menyebabkan server gagal start.
 </Warning>
+
+---
+
+## Video Tutorial
+
+<iframe src="https://www.youtube.com/embed/izC5isUmxQg" title="YouTube video player" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+
+<iframe src="https://www.youtube.com/embed/4wZFmENktR8" title="YouTube video player" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />

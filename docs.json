@@ -56,7 +56,6 @@
           {
             "group": "Panel vs Website",
             "pages": [
-              "website-panel",
               "website-rae-host",
               "hubungan-keduanya"
             ]
@@ -144,7 +143,8 @@
               "cara-menggunakan-plasmo-voice",
               "error-saat-join-server",
               "Cara-Mengaktifkan-Experimental-Features",
-              "cara-memilih-versi-Java"
+              "cara-memilih-versi-Java",
+              "cara-menampilkan-koordinat-dan-jumlah-hari"
             ]
           },
           {
