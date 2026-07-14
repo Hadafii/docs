@@ -1,0 +1,197 @@
+---
+title: "Error Saat Join Server Palworld"
+description: "Panduan mengatasi berbagai error saat bergabung ke server Palworld."
+---
+
+Jika kamu mengalami kendala saat bergabung ke server Palworld, pilih error yang sesuai di bawah ini.
+
+<CardGroup cols={2}>
+  <Card title="Connection Error" icon="wifi">
+    Gagal terhubung ke server.
+  </Card>
+
+  <Card title="Version Error" icon="refresh">
+    Versi game tidak sesuai.
+  </Card>
+
+  <Card title="Password Error" icon="lock">
+    Password server salah.
+  </Card>
+
+  <Card title="Server Full" icon="users">
+    Server telah mencapai batas pemain.
+  </Card>
+</CardGroup>
+
+---
+
+## Sebelum Melakukan Troubleshooting
+
+<Info>
+  Pastikan hal berikut terlebih dahulu:
+
+  - Server berstatus **Online**
+  - Menggunakan **IP Address** dan **Port** yang benar
+  - Versi game sama dengan versi server
+  - Server telah selesai melakukan startup
+</Info>
+
+---
+
+## Daftar Error
+
+<AccordionGroup>
+  <Accordion title="Connection Timed Out">
+    ### Penyebab
+
+    - Server masih Offline.
+    - Server sedang Restart.
+    - IP Address atau Port salah.
+    - Firewall memblokir koneksi.
+    - Server dan client berbeda versi.
+
+    ### Solusi
+
+    - Pastikan server **Online**.
+    - Periksa kembali IP Address dan Port.
+    - Restart server.
+    - Tunggu hingga startup selesai.
+    - Update game ke versi terbaru.
+
+    <Tip>
+      Sebagian besar kasus **Connection Timed Out** terjadi karena server masih melakukan startup.
+    </Tip>
+  </Accordion>
+
+  <Accordion title="Failed to Connect to Server">
+    ### Penyebab
+
+    - Server Offline.
+    - Port salah.
+    - Server crash saat startup.
+
+    ### Solusi
+
+    - Periksa status server pada panel.
+    - Pastikan menggunakan IP dan Port yang benar.
+    - Restart server jika diperlukan.
+  </Accordion>
+
+  <Accordion title="Incompatible Version">
+    ### Penyebab
+
+    Versi Palworld pada client dan server berbeda.
+
+    ### Solusi
+
+    - Update game Palworld.
+    - Restart server.
+    - Pastikan server menggunakan versi terbaru.
+    - Update seluruh mod jika menggunakan mod.
+
+    <Warning>
+      Setelah update Palworld, beberapa mod mungkin belum kompatibel sehingga pemain tidak dapat masuk.
+    </Warning>
+  </Accordion>
+
+  <Accordion title="Server is Full">
+    ### Penyebab
+
+    Jumlah pemain telah mencapai batas maksimum.
+
+    ### Solusi
+
+    - Tunggu hingga slot kosong.
+    - Tingkatkan nilai `ServerPlayerMaxNum`.
+    - Upgrade paket hosting apabila membutuhkan lebih banyak slot.
+  </Accordion>
+
+  <Accordion title="Incorrect Password">
+    ### Penyebab
+
+    Password server tidak sesuai.
+
+    ### Solusi
+
+    - Masukkan password yang benar.
+    - Periksa nilai `ServerPassword`.
+    - Restart server setelah mengganti password.
+  </Accordion>
+
+  <Accordion title="Kicked by Server">
+    ### Penyebab
+
+    - Admin mengeluarkan pemain.
+    - Server restart.
+    - Anti-cheat mendeteksi aktivitas yang tidak valid.
+
+    ### Solusi
+
+    - Tunggu server selesai restart.
+    - Hubungi admin server.
+    - Coba login kembali beberapa menit kemudian.
+  </Accordion>
+
+  <Accordion title="Infinite Loading / Loading Terus">
+    ### Penyebab
+
+    - Server belum selesai startup.
+    - World sangat besar.
+    - RAM server tidak mencukupi.
+    - Mod bermasalah.
+
+    ### Solusi
+
+    - Tunggu beberapa menit.
+    - Restart server.
+    - Hapus atau update mod.
+    - Upgrade RAM server jika sering kehabisan memori.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Penyebab yang Paling Sering Terjadi
+
+<CardGroup cols={3}>
+  <Card title="Server Offline" icon="server">
+    Pastikan server sudah berstatus **Online** sebelum mencoba bergabung.
+  </Card>
+
+  <Card title="Versi Berbeda" icon="refresh">
+    Pastikan versi game dan server sama.
+  </Card>
+
+  <Card title="IP atau Port Salah" icon="globe">
+    Salin kembali IP Address dan Port dari panel hosting.
+  </Card>
+</CardGroup>
+
+---
+
+## Masih Tidak Bisa Masuk?
+
+Siapkan informasi berikut sebelum menghubungi tim support.
+
+- Screenshot pesan error.
+- IP Address dan Port server.
+- Versi Palworld.
+- Waktu terjadinya error.
+- Log server (jika ada).
+
+<Warning>
+  Jangan menghapus folder **world** atau melakukan reinstall server sebelum memastikan penyebab masalah. Tindakan tersebut dapat menyebabkan kehilangan data apabila tidak memiliki backup.
+</Warning>
+
+---
+
+## Butuh Bantuan?
+
+Apabila seluruh langkah di atas sudah dilakukan namun masalah masih terjadi, silakan hubungi tim support dengan menyertakan:
+
+- Screenshot error.
+- Log server.
+- Versi Palworld.
+- IP Address dan Port server.
+
+/

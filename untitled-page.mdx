@@ -1,0 +1,193 @@
+---
+title: "Cara Setting PalWorldSettings.ini"
+description: "Panduan lengkap mengatur file konfigurasi PalWorldSettings.ini untuk server Palworld di RaeHost."
+---
+
+`PalWorldSettings.ini` adalah file konfigurasi utama server **Palworld** yang digunakan untuk mengatur gameplay, multiplayer, PvP, guild, hingga berbagai fitur server.
+
+## Lokasi File
+
+```text
+/Pal/Saved/Config/LinuxServer/PalWorldSettings.ini
+```
+
+Buka melalui **Panel → Files** lalu navigasi ke folder tersebut.
+
+<Note>
+  Setelah mengubah `PalWorldSettings.ini`, lakukan **Restart Server** agar perubahan diterapkan.
+</Note>
+
+---
+
+# Pengaturan Umum
+
+| Setting | Default | Deskripsi |
+| --- | --- | --- |
+| `Difficulty` | `None` | Tingkat kesulitan server. |
+| `ServerName` | `"Raehost Palworld Server"` | Nama server. |
+| `ServerDescription` | `"Raehost Palworld Server"` | Deskripsi server. |
+| `ServerPlayerMaxNum` | `32` | Maksimal pemain. |
+| `CoopPlayerMaxNum` | `4` | Maksimal pemain co-op. |
+| `AdminPassword` | `""` | Password admin. |
+| `ServerPassword` | `""` | Password untuk join server. |
+| `PublicPort` | `25600` | Port publik server. |
+| `Region` | `""` | Region server. |
+
+### Difficulty
+
+| Nilai | Keterangan |
+| --- | --- |
+| `None` | Custom |
+| `Casual` | Easy |
+| `Normal` | Normal |
+| `Hard` | Hard |
+
+<Warning>
+  Jangan bagikan `AdminPassword` kepada pemain lain.
+</Warning>
+
+---
+
+# Rate
+
+| Setting | Default | Deskripsi |
+| --- | --- | --- |
+| `ExpRate` | `1.0` | Multiplier EXP pemain. |
+| `PalCaptureRate` | `1.0` | Peluang menangkap Pal. |
+| `PalSpawnNumRate` | `1.0` | Jumlah spawn Pal. |
+| `WorkSpeedRate` | `1.0` | Kecepatan kerja Pal. |
+| `CollectionDropRate` | `1.0` | Resource yang diperoleh. |
+| `EnemyDropItemRate` | `1.0` | Drop item dari musuh. |
+| `DayTimeSpeedRate` | `1.0` | Kecepatan siang. |
+| `NightTimeSpeedRate` | `1.0` | Kecepatan malam. |
+| `ItemWeightRate` | `1.0` | Berat item. |
+
+---
+
+# Combat
+
+| Setting | Default | Deskripsi |
+| --- | --- | --- |
+| `PalDamageRateAttack` | `1.0` | Damage serangan Pal. |
+| `PalDamageRateDefense` | `1.0` | Damage yang diterima Pal. |
+| `PlayerDamageRateAttack` | `1.0` | Damage serangan pemain. |
+| `PlayerDamageRateDefense` | `1.0` | Damage yang diterima pemain. |
+| `BuildObjectHpRate` | `1.0` | HP bangunan. |
+| `BuildObjectDamageRate` | `1.0` | Damage pada bangunan. |
+| `BuildObjectDeteriorationDamageRate` | `1.0` | Kerusakan bangunan karena deteriorasi (`0` = Nonaktif). |
+| `EquipmentDurabilityDamageRate` | `1.0` | Pengurangan durability equipment. |
+
+---
+
+# Survival
+
+| Setting | Default | Deskripsi |
+| --- | --- | --- |
+| `PlayerStomachDecreaceRate` | `1.0` | Kecepatan lapar pemain. |
+| `PlayerStaminaDecreaceRate` | `1.0` | Pengurangan stamina pemain. |
+| `PlayerAutoHPRegeneRate` | `1.0` | Regen HP pemain. |
+| `PlayerAutoHpRegeneRateInSleep` | `1.0` | Regen HP saat tidur. |
+| `PalStomachDecreaceRate` | `1.0` | Kecepatan lapar Pal. |
+| `PalStaminaDecreaceRate` | `1.0` | Pengurangan stamina Pal. |
+| `PalAutoHPRegeneRate` | `1.0` | Regen HP Pal. |
+| `PalAutoHpRegeneRateInSleep` | `1.0` | Regen HP Pal saat istirahat. |
+
+---
+
+# PvP & Multiplayer
+
+| Setting | Default | Deskripsi |
+| --- | --- | --- |
+| `bIsPvP` | `False` | Mengaktifkan PvP. |
+| `bEnablePlayerToPlayerDamage` | `False` | Pemain dapat saling menyerang. |
+| `bEnableFriendlyFire` | `False` | Friendly fire antar guild. |
+| `bEnableDefenseOtherGuildPlayer` | `False` | Guild lain dapat membela diri. |
+| `bHardcore` | `False` | Mode Hardcore. |
+| `bPalLost` | `False` | Pal mati permanen. |
+
+### DeathPenalty
+
+| Nilai | Efek |
+| --- | --- |
+| `None` | Tidak ada penalti |
+| `Item` | Drop item |
+| `ItemAndEquipment` | Drop item \+ equipment |
+| `All` | Drop semua termasuk Pal |
+
+---
+
+# Guild & Base
+
+| Setting | Default | Deskripsi |
+| --- | --- | --- |
+| `GuildPlayerMaxNum` | `20` | Maksimal anggota guild. |
+| `BaseCampMaxNum` | `128` | Maksimal base camp server. |
+| `BaseCampWorkerMaxNum` | `15` | Maksimal worker per base. |
+| `BaseCampMaxNumInGuild` | `4` | Maksimal base tiap guild. |
+| `bAutoResetGuildNoOnlinePlayers` | `False` | Reset guild otomatis. |
+| `AutoResetGuildTimeNoOnlinePlayers` | `72` | Waktu reset guild (jam). |
+| `GuildRejoinCooldownMinutes` | `0` | Cooldown join guild baru. |
+
+---
+
+# Drop Item
+
+| Setting | Default | Deskripsi |
+| --- | --- | --- |
+| `DropItemMaxNum` | `3000` | Maksimal item di dunia. |
+| `DropItemAliveMaxHours` | `1` | Lama item bertahan (jam). |
+| `bCanPickupOtherGuildDeathPenaltyDrop` | `False` | Guild lain dapat mengambil item pemain mati. |
+
+---
+
+# Fitur Server
+
+| Setting | Default | Deskripsi |
+| --- | --- | --- |
+| `bEnableInvaderEnemy` | `True` | Event invader. |
+| `bEnableFastTravel` | `True` | Fast Travel. |
+| `bExistPlayerAfterLogout` | `False` | Karakter tetap ada setelah logout. |
+| `bEnableNonLoginPenalty` | `True` | Penalti pemain tidak aktif. |
+| `AutoSaveSpan` | `30` | Interval Auto Save (detik). |
+| `PalEggDefaultHatchingTime` | `1` | Lama menetaskan telur (jam). |
+| `SupplyDropSpan` | `180` | Interval Supply Drop (menit). |
+| `bAllowClientMod` | `True` | Izinkan Client Mod. |
+| `bUseAuth` | `True` | Steam Authentication. |
+| `BanListURL` | Official | URL Ban List resmi. |
+
+---
+
+# RCON
+
+| Setting | Default | Deskripsi |
+| --- | --- | --- |
+| `RCONEnabled` | `True` | Aktifkan RCON. |
+| `RCONPort` | `25601` | Port RCON. |
+
+---
+
+# Enhance Stat
+
+| Setting | Default | Deskripsi |
+| --- | --- | --- |
+| `bAllowEnhanceStat_Health` | `True` | Upgrade HP. |
+| `bAllowEnhanceStat_Attack` | `True` | Upgrade Attack. |
+| `bAllowEnhanceStat_Stamina` | `True` | Upgrade Stamina. |
+| `bAllowEnhanceStat_Weight` | `True` | Upgrade Weight. |
+| `bAllowEnhanceStat_WorkSpeed` | `True` | Upgrade Work Speed. |
+
+---
+
+# Voice Chat
+
+| Setting | Default | Deskripsi |
+| --- | --- | --- |
+| `bEnableVoiceChat` | `False` | Voice Chat. |
+| `VoiceChatMaxVolumeDistance` | `3000` | Jarak volume penuh. |
+| `VoiceChatZeroVolumeDistance` | `15000` | Jarak suara menghilang. |
+
+---
+
+<Warning>
+  Selalu **matikan server terlebih dahulu** sebelum mengedit `PalWorldSettings.ini`, kemudian lakukan **Restart Server** setelah selesai agar perubahan tidak tertimpa oleh proses auto-save.
+</Warning>
