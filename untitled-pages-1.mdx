@@ -1,0 +1,178 @@
+<Warning>
+  Selalu lakukan **Backup Server** sebelum menginstal mod. Mod yang tidak kompatibel dapat menyebabkan server gagal startup atau world menjadi corrupt.
+</Warning>
+
+## Sebelum Memulai
+
+<CardGroup cols={2}>
+  <Card title="Matikan Server" icon="power">
+    Pastikan server dalam keadaan **Offline** sebelum mengubah file.
+  </Card>
+
+  <Card title="Backup World" icon="database">
+    Backup world agar data dapat dipulihkan jika terjadi masalah.
+  </Card>
+
+  <Card title="Versi Mod" icon="refresh">
+    Pastikan mod mendukung versi Palworld yang digunakan.
+  </Card>
+
+  <Card title="Dedicated Server" icon="server">
+    Gunakan mod yang memang mendukung Dedicated Server.
+  </Card>
+</CardGroup>
+
+---
+
+## Jenis Mod
+
+<CardGroup cols={3}>
+  <Card title=".pak Mod" icon="package">
+    Mod yang hanya perlu mengunggah file `.pak`.
+  </Card>
+
+  <Card title="UE4SS" icon="terminal">
+    Framework yang digunakan oleh sebagian mod.
+  </Card>
+
+  <Card title="Workshop Mod" icon="box">
+    Mod resmi yang menggunakan Workshop Package.
+  </Card>
+</CardGroup>
+
+---
+
+## Install Mod (.pak)
+
+---
+
+## Install Workshop Mod
+
+<Info>
+  Workshop Mod hanya berlaku untuk mod yang memang mendukung sistem Workshop Palworld.
+</Info>
+
+---
+
+## Install UE4SS Mod
+
+<Warning>
+  Sebagian besar mod UE4SS hanya berjalan pada **Dedicated Server Windows**.
+</Warning>
+
+<Steps>
+</Steps>
+
+---
+
+## Menghapus Mod
+
+<Steps>
+</Steps>
+
+---
+
+## Troubleshooting
+
+<AccordionGroup>
+  <Accordion title="Server Crash Setelah Install Mod">
+    ### Penyebab
+
+    - Mod tidak kompatibel.
+    - Konflik antar mod.
+    - Dependency belum terpasang.
+
+    ### Solusi
+
+    - Hapus mod terakhir.
+    - Install mod satu per satu.
+    - Gunakan versi mod yang sesuai.
+  </Accordion>
+
+  <Accordion title="Server Stuck Starting">
+    ### Penyebab
+
+    - Mod rusak.
+    - Mod tidak mendukung versi Palworld terbaru.
+
+    ### Solusi
+
+    - Hapus mod yang baru diinstall.
+    - Restart server.
+    - Periksa Console untuk mengetahui mod yang menyebabkan error.
+  </Accordion>
+
+  <Accordion title="Player Tidak Bisa Join">
+    ### Penyebab
+
+    - Client belum menginstall mod yang diperlukan.
+    - Versi mod berbeda.
+    - Mod server tidak kompatibel.
+
+    ### Solusi
+
+    - Samakan versi mod.
+    - Install dependency yang diperlukan.
+    - Restart server.
+  </Accordion>
+
+  <Accordion title="Mod Tidak Berfungsi">
+    ### Penyebab
+
+    - File berada di folder yang salah.
+    - Mod hanya mendukung Client.
+    - Server belum direstart.
+
+    ### Solusi
+
+    - Pastikan lokasi file benar.
+    - Pastikan mod mendukung Dedicated Server.
+    - Restart server.
+  </Accordion>
+</AccordionGroup>
+
+---
+
+## Tips
+
+<Tip>
+  Install **satu mod terlebih dahulu**, kemudian lakukan pengujian sebelum memasang mod berikutnya. Cara ini memudahkan menemukan mod yang menyebabkan masalah.
+</Tip>
+
+<Tip>
+  Simpan salinan file mod asli agar lebih mudah melakukan rollback jika terjadi crash setelah update.
+</Tip>
+
+---
+
+## Struktur Folder yang Umum Digunakan
+
+| Jenis Mod | Lokasi |
+| --- | --- |
+| `.pak` | `/Pal/Content/Paks/` |
+| `~mods` | `/Pal/Content/Paks/~mods/` |
+| Workshop | Mengikuti petunjuk pembuat mod |
+| UE4SS | Mengikuti dokumentasi UE4SS |
+
+---
+
+## Hal yang Perlu Diperhatikan
+
+<Warning>
+  - Jangan menginstall mod yang dibuat untuk versi Palworld yang berbeda.
+  - Jangan menghapus dependency yang dibutuhkan mod lain.
+  - Selalu restart server setelah menambah atau menghapus mod.
+  - Jika server crash setelah install mod, hapus mod terakhir yang dipasang terlebih dahulu.
+</Warning>
+
+---
+
+## Butuh Bantuan?
+
+Jika server masih gagal berjalan setelah menghapus mod, silakan hubungi tim support dengan menyertakan:
+
+- Screenshot error.
+- Log server.
+- Daftar mod yang digunakan.
+- Versi Palworld.
+- Nama mod yang terakhir diinstall.
