@@ -96,9 +96,10 @@
         "pages": [
           "cara-membeli-server",
           {
-            "group": "Upgrade dan Renewal",
+            "group": "Upgrade, Downgrade dan Renewal",
             "pages": [
               "upgrade",
+              "downgrade",
               "renewal"
             ]
           },
