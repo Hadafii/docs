@@ -99,7 +99,8 @@
             "group": "Upgrade dan Renewal",
             "pages": [
               "upgrade",
-              "renewal"
+              "renewal",
+              "downgrade"
             ]
           },
           {
@@ -153,14 +154,6 @@
               "cara-bikin-server-hytale",
               "auth-login-device-selalu-muncul-saat-restart",
               "cara-pasang-mod-hytale"
-            ]
-          },
-          {
-            "group": "Palworld",
-            "pages": [
-              "Cara-Join-Server-Palworld",
-              "cara-settting-settings-palworld",
-              "Error-saat-join-server-palworld"
             ]
           },
           "troubleshooting"
