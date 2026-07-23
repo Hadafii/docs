@@ -56,6 +56,7 @@
           {
             "group": "Panel vs Website",
             "pages": [
+              "website-panel",
               "website-rae-host",
               "hubungan-keduanya"
             ]
@@ -116,36 +117,35 @@
             "group": "MINECRAFT",
             "pages": [
               "cara-join-server",
+              "cara-merubah-versi",
+              "cara-reset-dunia",
               "basic-command-di-minecraft",
               "cara-crack-join-server",
+              "error-saat-join-server",
               "cara-setup-geyser",
               "cara-pasang-add-on",
               "cara-pasang-mod",
-              "cara-merubah-versi",
-              "cara-reset-dunia",
-              "cara-aktifin",
+              "install-modpack",
+              "cara-install-plugin",
+              "cara-pasang-datapack",
               "cara-ganti-seed",
               "cara-install-simple-voice-chat",
-              "cara-whitelist",
               "cara-menonaktifkan-spawn-protection-di-server-minecraft",
+              "cara-menampilkan-koordinat-dan-jumlah-hari",
+              "cara-whitelist",
               "cara-ganti-icon",
               "cara-upload-file-besar-menggunakan-sftp",
-              "install-modpack",
               {
                 "group": "Upload World",
                 "pages": [
-                  "upload-world-minecraft-pc-ke-server-rae-host-java-edition",
-                  "minecraft-bedrock-ke-server-rae-host"
+                  "upload-minecraft-java",
+                  "upload-minecraft-bedrock"
                 ]
               },
               "cara-setting-server.properties",
-              "cara-install-plugin",
-              "cara-pasang-datapack",
               "cara-menggunakan-plasmo-voice",
-              "error-saat-join-server",
               "Cara-Mengaktifkan-Experimental-Features",
-              "cara-memilih-versi-Java",
-              "cara-menampilkan-koordinat-dan-jumlah-hari"
+              "cara-memilih-versi-Java"
             ]
           },
           {
