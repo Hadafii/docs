@@ -2,11 +2,6 @@
 title: "Cara Backup"
 ---
 
-Lihat tutorial backup yang kamu inginkan:
-- [Backup Secara Manual](#manual)
-- [Membuat Jadwal Sendiri](#bikin-jadwal-sendiri)
-- [Menggunakan Jadwal dari Raehost](#jadwal-dari-raehost)
-
 ## Manual
 
 <Steps>
@@ -15,23 +10,23 @@ Lihat tutorial backup yang kamu inginkan:
 
     <Frame>
       <img
-        src="/images/backup/login-panel.png"
+        src="/images/image-57.png"
         alt="Image"
         title="Image"
         className="mx-auto"
       />
     </Frame>
   </Step>
-  <Step title="Klik tab Backups">
+  <Step title="Klik tab Backup">
     <Frame>
-      ![Image](/images/backup-maual.png)
+      ![Image](/images/image-68.png)
     </Frame>
 
     Untuk melakukan backup, klik tab `Backups` seperti yang ditunjukkan pada nomor 1. Kemudian klik tombol `Create backup` seperti yang ditunjukkan pada nomor 2.
 
     <Frame>
       <img
-        src="/images/backup/isi-manual.png"
+        src="/images/image-69.png"
         alt="Image"
         title="Image"
         className="mx-auto"
@@ -48,7 +43,7 @@ Lihat tutorial backup yang kamu inginkan:
     Tunggu beberapa menit hingga file tersimpan seperti berikut:
 
     <Frame>
-      ![Image](/images/backup/backup-made.png)
+      ![Image](/images/image-70.png)
     </Frame>
   </Step>
 </Steps>
@@ -67,7 +62,7 @@ Lihat tutorial backup yang kamu inginkan:
 
     <Frame>
       <img
-        src="/images/backup/login-panel.png"
+        src="/images/image-57.png"
         alt="Image"
         title="Image"
         className="mx-auto"
@@ -78,15 +73,15 @@ Lihat tutorial backup yang kamu inginkan:
     Klik tab `Schedules` seperti yang ditunjukkan pada nomor 1. Kemudian klik tombol `Create schedule`
 
     <Frame>
-      ![Image](/images/backup/create-schedule.png)
+      ![Image](/images/image-71.png)
     </Frame>
   </Step>
   <Step title="Isi Data">
-    Isi kebutuhan seperti berikut: (Jika menggunakan tampilan lama, ditandai dengan menonaktifkan `Simple Interval Mode` seperti yang ditunjukkan pada nomor 2)
+    Isi kebutuhan seperti berikut:
 
     <Frame>
       <img
-        src="/images/backup/old-schedule.png"
+        src="/images/image-72.png"
         alt="Image"
         title="Image"
         className="mx-auto"
@@ -96,19 +91,9 @@ Lihat tutorial backup yang kamu inginkan:
 
     > Artinya backup ini akan dilakukan setiap hari di jam 00.00
 
-    Isi kebutuhan seperti berikut: (Jika menggunakan tampilan lama, ditandai dengan mengaktifkan `Simple Interval Mode` seperti yang ditunjukkan pada nomor 2)
     <Frame>
       <img
-        src="/images/backup/new-schedule-1.png"
-        alt="Image"
-        title="Image"
-        className="mx-auto"
-        style={{ width:"80%" }}
-      />
-    </Frame>
-    <Frame>
-      <img
-        src="/images/backup/new-schedule-2.png"
+        src="/images/image-73.png"
         alt="Image"
         title="Image"
         className="mx-auto"
@@ -117,17 +102,17 @@ Lihat tutorial backup yang kamu inginkan:
     </Frame>
 
     Penjelasan untuk gambar diatas:
-    1. Nomor 1 merupakan backup name.  Tulis nama backup kamu, contoh `Daiily Backup`.
-    2. Nomor 2 merupakan toggle untuk mengaktifkan tampilan modal schedule.
-    3. Nomor 3 merupakan jadwal schedule yang diinginkan.
-    4. Nomor 4 menjelaskan apakah jadwal backup hanya berjalan jika server sedang online. (Better off aja, jadi kalau lagi offline pun di backup)
-    5. Nomor 5 menjelaskan apakah jadwal akan terus berjalan. (Nyalakan saja agar selalu di backup)
-    6. Nomor 6 merupakan tombol untuk membuat jadwal.
+
+    1. Nomor 1 menjelaskan apakah jadwal backup hanya berjalan jika server sedang online. (Better off aja, jadi kalau lagi offline pun di backup)
+    2. Nomor 2 menjelaskan apakah setiap backup di eksekusi akan diberikan notifikasi melalui email. (Better off aja, biar ga terlalu banyak email)
+    3. Nomor 3 menjelaskan apakah jadwal akan terus berjalan. (Nyalakan saja agar selalu di backup)
+    4. Nomor 4 merupakan tombol untuk membuat jadwal.
   </Step>
   <Step title="Jadwal Terbuat">
-    Setelah kamu klik `create schedule` maka jadwal akan tersimpan.
+    Setelah kami klik `create schedule` maka jadwal akan tersimpan.
+
     <Frame>
-      ![Image](/images/backup/schedule-made.png)
+      ![Image](/images/image-74.png)
     </Frame>
   </Step>
 </Steps>
@@ -135,24 +120,33 @@ Lihat tutorial backup yang kamu inginkan:
 Jika kamu ingin mengubah jadwal yang sudah ada, kamu mengubahnya dengan cara seperti ini:
 
 <Steps>
-  <Step title="Klik Tombol Edit Pada Jadwalmu">
+  <Step title="Klik Jadwal">
     Untuk mengubah jadwal, kamu dapat klik jadwal yang sudah ada
 
     <Frame>
-      ![Image](/images/backup/edit-schedule.png)
+      ![Image](/images/image-74.png)
+    </Frame>
+  </Step>
+  <Step title="Klik tombol Edit">
+    <Frame>
+      ![Image](/images/image-75.png)
     </Frame>
   </Step>
   <Step title="Isi Data ">
-    Setelah klik tombol `Edit`, akan muncul form yang dapat kamu ubah isinya.
+    Setelah klik tombol `Edit`, akan muncul form yang dapat kamu ubah isinya seperti berikut:
 
     <Frame>
       <img
-        src="/images/backup/editted-schedule.png"
+        src="/images/image-72.png"
         alt="Image"
         title="Image"
         className="mx-auto"
         style={{ width:"83%" }}
       />
+    </Frame>
+
+    <Frame>
+      ![Image](/images/image-76.png)
     </Frame>
   </Step>
   <Step title="Data Berubah">
@@ -167,13 +161,13 @@ Jika kamu ingin membuat task terjadawal bisa menggunakan `Task Scheduler` memung
     Untuk membuat task baru, kamu dapat klik tombol `New Task`
 
     <Frame>
-      ![Image](/images/backup/new-task.png)
+      ![Image](/images/image-78.png)
     </Frame>
   </Step>
   <Step title="Isi Data">
     <Frame>
       <img
-        src="/images/backup/create-task.png"
+        src="/images/image-77.png"
         alt="Image"
         className="mx-auto"
         style={{ width:"87%" }}
@@ -186,10 +180,12 @@ Jika kamu ingin membuat task terjadawal bisa menggunakan `Task Scheduler` memung
        1. **Send command** → menjalankan command otomatis
        2. **Send power action** → restart/stop/start server
        3. **Create backup** → membuat backup server
+       4. **Cleanup old files** → menghapus file lama secara otomatis
     2. Nomor 2 berguna untuk menentukan jeda waktu sebelum task ini dijalankan setelah task sebelumnya selesai.
     3. Nomor 3 berisi data atau perintah yang akan dijalankan sesuai action yang dipilih. Contoh: `say Server restarting in 5 minutes` `restart`
     4. Nomor 4 merupakan tombol yang jika diaktifkan, task berikutnya tetap akan berjalan meskipun task ini gagal dijalankan.
-    5. Nomor 5 berguna untuk membuat task.
+    5. Nomor 5 berguna untuk cancel task yang ingin dibuat.
+    6. Nomor 6 berguna untuk membuat task.
   </Step>
   <Step title="Task Akan Tersimpan">
     Jika kamu klik tombol `Create Task`, maka task akan tersimpan dan akan dijalankan oleh sistem sesuai jadwal.
@@ -202,23 +198,26 @@ Kalau kamu ingin backup terjadwal tapi malas membuat jadwal nya. Kamu bisa mengg
 
 <Steps>
   <Step title="Gunakan Jadwal yang Sudah Ada">
+    Masuk ke tab `Schedules` dan klik tombol `Use Premade` seperti yang ditunjukkan oleh gambar berikut:
+
     <Frame>
-      ![Image](/images/backup/jadwal-raehost.png)
+      ![Image](/images/image-79.png)
     </Frame>
-    1. Masuk ke tab `Backups`
-    2. Klik toggle `Automatic Backup`
-    3. Jika ingin mengubah jadwal, klik tombol yang ditunjuk oleh nomor 3
   </Step>
-  <Step title="Setuju Jadwal Dibuat">
-    Ketika klik toggle `Automatic Backup`, akan muncul gambar seperti dibawah ini:
+  <Step title="Klik Jadwal ">
     <Frame>
-      ![Image](/images/backup/agree-jadwal.png)
+      <img
+        src="/images/image-80.png"
+        alt="Image"
+        title="Image"
+        className="mx-auto"
+        style={{ width:"85%" }}
+      />
     </Frame>
-    Klik tombol `I Understand, Enable`.
   </Step>
-  <Step title="Jadwal Auto Backup Berhasil Diaktifkan">
-  <Frame>
-      ![Image](/images/backup/active-auto-backup.png)
+  <Step title="Jadwal Terbuat">
+    <Frame>
+      ![Image](/images/image-81.png)
     </Frame>
   </Step>
 </Steps>

@@ -2,7 +2,7 @@
 title: "Minecraft Java ke Server RaeHost"
 ---
 
-Kamu ingin pakai world dari singleplayer ke server RaeHost kamu? Ikuti langkah berikut supaya world bisa ter-upload dengan aman dan tidak error.
+Pengen pakai world dari singleplayer ke server RaeHost kamu? Ikuti langkah berikut supaya world bisa ter-upload dengan aman dan tidak error.
 
 <Steps>
   <Step title="Siapkan World dari Komputer">
@@ -25,12 +25,12 @@ Kamu ingin pakai world dari singleplayer ke server RaeHost kamu? Ikuti langkah b
     Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu. Kemudian stop server dengan menekan tombol `Stop` seperti yang ditunjukkan oleh nomor 1.
 
     <Frame>
-      ![Image](/images/general/login-panel.png)
+      ![Image](/images/image-64.png)
     </Frame>
   </Step>
   <Step title="Upload World">
     <Frame>
-      ![Upload World](/images/upload-world/upload.png)
+      ![Upload World](/images/upload-world.png)
     </Frame>
 
     Masuk ke tab `Files`. Klik tombol `Upload` seperti nomor 2. Pilih file world `.zip` yang sudah dibuat. Tunggu hingga upload selesai.
@@ -47,18 +47,24 @@ Kamu ingin pakai world dari singleplayer ke server RaeHost kamu? Ikuti langkah b
 
     Contoh yang dihasilkan: MyWorld
   </Step>
-  <Step title="Atur Nama World di Properties">
-    <Frame>
-      ![Upload World](/images/upload-world/level-name.png)
-    </Frame>
-    1. Buka tab `Properties`
-    2. Cari `Level Name`. Ganti value nya sesuai nama folder world yang di-upload (huruf besar/kecil harus sama / case-sensitive). Contoh world yang disimpan sebelumnya bernama MyWorld, maka isi `MyWorld`. 
+  <Step title="Atur Nama World di MC Config">
+    <Steps>
+      <Step title="Buka tab MC Config">
+      </Step>
+      <Step title="Cari LEVEL NAME">
+      </Step>
+      <Step title="Ganti value nya sesuai nama folder world yang di-upload">
+        (huruf besar/kecil harus sama / case-sensitive). Contoh:
+
+        `LEVEL NAME = MyWorld`
+      </Step>
+    </Steps>
   </Step>
   <Step title="Restart Server">
     Setelahnya, pergi ke tab `Console` seperti yang ditunjukkan pada nomor 1. Kemudian klik `Restart` seperti yang ditunjukkan pada nomor 2.
 
     <Frame>
-      ![Image](/images/general/restart.png)
+      ![Image](/images/image-60.png)
     </Frame>
   </Step>
 </Steps>

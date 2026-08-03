@@ -4,76 +4,6 @@ title: "Minecraft Bedrock ke Server RaeHost"
 
 Pengen pindahin world dari Minecraft Bedrock (HP/PC) ke server RaeHost? Ikuti langkah berikut supaya world bisa berjalan dengan benar di server.
 
-## Dari HP
-
-<Steps>
-  <Step title="Cari Folder World">
-    <Steps>
-      <Step title="Buka aplikasi File Manager atau ZArchiver">
-      </Step>
-      <Step title="Masuk ke folder">
-        `/Android/data/com.mojang.minecraftpe/files/games/com.mojang/minecraftWorlds/`
-      </Step>
-      <Step title="Setiap folder di dalamnya adalah world Minecraft Bedrock">
-      </Step>
-      <Step title="Untuk mengetahui nama world">
-        1. Buka folder world
-        2. Cari file: `levelname.txt`
-        3. Buka file tersebut
-      </Step>
-    </Steps>
-  </Step>
-  <Step title="Kompres World">
-    <Steps>
-      <Step title="Tekan dan tahan folder world">
-      </Step>
-      <Step title="Pilih Compress / Arsipkan">
-      </Step>
-      <Step title="Simpan menjadi file .zip">
-        Contoh yang Dihasilkan: MyWorld.zip
-      </Step>
-    </Steps>
-  </Step>
-  <Step title="Upload ke Panel RaeHost">
-    <Steps>
-      <Step title="Login ke Panel">
-        Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu. Kemudian stop server dengan menekan tombol `Stop` seperti yang ditunjukkan oleh nomor 1.
-
-        <Frame>
-          ![Image](/images/general/login-panel.png)
-        </Frame>
-      </Step>
-      <Step title="Upload World">
-        <Frame>
-          ![Upload World](/images/upload-world/upload.png)
-        </Frame>
-
-        Masuk ke tab `Files`. Klik tombol `Upload` seperti nomor 2. Pilih file world `.zip` yang sudah dibuat. Tunggu hingga upload selesai.
-      </Step>
-      <Step title="Pilih file MyWorld.zip">
-        Tunggu proses upload selesai
-      </Step>
-      <Step title="Klik kanan file .zip → pilih Unarchive / Extract">
-      </Step>
-    </Steps>
-  </Step>
-  <Step title="Atur Nama World di Properties">
-    <Frame>
-      ![Upload World](/images/upload-world/level-name.png)
-    </Frame>
-    1. Buka tab `Properties`
-    2. Cari `Level Name`. Ganti value nya sesuai nama folder world yang di-upload (huruf besar/kecil harus sama / case-sensitive). Contoh world yang disimpan sebelumnya bernama MyWorld, maka isi `MyWorld`. 
-  </Step>
-  <Step title="Restart Server">
-    Setelahnya, pergi ke tab `Console` seperti yang ditunjukkan pada nomor 1. Kemudian klik `Restart` seperti yang ditunjukkan pada nomor 2.
-
-    <Frame>
-      ![Image](/images/general/restart.png)
-    </Frame>
-  </Step>
-</Steps>
-
-
 ## Dari PC
 
 <Steps>
@@ -115,12 +45,12 @@ Pengen pindahin world dari Minecraft Bedrock (HP/PC) ke server RaeHost? Ikuti la
         Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu. Kemudian stop server dengan menekan tombol `Stop` seperti yang ditunjukkan oleh nomor 1.
 
         <Frame>
-          ![Image](/images/general/login-panel.png)
+          ![Image](/images/image-64.png)
         </Frame>
       </Step>
       <Step title="Upload World">
         <Frame>
-          ![Upload World](/images/upload-world/upload.png)
+          ![Upload World](/images/upload-world.png)
         </Frame>
 
         Masuk ke tab `Files`. Klik tombol `Upload` seperti nomor 2. Pilih file world `.zip` yang sudah dibuat. Tunggu hingga upload selesai.
@@ -132,18 +62,99 @@ Pengen pindahin world dari Minecraft Bedrock (HP/PC) ke server RaeHost? Ikuti la
       </Step>
     </Steps>
   </Step>
-  <Step title="Atur Nama World di Properties">
-    <Frame>
-      ![Upload World](/images/upload-world/level-name.png)
-    </Frame>
-    1. Buka tab `Properties`
-    2. Cari `Level Name`. Ganti value nya sesuai nama folder world yang di-upload (huruf besar/kecil harus sama / case-sensitive). Contoh world yang disimpan sebelumnya bernama MyWorld, maka isi `MyWorld`. 
+  <Step title="Atur LEVEL NAME">
+    <Steps>
+      <Step title="Buka tab MC Config">
+      </Step>
+      <Step title="Cari LEVEL NAME">
+      </Step>
+      <Step title="Ganti value nya sesuai nama folder world yang di-upload">
+        (huruf besar/kecil harus sama / case-sensitive). Contoh:
+
+        `LEVEL NAME = MyWorld`
+      </Step>
+    </Steps>
   </Step>
   <Step title="Restart Server">
     Setelahnya, pergi ke tab `Console` seperti yang ditunjukkan pada nomor 1. Kemudian klik `Restart` seperti yang ditunjukkan pada nomor 2.
 
     <Frame>
-      ![Image](/images/general/restart.png)
+      ![Image](/images/image-60.png)
+    </Frame>
+  </Step>
+</Steps>
+
+## Dari HP
+
+<Steps>
+  <Step title="Cari Folder World">
+    <Steps>
+      <Step title="Buka aplikasi File Manager atau ZArchiver">
+      </Step>
+      <Step title="Masuk ke folder">
+        `/Android/data/com.mojang.minecraftpe/files/games/com.mojang/minecraftWorlds/`
+      </Step>
+      <Step title="Setiap folder di dalamnya adalah world Minecraft Bedrock">
+      </Step>
+      <Step title="Untuk mengetahui nama world">
+        1. Buka folder world
+        2. Cari file: `levelname.txt`
+        3. Buka file tersebut
+      </Step>
+    </Steps>
+  </Step>
+  <Step title="Kompres World">
+    <Steps>
+      <Step title="Tekan dan tahan folder world">
+      </Step>
+      <Step title="Pilih Compress / Arsipkan">
+      </Step>
+      <Step title="Simpan menjadi file .zip">
+        Contoh yang Dihasilkan: MyWorld.zip
+      </Step>
+    </Steps>
+  </Step>
+  <Step title="Upload ke Panel RaeHost">
+    <Steps>
+      <Step title="Login ke Panel">
+        Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu. Kemudian stop server dengan menekan tombol `Stop` seperti yang ditunjukkan oleh nomor 1.
+
+        <Frame>
+          ![Image](/images/image-64.png)
+        </Frame>
+      </Step>
+      <Step title="Upload World">
+        <Frame>
+          ![Upload World](/images/upload-world.png)
+        </Frame>
+
+        Masuk ke tab `Files`. Klik tombol `Upload` seperti nomor 2. Pilih file world `.zip` yang sudah dibuat. Tunggu hingga upload selesai.
+      </Step>
+      <Step title="Pilih file MyWorld.zip">
+        Tunggu proses upload selesai
+      </Step>
+      <Step title="Klik kanan file .zip → pilih Unarchive / Extract">
+      </Step>
+    </Steps>
+  </Step>
+  <Step title="Atur LEVEL NAME">
+    <Steps>
+      <Step title="Buka tab MC Config">
+      </Step>
+      <Step title="Cari LEVEL NAME">
+      </Step>
+      <Step title="Ganti value nya sesuai nama folder world yang di-upload">
+        (huruf besar/kecil harus sama / case-sensitive). Contoh:
+
+        `LEVEL NAME = MyWorld`
+      </Step>
+    </Steps>
+  </Step>
+  <Step title="Restart Server">
+    Setelahnya, pergi ke tab `Console` seperti yang ditunjukkan pada nomor 1. Kemudian klik `Restart` seperti yang ditunjukkan pada nomor 2.
+
+    <Frame>
+      ![Image](/images/image-60.png)
     </Frame>
   </Step>
 </Steps>

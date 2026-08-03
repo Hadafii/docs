@@ -12,7 +12,7 @@ title: "Cara Setup Geyser"
 
     <Frame>
       <img
-        src="/images/image-57.png"
+        src="/images/general/login-panel.png"
         alt="Image"
         title="Image"
         className="mx-auto"
@@ -20,108 +20,47 @@ title: "Cara Setup Geyser"
     </Frame>
   </Step>
   <Step title="Stop Server">
-    Klik tombol `Stop` seperti yang ditampilkan oleh nomor 1. Jika sudah di stop, maka server akan `offline` seperti yang ditampilkan oleh nomor 2.
+    Klik tombol `Stop` seperti yang ditampilkan oleh nomor 3. Jika sudah di stop, maka server akan `offline` seperti yang ditampilkan oleh nomor 2.
 
     <Frame>
-      ![Image](/images/image-86.png)
+      ![Image](/images/general/stop-server.png)
     </Frame>
   </Step>
-  <Step title="Clean Install File (Jika Mau)">
-    > **Hanya jika kalian ingin menghapus semua file ya!**
-
-    Pastikan di tab `Files`, bahwa semua file mu sudah tidak ada. Hal ini ditandai dengan `This directory seems to be empty` seperti yang ditampilkan oleh nomor 2.
+  <Step title="Pilih Minecraft Java">
+    Masuk ke tab `Egg Changer` seperti pada nomor 1. Kemudian klik tombol `Browse` seperti pada nomor 2.
 
     <Frame>
-      ![File Empty](/images/file-empty.png)
-    </Frame>
-
-    Jika belum kosong (dan ingin clean install), bisa ikuti langkah-langkah ini:
-
-    <Steps>
-      <Step title="Select All dan Delete">
-        <Frame>
-          ![Clean Install](/images/clean-install.png)
-        </Frame>
-
-        1. Masuk ke tab `Files`
-        2. Centang seperti pada nomor 2 untuk memilih semua file
-        3. Klik tombol `Delete` seperti pada nomor 3
-      </Step>
-      <Step title="Klik Delete">
-        <Frame>
-          <img
-            src="/images/modal-delete-file.png"
-            alt="Modal Delete File"
-            className="mx-auto"
-            style={{ width:"72%" }}
-          />
-        </Frame>
-      </Step>
-      <Step title="File Akan Kosong">
-        <Frame>
-          ![File Empty](/images/file-empty.png)
-        </Frame>
-      </Step>
-    </Steps>
-  </Step>
-  <Step title="Ubah Egg">
-    Untuk melakukan ubah egg, kamu perlu masuk ke teb `Egg Changer` dan cari egg `[GEYSER] CROSSPLAY`. Klik `Change Egg` seperti pada nomor 2.
-
-    <Frame>
-      ![Change Egg](/images/change-egg.png)
-    </Frame>
-
-    Kemudian klik tombol `Change Egg` seperti gambar dibawah ini:
-
-    <Frame>
-      <img
-        src="/images/modal-change-egg.png"
-        alt="Modal Change Egg"
-        title="Modal Change Egg"
-        className="mx-auto"
-        style={{ width:"86%" }}
-      />
-    </Frame>
-
-    Jika sudah berubah, maka tombol `Change Egg` akan berubah menjadi warna hijau seperti berikut:
-
-    <Frame>
-      ![Egg Is Change](/images/egg-is-change.png)
+      ![Image](/images/geyser/choose-egg.png)
     </Frame>
   </Step>
-  <Step title="Ubah Versi">
-    <Frame>
-      ![Geyser Version](/images/geyser-version.png)
-    </Frame>
-
-    1. Masuk ke tab `Startup`
-    2. Pada versi minecraft, **jangan** biarkan diisi `latest` tapi isi sesuai versi terbaru. 
-    3. Untuk port, bisa diisi dengan port pada server address yang terdapat di tab `Console`
-  </Step>
-  <Step title="Reinstall Server">
-    Untuk melakukan reinstall, kamu dapat masuk ke tab `Settings` seperti yang ditampilkan pada nomor 1. Untuk melakukan reinstall, kamu dapat klik tombol `Reinstall Server` seperti pada nomor 2.
+  <Step title="Pilih Geyser">
+    Cari `Geyser Crossplay` dan klik tombol `Select`
 
     <Frame>
-      ![Image](/images/image-96.png)
-    </Frame>
-
-    Kemudian akan muncul konfirmasi. Klik tombol `Yes, reinstall server` seperti pada gambar dibawah ini:
-
-    <Frame>
-      ![Image](/images/image-98.png)
+      ![Image](/images/geyser/select.png)
     </Frame>
   </Step>
-  <Step title="Kembali ke tab Console">
-    Saat sedang installing, akan muncul persetujuan seperti berikut, klik tombol `Accept`
-
+  <Step title="Isi Pilihan Berikut">
     <Frame>
-      ![Acc Eula](/images/acc-eula.png)
+      ![Image](/images/geyser/modal-select.png)
     </Frame>
-
-    Tunggu hingga tertuli `Server mark as running` seperti gambar dibawah ini:
-
+    1. Reinstall Server. Centang opsi ini untuk menjalankan instalasi ulang menggunakan konfigurasi dari egg Geyser yang baru. (Better klik centang saja)
+    2. Clear All Files. Centang opsi ini jika ingin menghapus seluruh file server sebelum mengganti egg. ⚠️ Semua data seperti world, plugin, dan konfigurasi akan terhapus.
+    3. Klik tombol Confirm Change untuk menerapkan perubahan egg server.
+  </Step>
+  <Step title="Tunggu Installing Selesai">
     <Frame>
-      ![Server Mark Running](/images/server-mark-running.png)
+      ![Image](/images/geyser/installer.png)
+    </Frame>
+  </Step>
+  <Step title="Klik Accept Eula">
+    <Frame>
+      ![Image](/images/geyser/accept-eula.png)
+    </Frame>
+  </Step>
+  <Step title="Server Aktif">
+    <Frame>
+      ![Image](/images/general/start-running.png)
     </Frame>
   </Step>
 </Steps>
@@ -136,7 +75,7 @@ Hal ini dapat disebkan karena Bedrock player dianggap belum “terautentikasi”
 
     <Frame>
       <img
-        src="/images/image-57.png"
+        src="/images/general/login-panel.png"
         alt="Image"
         title="Image"
         className="mx-auto"
@@ -145,7 +84,7 @@ Hal ini dapat disebkan karena Bedrock player dianggap belum “terautentikasi”
   </Step>
   <Step title="Buka file ">
     <Frame>
-      ![File Config](/images/file-config.png)
+      ![File Config](/images/geyser/auth-online.png)
     </Frame>
 
     1. Masuk ke tab `Files` 
@@ -153,7 +92,7 @@ Hal ini dapat disebkan karena Bedrock player dianggap belum “terautentikasi”
     3. Cari `auth-type: online` 
 
     <Frame>
-      ![Floodgate](/images/floodgate.png)
+      ![Floodgate](/images/geyser/auth-floodgate.png)
     </Frame>
 
     1. Ubah menjadi `auth-type: floodgate` seperti gambar diatas
@@ -163,7 +102,11 @@ Hal ini dapat disebkan karena Bedrock player dianggap belum “terautentikasi”
     Setelahnya, pergi ke tab `Console` seperti yang ditunjukkan pada nomor 1. Kemudian klik `Restart` seperti yang ditunjukkan pada nomor 2. Spawn Protection sudah mati.
 
     <Frame>
-      ![Image](/images/image-60.png)
+      ![Image](/images/general/restart.png)
+    </Frame>
+    Tunggu hingga server online kembali, seperti ini:
+    <Frame>
+      ![Image](/images/general/start.png)
     </Frame>
   </Step>
 </Steps>
