@@ -1,3 +1,6 @@
+---
+title: "Website Panel"
+---
 Pada halaman Panel, kamu dapat mengatur seluruh kebutuhan server Minecraft kamu.
 
 Melalui panel ini, kamu bisa:
@@ -6,9 +9,10 @@ Melalui panel ini, kamu bisa:
 - Upload world, plugin, addon, atau mod
 - Mengubah tipe software server
 - Mengatur startup dan environment server
+- Mengatur konfigurasi Minecraft melalui Properties
+- Mengelola versi server
 - Melihat penggunaan resource server
 - Mengelola file server melalui File Manager
-- Restart, stop, atau start server kapan saja
 - Membuat backup server
 - Mengelola database
 - Memberikan akses kepada pengguna lain
@@ -19,6 +23,29 @@ Panel digunakan untuk seluruh **pengaturan teknis** server Minecraft kamu.
 
 # Menu pada Panel
 
+## 📊 Dashboard
+
+Dashboard digunakan untuk melihat ringkasan informasi server secara cepat tanpa perlu membuka menu lainnya.
+
+Melalui Dashboard, kamu dapat melihat:
+
+- **Status Server** — Menampilkan status server seperti Online, Offline, atau Starting beserta uptime server.
+- **Resource Usage** — Menampilkan penggunaan resource server secara real-time:
+  - CPU Usage
+  - Memory/RAM Usage
+  - Disk Usage
+- **Network** — Menampilkan aktivitas jaringan server.
+- **Server Information** — Menampilkan informasi dasar server seperti Node dan Server UUID.
+- **Quick Actions** — Akses cepat menuju beberapa menu penting seperti:
+  - Console
+  - Files
+  - Backups
+  - Settings
+
+Dashboard cocok digunakan untuk memantau kondisi server sebelum melakukan pengelolaan lebih lanjut.
+
+---
+
 ## 🖥️ Console
 
 Digunakan untuk melihat aktivitas server secara real-time dan menjalankan command Minecraft.
@@ -28,6 +55,66 @@ Digunakan untuk melihat aktivitas server secara real-time dan menjalankan comman
 - Menjalankan command. Lengkapnya bisa dibaca [disini](https://docs.raehost.com/basic-command-di-minecraft)
 - Melihat error plugin atau mod
 - Memantau aktivitas pemain
+
+---
+
+## ⏰ Schedules
+
+Digunakan untuk membuat tugas otomatis.
+
+**Contoh:**
+
+- Restart server otomatis setiap hari
+- Menjalankan command secara berkala
+- Backup otomatis
+
+Lengkapnya bisa dibaca [disini](https://docs.raehost.com/cara-backup#schedule)
+
+---
+
+## 🌐 Network
+
+Menampilkan informasi port dari server. Jika kamu membutuhnya 2 port atau lebih untuk kebutuhan bermain, silahkan hubungi kami melalui tiket discord maupun tiket di website.
+
+---
+
+## 🚀 Startup
+
+Digunakan untuk mengatur cara server dijalankan. Contoh penggunaan adalah mengganti versi server. Lengkapnya dapat dibaca [disini](https://docs.raehost.com/cara-merubah-versi).
+
+> ⚠️ Jangan mengubah pengaturan pada menu ini kecuali kamu memahami fungsinya.
+
+---
+
+## ⚙️ Settings
+
+Berisi pengaturan umum server seperti:
+
+- Nama server
+- Reinstall server
+- SFTP Detail
+
+> SFTP Detail dapat digunakan untuk mengupload file besar menggunakan SFTP, lengkapnya dapat dibaca [disini](https://docs.raehost.com/cara-upload-file-besar-menggunakan-sftp). Atau SFTP Detail juga berguna sebagai identitas untuk migrasi dari server satu ke server lain, lengkapnya bisa dibaca [disini](https://docs.raehost.com/cara-pindah-migrasi-server).
+
+---
+
+## 🥚 Egg Changer
+
+Digunakan untuk mengganti software server. Kenali egg yang harusnya kamu pilih [disini](https://docs.raehost.com/panduan-memilih-server).
+
+Contoh:
+
+- Vanilla Minecraft → Paper
+- Paper → Purpur
+- Forge → NeoForge
+
+> ⚠️ Selalu buat backup sebelum mengganti software server.
+
+<Card title="Perbedaan Vanilla di Egg Changer" type="info">
+  **Vanilla Minecraft** → Vanilla untuk Java version 
+
+  **Vanilla Bedrock** → Vanilla untuk Bedrock version
+</Card>
 
 ---
 
@@ -53,74 +140,82 @@ Digunakan untuk mengelola seluruh file server.
 
 ---
 
-## 🗄️ Databases
+## 🔌 Plugins
 
-Digunakan untuk membuat dan mengelola database MySQL.
+Khusus untuk server Paper, Spigot, dan Purpur. Digunakan untuk menginstal plugin server.
 
-Biasanya digunakan oleh plugin seperti:
+Contoh plugin:
 
+- EssentialsX
 - LuckPerms
+- ViaVersion
 - CoreProtect
-- Tebex
-- VotingPlugin
+
+Lengkapnya dapat dibaca [disini](https://docs.raehost.com/cara-install-plugin).
 
 ---
 
-## ⏰ Schedules
+## 🧩 Minecraft Mods
 
-Digunakan untuk membuat tugas otomatis.
+Khusus untuk server modded seperti:
 
-**Contoh:**
+- Forge
+- NeoForge
+- Fabric
 
-- Restart server otomatis setiap hari
-- Menjalankan command secara berkala
-- Backup otomatis
+Digunakan untuk mengelola mod yang terpasang pada server Minecraft.
 
-Lengkapnya bisa dibaca [disini](https://docs.raehost.com/cara-backup#schedule)
-
----
-
-## 👥 Users
-
-Menu **Users** digunakan untuk memberikan akses panel kepada pengguna lain agar mereka dapat membantu mengelola server.
-
-### Cara Menambahkan User
-
-<Steps>
-  <Step title="Klik New User">
-    Pada menu Users, klik tombol  untuk menambahkan pengguna baru.
-  </Step>
-  <Step title="Masukkan Email Pengguna">
-    Masukkan alamat email akun pengguna yang ingin diberikan akses ke server.
-  </Step>
-  <Step title="Pilih Permission">
-    Centang izin (permission) yang ingin diberikan, seperti akses Console, Files, Backups, atau fitur lainnya sesuai kebutuhan.
-  </Step>
-  <Step title="Klik Invite User">
-    Setelah semua izin sudah sesuai, klik  untuk mengirimkan akses kepada pengguna tersebut.
-  </Step>
-</Steps>
-
-> 💡 Gunakan fitur ini jika server dikelola oleh beberapa orang, seperti teman, staff, atau developer yang membutuhkan akses ke panel. **Berikan hanya permission yang diperlukan. Hindari memberikan akses penuh kepada orang yang tidak dipercaya karena mereka dapat mengubah konfigurasi server atau menghapus data.**
+Lengkapnya dapat dibaca [disini](https://docs.raehost.com/cara-pasang-mod).
 
 ---
 
-## 💾 Backups
+## 📦 Modpacks
 
-Digunakan untuk membuat dan memulihkan backup server.
+Digunakan untuk menginstal modpack secara otomatis.
 
-**Fungsi:**
+Contoh:
 
-- Membuat backup manual. Lengkapnya dapat dibaca [disini](https://docs.raehost.com/cara-backup).
-- Mengembalikan data server dari backup sebelumnya. Lengkapnya dapat dibaca [disini](https://docs.raehost.com/cara-restore-backup).
+- Better MC
+- All The Mods
+- Prominence
 
-> ⚠️ Restore backup akan mengganti data server saat ini dengan data dari backup yang dipilih.
+Lengkapnya dapat dibaca [disini](https://docs.raehost.com/install-modpack).
 
 ---
 
-## 🌐 Network
+## 📱 Bedrock Addons
 
-Menampilkan informasi port dari server. Jika kamu membutuhnya 2 port atau lebih untuk kebutuhan bermain, silahkan hubungi kami melalui tiket discord maupun tiket di website.
+Khusus Minecraft Bedrock Edition. Digunakan untuk mengelola:
+
+- Behavior Pack
+- Resource Pack
+
+Lengkapnya dapat dibaca [disini](https://docs.raehost.com/cara-pasang-add-on)
+
+---
+
+## ⚡ Versions
+
+Digunakan untuk melihat dan mengatur versi software server yang tersedia.
+
+Menu ini membantu memastikan server menggunakan versi yang sesuai dengan kebutuhan, seperti versi Minecraft, loader, atau software server tertentu.
+
+---
+
+## 📄 Properties
+
+Digunakan untuk mengubah konfigurasi dasar server Minecraft tanpa perlu mengedit file secara manual.
+
+Contohnya:
+
+- Difficulty
+- Gamemode
+- Online Mode
+- View Distance
+- Max Players
+- Spawn Protection
+
+Perubahan pada menu ini akan diterapkan ke file konfigurasi Minecraft secara otomatis.
 
 ---
 
@@ -169,115 +264,67 @@ Melalui menu ini, kamu dapat:
 
 ---
 
-## 🔧 Mods
+## ☁️ Server Importer
 
-Khusus untuk server modded seperti:
+Digunakan untuk mengimpor data server dari sumber lain.
 
-- Forge
-- NeoForge
-- Fabric
+Contoh penggunaan:
+- Migrasi server dari hosting lain
+- Memindahkan data server secara otomatis
 
-Digunakan untuk mengelola mod yang terpasang pada server. Lengkapnya dapat dibaca [disini](https://docs.raehost.com/cara-pasang-mod).
-
----
-
-## 📦 Modpacks
-
-Digunakan untuk menginstal modpack secara otomatis.
-
-Contoh:
-
-- Better MC
-- All The Mods
-- Prominence
-
-Lengkapnya dapat dibaca [disini](https://docs.raehost.com/install-modpack).
+Lengkapnya dapat dibaca [disini](https://docs.raehost.com/cara-pindah-migrasi-server).
 
 ---
 
-## 🔌 Plugins
+## 🗄️ Databases
 
-Khusus untuk server Paper, Spigot, dan Purpur. Digunakan untuk menginstal plugin server.
+Digunakan untuk membuat dan mengelola database MySQL.
 
-Contoh plugin:
+Biasanya digunakan oleh plugin seperti:
 
-- EssentialsX
 - LuckPerms
-- ViaVersion
 - CoreProtect
-
-Lengkapnya dapat dibaca [disini](https://docs.raehost.com/cara-install-plugin).
-
----
-
-## 📱 Bedrock Addons
-
-Khusus Minecraft Bedrock Edition. Digunakan untuk mengelola:
-
-- Behavior Pack
-- Resource Pack
-
-Lengkapnya dapat dibaca [disini](https://docs.raehost.com/cara-pasang-add-on)
+- Tebex
+- VotingPlugin
 
 ---
 
-## 🛠️ MC Configs
 
-Memudahkan perubahan konfigurasi Minecraft tanpa perlu mengedit file secara manual.
+## 💾 Backups
 
-Contohnya:
+Digunakan untuk membuat dan memulihkan backup server.
 
-- Difficulty
-- Gamemode
-- Online Mode
-- Experimental
-- View Distance
+**Fungsi:**
 
----
+- Membuat backup manual. Lengkapnya dapat dibaca [disini](https://docs.raehost.com/cara-backup).
+- Mengembalikan data server dari backup sebelumnya. Lengkapnya dapat dibaca [disini](https://docs.raehost.com/cara-restore-backup).
 
-## 🚀 Startup
-
-Digunakan untuk mengatur cara server dijalankan. Contoh penggunaan adalah mengganti versi server. Lengkapnya dapat dibaca [disini](https://docs.raehost.com/cara-merubah-versi).
-
-> ⚠️ Jangan mengubah pengaturan pada menu ini kecuali kamu memahami fungsinya.
+> ⚠️ Restore backup akan mengganti data server saat ini dengan data dari backup yang dipilih.
 
 ---
 
-## 🌎 Importer
+## 👥 Users
 
-Digunakan untuk mengimpor data server dari sumber lain. Contoh penggunaan adalah migrasi server. Lengkapnya dapat dibaca [disini](https://docs.raehost.com/cara-pindah-migrasi-server).
+Menu **Users** digunakan untuk memberikan akses panel kepada pengguna lain agar mereka dapat membantu mengelola server.
 
----
+### Cara Menambahkan User
 
-## 🥚 Egg Changer
+<Steps>
+  <Step title="Klik New User">
+    Pada menu Users, klik tombol  untuk menambahkan pengguna baru.
+  </Step>
+  <Step title="Masukkan Email Pengguna">
+    Masukkan alamat email akun pengguna yang ingin diberikan akses ke server.
+  </Step>
+  <Step title="Pilih Permission">
+    Centang izin (permission) yang ingin diberikan, seperti akses Console, Files, Backups, atau fitur lainnya sesuai kebutuhan.
+  </Step>
+  <Step title="Klik Invite User">
+    Setelah semua izin sudah sesuai, klik  untuk mengirimkan akses kepada pengguna tersebut.
+  </Step>
+</Steps>
 
-Digunakan untuk mengganti software server. Kenali egg yang harusnya kamu pilih [disini](https://docs.raehost.com/panduan-memilih-server).
-
-Contoh:
-
-- Vanilla Minecraft → Paper
-- Paper → Purpur
-- Forge → NeoForge
-
-> ⚠️ Selalu buat backup sebelum mengganti software server.
-
-<Card title="Perbedaan Vanilla di Egg Changer" type="info">
-  **Vanilla Minecraft** → Vanilla untuk Java version 
-
-  **Vanilla Bedrock** → Vanilla untuk Bedrock version
-</Card>
-
----
-
-## ⚙️ Settings
-
-Berisi pengaturan umum server seperti:
-
-- Nama server
-- Reinstall server
-- SFTP Detail
-
-> SFTP Detail dapat digunakan untuk mengupload file besar menggunakan SFTP, lengkapnya dapat dibaca [disini](https://docs.raehost.com/cara-upload-file-besar-menggunakan-sftp). Atau SFTP Detail juga berguna sebagai identitas untuk migrasi dari server satu ke server lain, lengkapnya bisa dibaca [disini](https://docs.raehost.com/cara-pindah-migrasi-server).
+> 💡 Gunakan fitur ini jika server dikelola oleh beberapa orang, seperti teman, staff, atau developer yang membutuhkan akses ke panel. **Berikan hanya permission yang diperlukan. Hindari memberikan akses penuh kepada orang yang tidak dipercaya karena mereka dapat mengubah konfigurasi server atau menghapus data.**
 
 ---
 
@@ -291,12 +338,6 @@ Contoh:
 - Penghapusan file
 - Perubahan konfigurasi
 - Aktivitas pengguna
-
----
-
-## 🛡️ Access Requests
-
-Menampilkan permintaan akses dari pengguna lain yang ingin bergabung mengelola server.
 
 ---
 
