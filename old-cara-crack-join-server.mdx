@@ -12,43 +12,70 @@ Di RaeHost, kamu tidak perlu memiliki lisensi Minecraft premium untuk bermain. B
 
     <Frame>
       <img
-        src="/images/general/start.png"
+        src="/images/image-57.png"
         alt="Image"
         title="Image"
         className="mx-auto"
       />
     </Frame>
   </Step>
-  <Step title="Masuk ke Tab Properties">
-    Masuk ke tab `Properties`seperti yang ditampilkan pada nomor 1. Kemudian cari toggle online mode seperti yang ditampilkan pada nomor 2.
+  <Step title="Masuk ke Tab MC Config">
+    Masuk ke tab `MC Config`seperti yang ditampilkan pada nomor 1. Kemudian cari toggle online mode seperti yang ditampilkan pada nomor 2.
 
     <Frame>
-      ![Image](/images/crack/online.png)
+      ![Image](/images/image-58.png)
     </Frame>
 
     Klik toggle menjadi disable agar online mode menjadi off seperti yang ditampilkan pada gambar berikut:
 
     <Frame>
-      ![Image](/images/crack/offline.png)
-    </Frame>
-  </Step>
-  <Step title="Klik Save Changes">
-    Cari dan klik tombol Save Changes.
-
-    <Frame>
-      ![Image](/images/crack/save.png)
+      ![Image](/images/image-59.png)
     </Frame>
   </Step>
   <Step title="Restart Server">
-    Setelahnya, klik restart server seperti gambar dibawah ini:
+    Setelahnya, pergi ke tab `Console` seperti yang ditunjukkan pada nomor 1. Kemudian klik `Restart` seperti yang ditunjukkan pada nomor 2. Online mode sudah off.
 
     <Frame>
-      ![Image](/images/crack/restart.png)
+      ![Image](/images/image-60.png)
+    </Frame>
+  </Step>
+</Steps>
+
+Jika setelah di restart, online mode masih off atau toggle sedang tidak works. Kamu bisa langsung hard code seperti ini:
+
+<Steps>
+  <Step title="Login ke Panel">
+    Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu.
+
+    <Frame>
+      <img
+        src="/images/image-57.png"
+        alt="Image"
+        title="Image"
+        className="mx-auto"
+      />
+    </Frame>
+  </Step>
+  <Step title="Masuk ke Tab Files">
+    Masuk ke tab `Files`seperti yang ditampilkan pada nomor 1. Kemudian cari file server.properties seperti yang ditampilkan pada nomor 2.
+
+    <Frame>
+      ![Image](/images/image-62.png)
     </Frame>
 
-    Tunggu hingga server online kembali, seperti ini:
+    Klik toggle menjadi disable agar online mode menjadi off seperti yang ditampilkan pada gambar berikut:
+
+    `online-mode=true` ubah menjadi `online-mode=false` seperti yang ditampilkan pada nomor 1. Kemudian klik `Save Content` seperti yang ditunjukkan pada nomor 2.
+
     <Frame>
-      ![Image](/images/general/start.png)
+      ![Image](/images/image-63.png)
+    </Frame>
+  </Step>
+  <Step title="Restart Server">
+    Setelahnya, pergi ke tab `Console` seperti yang ditunjukkan pada nomor 1. Kemudian klik `Restart` seperti yang ditunjukkan pada nomor 2. Online mode sudah off.
+
+    <Frame>
+      ![Image](/images/image-60.png)
     </Frame>
   </Step>
 </Steps>
