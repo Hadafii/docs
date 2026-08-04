@@ -1,5 +1,5 @@
 ---
-title: "Cara Mengaktifkan Experimental Features"
+title: "Cara Mengaktifkan Experimental Features (BEDROCK EDITION)"
 ---
 
 Experimental Features adalah fitur-fitur yang masih dalam tahap pengembangan di Minecraft Bedrock Edition. Fitur ini berguna untuk membuat addon, script, atau mencoba konten terbaru sebelum dirilis secara resmi.
@@ -20,10 +20,10 @@ Experimental Features adalah fitur-fitur yang masih dalam tahap pengembangan di 
       Jangan mengubah pengaturan Experimental saat server sedang berjalan. Perubahan tidak akan tersimpan dengan benar dan dapat menyebabkan masalah.
     </Warning>
   </Step>
-  <Step title="Buka MC Configs">
+  <Step title="Buka Bedrock Config">
     <Frame>
       <img
-        src="/images/Screenshot-2026-06-12-235751.png"
+        src="/images/bedrock-config1.png"
         alt="Screenshot 2026 06 12 235751"
         title="Screenshot 2026 06 12 235751"
         className="mx-auto"
@@ -31,16 +31,20 @@ Experimental Features adalah fitur-fitur yang masih dalam tahap pengembangan di 
       />
     </Frame>
 
-    Di sidebar Panel, klik menu **MC Configs**.
+    Di sidebar Panel, klik menu **Bedrock Config**.
   </Step>
   <Step title="Pilih Experiments">
     <Frame>
-      ![Screenshot 2026 06 12 235834](/images/Screenshot-2026-06-12-235834.png)
+      ![Screenshot 2026 06 12 235834](/images/bedrock-config2.png)
     </Frame>
 
     Klik dropdown yang menampilkan **Server Properties**, lalu ganti ke **Experiments**.
   </Step>
   <Step title="Aktifkan Fitur yang Dibutuhkan">
+    <Frame>
+      ![Image](/images/image-109.png "Image")
+    </Frame>
+
     Aktifkan toggle untuk fitur Experimental yang ingin kamu gunakan. Lihat penjelasan setiap fitur di bawah.
   </Step>
   <Step title="Simpan dan Jalankan Server">
@@ -52,69 +56,15 @@ Experimental Features adalah fitur-fitur yang masih dalam tahap pengembangan di 
 
 ## Penjelasan Fitur Experimental
 
-### Beta APIs
-
-> Enables Beta APIs (GameTest Framework) for addon scripting
-
-Mengaktifkan akses ke API scripting versi beta untuk pembuatan addon menggunakan JavaScript. Diperlukan jika kamu menggunakan addon atau script yang memanfaatkan `@minecraft/server` atau module scripting lainnya yang masih dalam tahap beta.
-
-<Note>
-  Wajib diaktifkan jika addon kamu menggunakan Scripting API seperti `@minecraft/server`, `@minecraft/server-ui`, atau `@minecraft/server-gametest`.
-</Note>
-
----
-
-### Custom Biomes
-
-> Enables custom biome definitions through JSON
-
-Mengaktifkan dukungan untuk biome kustom yang didefinisikan melalui file JSON. Diperlukan jika kamu menggunakan addon yang menambahkan biome baru ke dunia.
-
----
-
-### Upcoming Creator Features
-
-> Enables experimental creator features before official release
-
-Mengaktifkan fitur-fitur creator yang sudah selesai dikembangkan namun belum dirilis secara resmi. Cocok untuk addon developer yang ingin mencoba fitur terbaru lebih awal.
-
----
-
-### Villager Trade Rebalancing
-
-> Enables rebalanced villager trading
-
-Mengaktifkan sistem perdagangan villager yang sudah diseimbangkan ulang oleh Mojang. Perubahan ini mempengaruhi harga dan jenis item yang bisa diperdagangkan dengan villager di dunia.
-
-<Note>
-  Mengaktifkan fitur ini akan mengubah sistem trading di dunia yang sudah ada. Pertimbangkan dampaknya jika server kamu sudah punya ekonomi berbasis villager trade.
-</Note>
-
----
-
-### Experimental Creator Camera Features
-
-> Enables experimental camera features for creators
-
-Mengaktifkan fitur kamera eksperimental untuk keperluan pembuatan konten dan addon. Termasuk kemampuan untuk mengontrol sudut kamera dan perspektif secara lebih fleksibel melalui addon.
-
----
-
-### Data-Driven Jigsaw Structures
-
-> Enables data-driven jigsaw structure generation
-
-Mengaktifkan sistem generasi struktur jigsaw yang dikendalikan melalui data (JSON). Diperlukan untuk addon yang menambahkan struktur kustom seperti bangunan atau dungeon yang di-generate secara prosedural di dunia.
-
----
-
-### Drop 3 2025
-
-> Enables features from the 2025 Drop 3 update
-
-Mengaktifkan konten dan fitur dari update Drop 3 tahun 2025. Aktifkan jika kamu ingin mencoba fitur-fitur terbaru dari update ini sebelum tersedia secara penuh di versi stabil.
-
----
+| Fitur | Fungsi | Catatan |
+| --- | --- | --- |
+| **Beta APIs** | Mengaktifkan akses ke Scripting API versi beta (GameTest Framework) untuk membuat addon dengan JavaScript | Wajib aktif jika addon memakai `@minecraft/server`, `@minecraft/server-ui`, atau `@minecraft/server-gametest` |
+| **Custom Biomes** | Mendukung biome kustom yang didefinisikan lewat file JSON | Diperlukan jika addon menambahkan biome baru |
+| **Upcoming Creator Features** | Mengaktifkan fitur creator yang sudah selesai dikembangkan tapi belum resmi dirilis | Cocok untuk mencoba fitur terbaru lebih awal |
+| **Villager Trade Rebalancing** | Mengaktifkan sistem trading villager versi baru dari Mojang | Bisa mengubah harga & jenis item trading di world yang sudah ada — pertimbangkan dampaknya ke ekonomi server |
+| **Experimental Creator Camera Features** | Mengaktifkan kontrol kamera eksperimental (sudut & perspektif) untuk addon/konten | — |
+| **Data-Driven Jigsaw Structures** | Mengaktifkan generasi struktur jigsaw berbasis data JSON | Diperlukan untuk addon dengan struktur kustom (bangunan/dungeon prosedural) |
+| **Drop 3 2025** | Mengaktifkan konten dari update Drop 3 2025 | Untuk mencoba fitur terbaru sebelum stabil |
 
 <Note>
   Setelah mengaktifkan Experimental Features, pastikan semua pemain yang join ke server menggunakan versi Minecraft yang sama dan sudah mendukung fitur tersebut.
