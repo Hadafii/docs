@@ -2,115 +2,417 @@
 title: "Cara Merubah Versi"
 ---
 
-<Info>
-  Java: [https://minecraft.fandom.com/wiki/Java\_Edition\_version\_history](https://minecraft.fandom.com/wiki/Java_Edition_version_history)\
-  Bedrock: [https://minecraft.wiki/w/Bedrock\_Dedicated\_Server#History](https://minecraft.wiki/w/Bedrock_Dedicated_Server#History)
-</Info>
+Lihat minecraft yang kamu ingin ubah versi:
+- [Java Edition Melalui Tab Versions (Lebih Mudah)](#melalui-tab-versions)
+- [Java Edition Melalui Tab Startup](#melalui-tab-startup)
+- [Bedrock Edition](#bedrock-edition)
 
 ## Java Edition
 
+### Melalui Tab Versions
 <Steps>
-  <Step title="Login ke Panel">
-    Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu.
-
-    <Frame>
-      <img
-        src="/images/image-57.png"
-        alt="Image"
-        title="Image"
-        className="mx-auto"
-      />
-    </Frame>
-  </Step>
   <Step title="Stop Server">
-    Klik tombol `Stop` seperti yang ditampilkan oleh nomor 1. Jika sudah di stop, maka server akan `offline` seperti yang ditampilkan oleh nomor 2.
+    Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu. Klik tombol `Stop` seperti yang ditampilkan oleh nomor 3. Jika sudah di stop, maka server akan `offline` seperti yang ditampilkan oleh nomor 2.
 
     <Frame>
-      ![Image](/images/image-86.png)
+      ![Image](/images/general/stop-server.png)
     </Frame>
   </Step>
-  <Step title="Masukkan versi yang sesuai">
-    Masuk ke tab `Startup` seperti yang ditunjuk oleh nomor 1. Masukkan versi yang sesuai dengan minecraft kamu seperti yang ditunjuk oleh nomor 2. Jangan lupa cek apakah docker sudah sesuai apa belum seperti yang ditunjuk oleh nomor 3. 
-
-    > untuk mendapatkan docker berapa, kamu bisa cari versi MC mu menggunakan java berapa
-
+  <Step title="Pilih Egg yang Diinginkan">
     <Frame>
-      ![Image](/images/image-97.png)
+      ![Image](/images/ubah-versi/versions-choose-egg.png)
     </Frame>
+    1. Masuk ke tab Versions
+    2. Klik `Browse` pada egg yang kamu inginkan
   </Step>
-  <Step title="Reinstall Server">
-    Untuk melakukan reinstall, kamu dapat masuk ke tab `Settings` seperti yang ditampilkan pada nomor 1. Untuk melakukan reinstall, kamu dapat klik tombol `Reinstall Server` seperti pada nomor 2.
-
+  <Step title="Pilih Versi yang Diinginkan">
     <Frame>
-      ![Image](/images/image-96.png)
+      ![Image](/images/ubah-versi/versions-choose-version.png)
     </Frame>
-
-    Kemudian akan muncul konfirmasi. Klik tombol `Yes, reinstall server` seperti pada gambar dibawah ini:
-
+    Contohnya adalah Spigot:
+    1. Pilih Minecraft Version sesuai dengan versi server yang ingin digunakan.
+    2. Pilih Build yang tersedia. Gunakan build terbaru (nomor build paling tinggi) untuk rekomendasi penggunaan.
+    3. Klik Switch Version untuk menerapkan perubahan versi server.
+  </Step>
+  <Step title="Pilih Metode Penggantian Egg">
     <Frame>
-      ![Image](/images/image-98.png)
+      ![Image](/images/ubah-versi/versions-apply-switch.png)
     </Frame>
+    Contohnya adalah Spigot:
+    1. Pilih metode pembersihan file saat mengganti versi server:
+    - Keep Existing Files: Tidak menghapus file server yang ada.
+    - Smart Cleanup: Menghapus file yang berpotensi konflik (rekomendasi).
+    - Full Cleanup: Menghapus seluruh file server sebelum mengganti versi.
+    2. Centang otomatis menyetujui EULA Minecraft agar server dapat langsung dijalankan.
+    3. Klik untuk penerapkan perubahan versi server sesuai pengaturan yang dipilih.
   </Step>
   <Step title="Start Server">
-    Kembali ke tab `Console` seperti pada nomor 1. 
-
     <Frame>
-      ![Image](/images/image-99.png)
+      ![Image](/images/ubah-versi/versions-start.png)
+    </Frame>
+  </Step>
+  <Step title="Tunggu Hingga Server Online">
+    <Frame>
+      ![Image](/images/ubah-versi/versions-online.png)
     </Frame>
   </Step>
 </Steps>
 
-## Bedrock Edition
+### Melalui Tab Startup
+Langsung lompat ke loader yang kamu gunakan:
+- [Vanilla Java](#vanilla-java)
+- [Paper](#paper)
+- [Forge](#forge)
+- [NeoForge](#neoforge)
+- [Fabric](#fabric)
 
+<Info>
+  Lihat tabel versi disini:
+  Java: [https://minecraft.fandom.com/wiki/Java\_Edition\_version\_history](https://minecraft.fandom.com/wiki/Java_Edition_version_history)
+</Info>
+
+#### Vanilla Java
 <Steps>
-  <Step title="Login ke Panel">
-    Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu.
-
-    <Frame>
-      <img
-        src="/images/image-57.png"
-        alt="Image"
-        title="Image"
-        className="mx-auto"
-      />
-    </Frame>
-  </Step>
   <Step title="Stop Server">
-    Klik tombol `Stop` seperti yang ditampilkan oleh nomor 1. Jika sudah di stop, maka server akan `offline` seperti yang ditampilkan oleh nomor 2.
+    Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu. Klik tombol `Stop` seperti yang ditampilkan oleh nomor 3. Jika sudah di stop, maka server akan `offline` seperti yang ditampilkan oleh nomor 2.
 
     <Frame>
-      ![Image](/images/image-86.png)
+      ![Image](/images/general/stop-server.png)
     </Frame>
   </Step>
-  <Step title="Ubah versi">
-    Untuk mengubah versi, kamu perlu masuk ke tab `Startup` seperti pada nomor 1. Kemudian ubah versi sesuai dengan versi yang kamu miliki seperti pada nomor 2.
-
+  <Step title="Masukkan versi yang sesuai">
     <Frame>
-      ![Image](/images/image-100.png)
+      ![Image](/images/ubah-versi/java-startup.png)
     </Frame>
 
-    <Tip>
-      Tidak disarankan menggunakan versi beta, kecuali versi client juga menggunakan versi beta.
-    </Tip>
+    1. Masuk ke tab `Startup`
+    2. Pilih docker yang sesuai dengan versi kamu
+    3. Masukkan versi minecraft kamu
+    > untuk mendapatkan docker berapa, kamu bisa cek [disini](#tabel-versi-minecraft-%26-java)
   </Step>
   <Step title="Reinstall Server">
-    Untuk melakukan reinstall, kamu dapat masuk ke tab `Settings` seperti yang ditampilkan pada nomor 1. Untuk melakukan reinstall, kamu dapat klik tombol `Reinstall Server` seperti pada nomor 2.
-
     <Frame>
-      ![Image](/images/image-96.png)
+      ![Image](/images/ubah-versi/settings.png)
     </Frame>
+
+    1. Masuk ke tab `Settings`
+    2. Pilih menu `Reinstall Server`
+    3. Masukkan nama server kamu (harus sama persis secara penulisan)
+    4. Klik tombol `Reinstall Server`
 
     Kemudian akan muncul konfirmasi. Klik tombol `Yes, reinstall server` seperti pada gambar dibawah ini:
 
     <Frame>
-      ![Image](/images/image-98.png)
+      ![Image](/images/ubah-versi/confirm.png)
+    </Frame>
+  </Step>
+  <Step title="Tunggu Installing">
+    <Frame>
+      ![Image](/images/ubah-versi/running-installer.png)
     </Frame>
   </Step>
   <Step title="Start Server">
-    Kembali ke tab `Console` seperti pada nomor 1. 
+    Server sudah berjalan dengan versi yang diinginkan.
 
     <Frame>
-      ![Image](/images/image-99.png)
+      ![Image](/images/ubah-versi/java-running.png)
+    </Frame>
+  </Step>
+</Steps>
+
+---
+
+#### Paper
+<Steps>
+  <Step title="Stop Server">
+    Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu. Klik tombol `Stop` seperti yang ditampilkan oleh nomor 3. Jika sudah di stop, maka server akan `offline` seperti yang ditampilkan oleh nomor 2.
+
+    <Frame>
+      ![Image](/images/general/stop-server.png)
+    </Frame>
+  </Step>
+  <Step title="Pergi ke Startup">
+    <Frame>
+      ![Image](/images/ubah-versi/paper-startup.png)
+    </Frame>
+    <Step title="Pilih Docker yang Sesuai">
+      > untuk mendapatkan docker berapa, kamu bisa cek [disini](#tabel-versi-minecraft-%26-java)
+    </Step>
+    <Step title="Masukkan Versi Minecraft Kamu">
+      Di bagian **Server Variables**, isi field **Minecraft Version** dengan versi Minecraft yang ingin digunakan. Contoh: `1.20.1`
+    </Step>
+    <Step title="Masukkan Build Number">
+      Di bagian **Server Variables**, isi field **Build Number** dengan build number yang sesuai atau bisa isi `latest` untuk  mendapatkan build terbaru. 
+    </Step>
+  </Step>
+  <Step title="Reinstall Server">
+    <Frame>
+      ![Image](/images/ubah-versi/settings.png)
+    </Frame>
+
+    1. Masuk ke tab `Settings`
+    2. Pilih menu `Reinstall Server`
+    3. Masukkan nama server kamu (harus sama persis secara penulisan)
+    4. Klik tombol `Reinstall Server`
+
+    Kemudian akan muncul konfirmasi. Klik tombol `Yes, reinstall server` seperti pada gambar dibawah ini:
+
+    <Frame>
+      ![Image](/images/ubah-versi/confirm.png)
+    </Frame>
+  </Step>
+  <Step title="Tunggu Installing">
+    <Frame>
+      ![Image](/images/ubah-versi/running-installer.png)
+    </Frame>
+  </Step>
+  <Step title="Start Server">
+    Server sudah berjalan dengan versi yang diinginkan.
+
+    <Frame>
+      ![Image](/images/ubah-versi/paper-running.png)
+    </Frame>
+  </Step>
+</Steps>
+
+---
+
+#### Forge
+<Steps>
+  <Step title="Stop Server">
+    Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu. Klik tombol `Stop` seperti yang ditampilkan oleh nomor 3. Jika sudah di stop, maka server akan `offline` seperti yang ditampilkan oleh nomor 2.
+
+    <Frame>
+      ![Image](/images/general/stop-server.png)
+    </Frame>
+  </Step>
+  <Step title="Pergi ke Startup">
+    <Frame>
+      ![Image](/images/ubah-versi/forge-settings.png)
+    </Frame>
+    <Step title="Pilih Docker yang Sesuai">
+      > untuk mendapatkan docker berapa, kamu bisa cek [disini](#tabel-versi-minecraft-%26-java)
+    </Step>
+    <Step title="Masukkan Versi Minecraft Kamu">
+      Di bagian **Server Variables**, isi field **Minecraft Version** dengan versi Minecraft yang ingin digunakan. Contoh: `1.20.1`
+    </Step>
+    <Step title="Masukkan Forge Version">
+      Isi field **Forge Version** dengan versi Forge yang ingin digunakan, menggunakan format:
+
+      ```text
+      (Versi Minecraft)-(Build Forge)
+      ```
+
+      Contoh: `1.20.1-47.4.20`
+
+      <Note>
+        Cek daftar versi Forge yang tersedia di [files.minecraftforge.net](https://files.minecraftforge.net/net/minecraftforge/forge/). Pastikan versi yang dimasukkan valid — jika salah, proses install akan gagal.
+      </Note>
+    </Step>
+    <Step title="Pilih Build Type">
+      Di field **Build Type**, pilih tipe build yang ingin digunakan:
+
+      | Nilai | Keterangan |
+      | --- | --- |
+      | `recommended` | Versi stabil yang direkomendasikan |
+      | `latest` | Versi terbaru (bisa belum stabil) |
+    </Step>
+  </Step>
+  <Step title="Reinstall Server">
+    <Frame>
+      ![Image](/images/ubah-versi/settings.png)
+    </Frame>
+
+    1. Masuk ke tab `Settings`
+    2. Pilih menu `Reinstall Server`
+    3. Masukkan nama server kamu (harus sama persis secara penulisan)
+    4. Klik tombol `Reinstall Server`
+
+    Kemudian akan muncul konfirmasi. Klik tombol `Yes, reinstall server` seperti pada gambar dibawah ini:
+
+    <Frame>
+      ![Image](/images/ubah-versi/confirm.png)
+    </Frame>
+  </Step>
+  <Step title="Tunggu Installing">
+    <Frame>
+      ![Image](/images/ubah-versi/running-installer.png)
+    </Frame>
+  </Step>
+  <Step title="Start Server">
+    Server sudah berjalan dengan versi yang diinginkan.
+
+    <Frame>
+      ![Image](/images/ubah-versi/forge-running.png)
+    </Frame>
+  </Step>
+</Steps>
+
+---
+
+#### NeoForge
+
+<Steps>
+  <Step title="Stop Server">
+    Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu. Klik tombol `Stop` seperti yang ditampilkan oleh nomor 3. Jika sudah di stop, maka server akan `offline` seperti yang ditampilkan oleh nomor 2.
+
+    <Frame>
+      ![Image](/images/general/stop-server.png)
+    </Frame>
+  </Step>
+  <Step title="Pergi ke Startup">
+    <Frame>
+      ![Image](/images/ubah-versi/neoforge-startup.png)
+    </Frame>
+    <Step title="Pilih Docker yang Sesuai">
+      > untuk mendapatkan docker berapa, kamu bisa cek [disini](#tabel-versi-minecraft-%26-java)
+    </Step>
+    <Step title="Masukkan Versi Minecraft Kamu">
+      Di bagian **Server Variables**, isi field **Minecraft Version** dengan versi Minecraft yang ingin digunakan. Contoh: `1.21.1`
+    </Step>
+    <Step title="Masukkan NeoForge Version">
+      Isi field **NeoForge Version** dengan versi NeoForge yang ingin digunakan. Contoh: `21.1.233`
+
+      <Note>
+        Cek daftar versi NeoForge yang tersedia di [projects.neoforged.net](https://projects.neoforged.net/neoforged/neoforge). Pastikan versi yang dimasukkan valid — jika salah, proses install akan gagal.
+      </Note>
+    </Step>
+  </Step>
+  <Step title="Reinstall Server">
+    <Frame>
+      ![Image](/images/ubah-versi/settings.png)
+    </Frame>
+
+    1. Masuk ke tab `Settings`
+    2. Pilih menu `Reinstall Server`
+    3. Masukkan nama server kamu (harus sama persis secara penulisan)
+    4. Klik tombol `Reinstall Server`
+
+    Kemudian akan muncul konfirmasi. Klik tombol `Yes, reinstall server` seperti pada gambar dibawah ini:
+
+    <Frame>
+      ![Image](/images/ubah-versi/confirm.png)
+    </Frame>
+  </Step>
+  <Step title="Tunggu Installing">
+    <Frame>
+      ![Image](/images/ubah-versi/running-installer.png)
+    </Frame>
+  </Step>
+  <Step title="Start Server">
+    Server sudah berjalan dengan versi yang diinginkan.
+
+    <Frame>
+      ![Image](/images/ubah-versi/neoforge-running.png)
+    </Frame>
+  </Step>
+</Steps>
+
+---
+
+#### Fabric 
+<Steps>
+  <Step title="Stop Server">
+    Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu. Klik tombol `Stop` seperti yang ditampilkan oleh nomor 3. Jika sudah di stop, maka server akan `offline` seperti yang ditampilkan oleh nomor 2.
+
+    <Frame>
+      ![Image](/images/general/stop-server.png)
+    </Frame>
+  </Step>
+  <Step title="Pergi ke Startup">
+    <Frame>
+      ![Image](/images/ubah-versi/fabric-startup.png)
+    </Frame>
+    <Step title="Pilih Docker yang Sesuai">
+      > untuk mendapatkan docker berapa, kamu bisa cek [disini](#tabel-versi-minecraft-%26-java)
+    </Step>
+    <Step title="Masukkan Versi Minecraft Kamu">
+      Di bagian **Server Variables**, isi field **Minecraft Version** dengan versi Minecraft yang ingin digunakan. Contoh: `1.20.1`
+    </Step>
+    <Step title="Masukkan Fabric Version">
+      Isi field **Fabric Version** dengan versi Fabric yang ingin digunakan. Isi dengan `latest` untuk menggunakan versi terbaru.
+    </Step>
+    <Step title="Masukkan Fabric Loader Version">
+      Isi field **Fabric Loader Version** dengan versi Fabric Loader yang ingin digunakan. Isi dengan `latest` untuk menggunakan versi terbaru.
+    </Step>
+  </Step>
+  <Step title="Reinstall Server">
+    <Frame>
+      ![Image](/images/ubah-versi/settings.png)
+    </Frame>
+
+    1. Masuk ke tab `Settings`
+    2. Pilih menu `Reinstall Server`
+    3. Masukkan nama server kamu (harus sama persis secara penulisan)
+    4. Klik tombol `Reinstall Server`
+
+    Kemudian akan muncul konfirmasi. Klik tombol `Yes, reinstall server` seperti pada gambar dibawah ini:
+
+    <Frame>
+      ![Image](/images/ubah-versi/confirm.png)
+    </Frame>
+  </Step>
+  <Step title="Tunggu Installing">
+    <Frame>
+      ![Image](/images/ubah-versi/running-installer.png)
+    </Frame>
+  </Step>
+  <Step title="Start Server">
+    Server sudah berjalan dengan versi yang diinginkan.
+
+    <Frame>
+      ![Image](/images/ubah-versi/fabric-running.png)
+    </Frame>
+  </Step>
+</Steps>
+
+---
+
+## Bedrock Edition
+
+<Steps>
+  <Step title="Stop Server">
+    Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu. Klik tombol `Stop` seperti yang ditampilkan oleh nomor 3. Jika sudah di stop, maka server akan `offline` seperti yang ditampilkan oleh nomor 2.
+
+    <Frame>
+      ![Image](/images/general/stop-server.png)
+    </Frame>
+  </Step>
+  <Step title="Masukkan versi yang sesuai">
+    <Frame>
+      ![Image](/images/ubah-versi/bedrock-startup.png)
+    </Frame>
+
+    1. Masuk ke tab `Startup`
+    2. Isi `Bedrock Version` sesuai versi kamu
+    > penulisan versi dapat dilihat disini: https://minecraft.wiki/w/Bedrock_Dedicated_Server#History
+  </Step>
+  <Step title="Reinstall Server">
+    <Frame>
+      ![Image](/images/ubah-versi/settings.png)
+    </Frame>
+
+    1. Masuk ke tab `Settings`
+    2. Pilih menu `Reinstall Server`
+    3. Masukkan nama server kamu (harus sama persis secara penulisan)
+    4. Klik tombol `Reinstall Server`
+
+    Kemudian akan muncul konfirmasi. Klik tombol `Yes, reinstall server` seperti pada gambar dibawah ini:
+
+    <Frame>
+      ![Image](/images/ubah-versi/confirm.png)
+    </Frame>
+  </Step>
+  <Step title="Tunggu Installing">
+    <Frame>
+      ![Image](/images/ubah-versi/running-installer.png)
+    </Frame>
+  </Step>
+  <Step title="Start Server">
+    Server sudah berjalan dengan versi yang diinginkan.
+
+    <Frame>
+      ![Image](/images/ubah-versi/bedrock-running.png)
     </Frame>
   </Step>
 </Steps>
@@ -121,6 +423,19 @@ title: "Cara Merubah Versi"
   - Kalau error `Invalid version` muncul, cek lagi versi yang kamu tulis (harus pakai 4 angka penuh).
 </Warning>
 
+## Tabel Versi Minecraft & Java
+
+| Versi Minecraft | Java yang Dibutuhkan |
+| --- | --- |
+| 1.8 – 1.16.5 | Java 8 |
+| 1.17 | Java 16 |
+| 1.17.1 – 1.20.4 | Java 17 |
+| 1.20.5 – 1.21.x | Java 21 |
+| 1.21.11 – 1.26\+ | Java 25 |
+
+<Warning>
+  Pastikan versi Java sudah sesuai dengan versi Minecraft yang digunakan. Java yang salah akan menyebabkan server gagal start.
+</Warning>
 
 ## Tutorial video
 
