@@ -1,92 +1,56 @@
 ---
-title: "Cara Bikin Server Hytale"
+title: "Cara Membuat Server Hytale"
 ---
 
 <Steps>
-  <Step title="Login ke Panel">
-    Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu. Kemudian stop server dengan menekan tombol `Stop` seperti yang ditunjukkan oleh nomor 2. Pastikan servermu offline seperti yang ditunjukkan oleh nomor 1.
-
-    <Frame>
-      ![Server Offline](/images/server-offline.png)
-    </Frame>
+  <Step title="Pastikan Server Stop">
+    Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/). Kemudian pilih servermu, dan pastikan statusnya `Offline`. Jika server masih menyala, klik tombol `Stop` terlebih dahulu sebelum lanjut ke langkah berikutnya.
   </Step>
-  <Step title="Clean Install File (Jika Mau)">
-    > **Hanya jika egg kalian belum Hytale**
+  <Step title="Buka Egg Changer">
+    Pada sidebar server, klik menu `Egg Changer`. Kamu akan melihat daftar `Nests` beserta jumlah egg di masing-masing kategori.
 
-    Pastikan di tab `Files`, bahwa semua file mu sudah tidak ada. Hal ini ditandai dengan `This directory seems to be empty` seperti yang ditampilkan oleh nomor 2.
-
-    <Frame>
-      ![File Empty](/images/file-empty.png)
-    </Frame>
-
-    Jika belum kosong (dan ingin clean install), bisa ikuti langkah-langkah ini:
-
-    <Steps>
-      <Step title="Select All dan Delete">
-        <Frame>
-          ![Clean Install](/images/clean-install.png)
-        </Frame>
-
-        1. Masuk ke tab `Files`
-        2. Centang seperti pada nomor 2 untuk memilih semua file
-        3. Klik tombol `Delete` seperti pada nomor 3
-      </Step>
-      <Step title="Klik Delete">
-        <Frame>
-          <img
-            src="/images/modal-delete-file.png"
-            alt="Modal Delete File"
-            className="mx-auto"
-            style={{ width:"72%" }}
-          />
-        </Frame>
-      </Step>
-      <Step title="File Akan Kosong">
-        <Frame>
-          ![File Empty](/images/file-empty.png)
-        </Frame>
-      </Step>
-    </Steps>
-  </Step>
-  <Step title="Ubah Egg ">
-    <Info>
-      **Lakukan ini jika Egg pada servermu belum Hytale**
-    </Info>
-
-    Masuk ke tab `Egg Changer` . Kemudian cari Hytale dan klik `Change Egg` seperti gambar dibawah ini:
-
-    <Frame>
-      ![Hytale Off](/images/hytale-off.png)
-    </Frame>
-
-    Kemudian klik tombol `Change Egg` seperti gambar dibawah ini:
+    Cari nest `Hytale`, lalu klik tombol `Browse` pada kartu tersebut.
 
     <Frame>
       <img
-        src="/images/modal-change-egg.png"
-        alt="Modal Change Egg"
-        title="Modal Change Egg"
+        src="/images/hytale1.png"
+        alt="Hytale1"
+        title="Hytale1"
         className="mx-auto"
-        style={{ width:"86%" }}
       />
     </Frame>
   </Step>
-  <Step title="Start Server">
-    Jika install sudah berhasil, klik tombol `Start` pada tab `Console`
+  <Step title="Pilih Egg Hytale">
+    Setelah masuk ke nest `Hytale`, kamu akan melihat egg `Hytale` beserta deskripsinya. Klik tombol `Select` untuk memilih egg tersebut.
 
     <Frame>
-      ![Start Hytale](/images/start-hytale.png)
+      ![Hytale2](/images/hytale2.png "Hytale2")
     </Frame>
+  </Step>
+  <Step title="Konfirmasi Ganti Egg">
+    Akan muncul modal `Change Server Egg`. Pastikan kedua opsi berikut sudah tercentang:
+
+    - **Reinstall Server** — server akan diinstal ulang menggunakan installation script dari egg baru (Hytale), sehingga proses instalasi Hytale langsung berjalan setelah egg diganti.
+    - **Clear All Files** — seluruh file dan folder pada root server akan dihapus saat proses penggantian egg. Opsi ini penting dicentang agar tidak ada sisa file dari egg sebelumnya yang bisa mengganggu instalasi Hytale.
+
+    <Frame>
+      ![Hytale3](/images/hytale3.png "Hytale3")
+    </Frame>
+
+    Setelah kedua opsi dicentang, klik tombol `Confirm Change`.
+  </Step>
+  <Step title="Tunggu Instalasi Selesai">
+    Panel akan otomatis membersihkan file lama dan menjalankan proses instalasi egg Hytale. Tunggu hingga proses instalasi selesai (ditandai status server kembali `Offline`/`Installed` di tab `Console`), lalu klik tombol `Start`.
   </Step>
   <Step title="Lakukan Autentikasi">
     Untuk server Hytale, akan muncul link autentikasi pada console. Silahkan klik link tersebut.
 
     <Frame>
-      ![Autentikasi Hytale](/images/autentikasi-hytale.png)
+      ![Autentikasi Hytale](/images/hytale4.png)
     </Frame>
   </Step>
   <Step title="Autentikasi Akun Melalui Hytale">
-    Klik tombol `Approve` seperti dibawah ini.
+    Klik tombol `Approve` seperti dibawah ini.
 
     <Frame>
       <img
@@ -126,14 +90,40 @@ title: "Cara Bikin Server Hytale"
     Masuk kembali ke tab `Console`, server sedang dibuat dengan ditandai seperti ini
 
     <Frame>
-      ![Downloading](/images/downloading.png)
+      <img
+        src="/images/hytale-proses-download.png"
+        alt="Downloading"
+        lightAlt="Downloading"
+        darkAlt="Downloading"
+        className="dark:hidden"
+      />
+      <img
+        src="images/hytale-proses-download.png"
+        alt="Downloading"
+        lightAlt="Downloading"
+        darkAlt="Downloading"
+        className="hidden dark:block"
+      />
     </Frame>
   </Step>
   <Step title="Masukkan token">
     Selanjutnya server akan running seperti nomor 1. Kemudian akan muncul pemberitahuan seperti nomor 2.
 
     <Frame>
-      ![Need Auth](/images/need-auth.png)
+      <img
+        src="/images/hytale-need-auth.png"
+        alt="Need Auth"
+        lightAlt="Need Auth"
+        darkAlt="Need Auth"
+        className="dark:hidden"
+      />
+      <img
+        src="images/hytale-need-auth.png"
+        alt="Need Auth"
+        lightAlt="Need Auth"
+        darkAlt="Need Auth"
+        className="hidden dark:block"
+      />
     </Frame>
 
     Pada console, tulis command ini dan kirim
@@ -144,7 +134,20 @@ title: "Cara Bikin Server Hytale"
   </Step>
   <Step title="Server Harus di Verifikasi lagi">
     <Frame>
-      ![Link Verify](/images/link-verify.png)
+      <img
+        src="/images/hytale-verif.png"
+        alt="Link Verify"
+        lightAlt="Link Verify"
+        darkAlt="Link Verify"
+        className="dark:hidden"
+      />
+      <img
+        src="images/hytale-verif.png"
+        alt="Link Verify"
+        lightAlt="Link Verify"
+        darkAlt="Link Verify"
+        className="hidden dark:block"
+      />
     </Frame>
 
     Akan muncul link verifikasi seperti gambar diatas. Bisa klik link 1 atau 2. Sarannya, klik saja link nomor 2. Kemudian ikuti step 6.
@@ -160,11 +163,24 @@ title: "Cara Bikin Server Hytale"
   </Step>
   <Step title="Copy Server Address">
     <Frame>
-      ![Ambil Server Address](/images/ambil-server-address.png)
+      <img
+        src="/images/hytale-ip-address.png"
+        alt="Ambil Server Address"
+        lightAlt="Ambil Server Address"
+        darkAlt="Ambil Server Address"
+        className="dark:hidden"
+      />
+      <img
+        src="images/hytale-ip-address.png"
+        alt="Ambil Server Address"
+        lightAlt="Ambil Server Address"
+        darkAlt="Ambil Server Address"
+        className="hidden dark:block"
+      />
     </Frame>
   </Step>
   <Step title="Buka Hytale ">
-    Klik menu `Servers` seperti gambar dibawah ini:
+    Klik menu `Servers` seperti gambar dibawah ini:
 
     <Frame>
       <img
@@ -200,7 +216,7 @@ title: "Cara Bikin Server Hytale"
       />
     </Frame>
 
-    1. Isi `connection address` dengan server address yang sudah di copy pada tab `Console`
+    1. Isi `connection address` dengan server address yang sudah di copy pada tab `Console`
     2. Masukkan nama server yang kamu inginkan
     3. Klik tombol `Add Server`
   </Step>
