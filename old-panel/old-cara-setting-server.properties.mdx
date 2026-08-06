@@ -11,18 +11,52 @@ Langsung lompat ke referensi properti yang kamu butuhkan:
 
 ---
 
+Ada **dua cara** untuk mengatur server.properties di RaeHost:
+
+---
+
+## Cara 1: Melalui MC Configs (Direkomendasikan)
+
+RaeHost menyediakan tampilan visual untuk mengubah pengaturan server tanpa perlu membuka file secara langsung.
+
+<Frame>
+  ![Image](/images/image-105.png)
+</Frame>
+
+<Steps>
+  <Step title="Buka MC Configs">
+    Di sidebar Panel, klik menu **MC Configs**.
+  </Step>
+  <Step title="Pilih Server Properties">
+    Pada dropdown pertama, pilih **Server Properties**. Pada dropdown kedua, pilih tampilan **Visual** untuk tampilan form yang lebih mudah dibaca.
+  </Step>
+  <Step title="Ubah Pengaturan">
+    Kamu bisa langsung mengubah pengaturan melalui form yang tersedia — dropdown, toggle, dan input field — tanpa perlu mengedit file secara manual.
+  </Step>
+  <Step title="Simpan">
+    Setelah selesai, klik tombol **Save** dan **restart server** agar perubahan berlaku.
+  </Step>
+</Steps>
+
+<Note>
+  Tampilan **Visual** di MC Configs menampilkan semua opsi dalam bentuk form yang lebih mudah dipahami. Jika ingin mengedit file mentahnya langsung, pilih tampilan **Text**.
+</Note>
+
+---
+
+## Cara 2: Edit File Langsung via File Manager
+
+Cara manual dengan membuka file `server.properties` di **Panel → Files**.
+
 <Tabs>
   <Tab title="Java Edition">
     ## Minecraft Java Edition
-    ## Tahapan
-    <Frame>
-      ![Image](/images/server-properties/tutorial.png)
-    </Frame>
-    Berikut adalah tahapan pengisian:
-    1. Masuk ke tab `Properties`
-    2. Secara default, yang tampil adalah bentuk visual (lebih mudah untuk dimengerti). Jika ingin menampilkan raw code, klik tombol `File View`.
-    3. Isi pengaturan sesuai yang kamu inginkan.
-    4. Klik `Save Changes` untuk menyimpan pengaturan yang sudah kamu ubah
+
+    ## Lokasi File
+
+    File `server.properties` berada di root direktori server kamu. Buka melalui **Panel → Files** lalu cari file tersebut.
+
+    ---
 
     ## Pengaturan Umum
 
@@ -399,37 +433,12 @@ Langsung lompat ke referensi properti yang kamu butuhkan:
   </Tab>
   <Tab title="Bedrock Edition">
     ## Minecraft Bedrock Edition
-    Ada **dua cara** untuk mengatur server.properties pada Bedrock Edition:
 
-    ## Cara 1: Melalui Bedrock Config
+    ## Lokasi File
 
-    <Frame>
-      ![Image](/images/server-properties/bc.png)
-    </Frame>
-
-    <Steps>
-      <Step title="Buka Tab Bedrock Config">
-        Di sidebar Panel, klik menu **Bedrock Config**.
-      </Step>
-      <Step title="Pilih Server Properties">
-        Pada dropdown pertama, pilih **Server Properties**. Pada dropdown kedua, pilih tampilan **Visual** untuk tampilan form yang lebih mudah dibaca.
-      
-        > Tampilan **Visual** di Bedrock Config menampilkan semua opsi dalam bentuk form yang lebih mudah dipahami. Jika ingin mengedit file mentahnya langsung, pilih tampilan **Raw Code**.
-      </Step>
-      <Step title="Ubah Pengaturan">
-        Kamu bisa langsung mengubah pengaturan melalui form yang tersedia — dropdown, toggle, dan input field — tanpa perlu mengedit file secara manual.
-      </Step>
-      <Step title="Restart Server">
-        Setelah selesai, **restart server** agar perubahan berlaku.
-        <Frame>
-          ![Image](/images/general/restart.png)
-        </Frame>
-      </Step>
-    </Steps>
+    File `server.properties` berada di root direktori server kamu. Buka melalui **Panel → Files** lalu cari file tersebut.
 
     ---
-
-    ## Cara 2: Edit File Langsung via Tab Properties
 
     ## Pengaturan Umum
 
