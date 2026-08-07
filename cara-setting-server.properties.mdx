@@ -130,8 +130,116 @@ Cara manual dengan membuka file `server.properties` di **Panel → Files**, yang
   </Tab>
   <Tab title="Bedrock Edition">
     ## Minecraft Bedrock Edition
+    Ada **dua cara** untuk mengatur server.properties pada Bedrock Edition:
 
-    ### Pengaturan Umum
+    ## Cara 1: Melalui Bedrock Config
+
+    <Frame>
+      ![Image](/images/server-properties/bc.png)
+    </Frame>
+
+    <Steps>
+      <Step title="Buka Tab Bedrock Config">
+        Di sidebar Panel, klik menu **Bedrock Config**.
+      </Step>
+      <Step title="Pilih Server Properties">
+        Pada dropdown pertama, pilih **Server Properties**. Pada dropdown kedua, pilih tampilan **Visual** untuk tampilan form yang lebih mudah dibaca.
+      
+        > Tampilan **Visual** di Bedrock Config menampilkan semua opsi dalam bentuk form yang lebih mudah dipahami. Jika ingin mengedit file mentahnya langsung, pilih tampilan **Raw Code**.
+      </Step>
+      <Step title="Ubah Pengaturan">
+        Kamu bisa langsung mengubah pengaturan melalui form yang tersedia — dropdown, toggle, dan input field — tanpa perlu mengedit file secara manual.
+      </Step>
+      <Step title="Restart Server">
+        Setelah selesai, **restart server** agar perubahan berlaku.
+        <Frame>
+          ![Image](/images/general/restart.png)
+        </Frame>
+      </Step>
+    </Steps>
+
+    ---
+
+    ## Cara 2: Edit File Langsung via Tab Properties
+
+    ## Pengaturan Umum
+
+    ### `server-name`
+
+    Nama server yang muncul di daftar server pemain.
+
+    ```text
+    server-name=Bedrock Dedicated Server
+    ```
+
+    ---
+
+    ### `gamemode`
+
+    Mode permainan default untuk pemain yang baru join.
+
+    | Nilai | Mode |
+    | --- | --- |
+    | `survival` | Survival |
+    | `creative` | Creative |
+    | `adventure` | Adventure |
+
+    ```text
+    gamemode=survival
+    ```
+
+    ---
+
+    ### `difficulty`
+
+    Tingkat kesulitan server.
+
+    | Nilai | Keterangan |
+    | --- | --- |
+    | `peaceful` | Tidak ada mob musuh |
+    | `easy` | Damage rendah |
+    | `normal` | Standar |
+    | `hard` | Damage tinggi |
+
+    ```text
+    difficulty=easy
+    ```
+
+    ---
+
+    ### `force-gamemode`
+
+    Jika `true`, pemain selalu kembali ke gamemode default saat join.
+
+    ```text
+    force-gamemode=false
+    ```
+
+    ---
+
+    ### `allow-cheats`
+
+    Izinkan penggunaan cheat command seperti `/give`, `/tp`, dll.
+
+    ```text
+    allow-cheats=false
+    ```
+
+    ---
+
+    ### `max-players`
+
+    Jumlah maksimal pemain yang bisa join secara bersamaan.
+
+    ```text
+    max-players=10
+    ```
+
+    ---
+
+    ### `online-mode`
+
+    Verifikasi akun pemain ke server Microsoft/Xbox. Matikan untuk mode cracked.
 
     | Properti | Default | Keterangan |
     | --- | --- | --- |
