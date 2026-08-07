@@ -113,6 +113,7 @@
           },
           "cara-pindah-migrasi-server",
           "ganti-ip-menjadi-domain",
+          "cara-upload-file-besar-menggunakan-sftp",
           {
             "group": "MINECRAFT",
             "pages": [
@@ -135,7 +136,6 @@
               "cara-menampilkan-koordinat-dan-jumlah-hari",
               "cara-whitelist",
               "cara-ganti-icon",
-              "cara-upload-file-besar-menggunakan-sftp",
               {
                 "group": "Upload World",
                 "pages": [

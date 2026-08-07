@@ -1,118 +1,164 @@
 ---
-title: "Cara Upload File Besar Menggunakan SFTP"
+title: "Cara Menggunakan SFTP/FTP"
 ---
 
 Kalau kamu mau upload file besar (di atas 100 MB) atau banyak file sekaligus, pakai **SFTP** jauh lebih cepat dan stabil daripada File Manager di panel.
 
-<Steps>
-  <Step title="Download Software SFTP">
-    Contoh: 
+<Tabs>
+  <Tab title="Desktop">
+    <Steps>
+      <Step title="Download Software SFTP">
+        Contoh:
 
-    - FileZilla
-    - WinSCP
-    - Termius
-  </Step>
-  <Step title="Login ke Panel">
-    Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu.
+        - FileZilla
+        - WinSCP
+        - Termius
+      </Step>
+      <Step title="Login ke Panel">
+        Login ke panel melalui [panel.raehost.com](https://panel.raehost.com/), lalu pilih servermu.
 
-    <Frame>
-      <img
-        src="/images/image-57.png"
-        alt="Image"
-        title="Image"
-        className="mx-auto"
-      />
-    </Frame>
-  </Step>
-  <Step title="Stop Server">
-    Klik tombol `Stop` seperti yang ditampilkan oleh nomor 1. Jika sudah di stop, maka server akan `offline` seperti yang ditampilkan oleh nomor 2.
+        <Frame>
+          <img
+            src="/images/image_2026-08-05_043825469.png"
+            alt="Login ke Panel Raehost"
+            title="Login ke Panel"
+            className="mx-auto"
+          />
+        </Frame>
+      </Step>
+      <Step title="Masuk ke Tab Settings">
+        Pada halaman server, klik tab **Settings**.
+      </Step>
+      <Step title="Klik SFTP Access">
+        <Frame>
+          ![Klik SFTP Access](/images/image_2026-08-05_045537619.png "Klik SFTP Access")
+        </Frame>
+      </Step>
+      <Step title="Hubungkan SFTP dengan Panel">
+        <Tabs>
+          <Tab title="Instan">
+            <Steps>
+              <Step title="Klik Open pada pop up">
+                <Frame>
+                  ![Pop up konfirmasi buka software SFTP](/images/pop-up.png "Pop Up")
+                </Frame>
+              </Step>
+              <Step title="Isi Password Panel">
+                Masukkan password panel kamu, lalu klik **OK**.
 
-    <Frame>
-      ![Image](/images/image-86.png)
-    </Frame>
-  </Step>
-  <Step title="Masuk ke Tab Settings dan Hubungkan SFTP dengan Panel">
-    ## Instan
+                <Frame>
+                  ![Masukkan password panel](/images/masukin-pass.png "Masukin Pass")
+                </Frame>
+
+                <Info>
+                  Login dengan Google? Atur password di [clients.raehost.com/profile](https://clients.raehost.com/profile).
+                </Info>
+              </Step>
+            </Steps>
+          </Tab>
+          <Tab title="Manual">
+            Buka software SFTP, lalu isi informasi berikut sesuai data pada **Panel → Settings → SFTP Details**.
+
+            <Frame>
+              ![Isi data koneksi SFTP secara manual](/images/connect-acc.png "Connect Acc")
+            </Frame>
+
+            | Field | Isi dengan |
+            | --- | --- |
+            | Host name | `Server Address` pada panel (tanpa port) |
+            | Port | `Port Number` pada panel |
+            | Username | Username panel |
+            | Password | Password panel |
+
+            <Info>
+              Login dengan Google? Atur password di [clients.raehost.com/profile](https://clients.raehost.com/profile).
+            </Info>
+
+            Setelah semua terisi, klik **Login**.
+          </Tab>
+        </Tabs>
+      </Step>
+      <Step title="Drag & Drop File ke SFTP">
+        Drag and drop file `.zip` kamu ke SFTP server.
+
+        <Frame>
+          ![Drag and drop file ke SFTP server](/images/upload_file.png "Upload File")
+        </Frame>
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Mobile">
+    Di HP, kamu bisa pakai aplikasi seperti **Termius** (Android & iOS) atau **FileZilla Mobile** untuk terhubung ke SFTP.
 
     <Steps>
-      <Step title="Masuk ke tab Settings. Kemudian klik tombol Launch SFTP pada SFTP DETAILS">
-        <Frame>
-          ![Launch Sftp](/images/launch-sftp.png)
-        </Frame>
-      </Step>
-      <Step title="Akan muncul pop up. Klik Open">
-        <Frame>
-          ![Pop Up](/images/pop-up.png)
-        </Frame>
-      </Step>
-      <Step title="Isi Password">
-        Masukkan password panel mu. Kemudian klik tombol OK.
+      <Step title="Download Aplikasi SFTP">
+        Beberapa aplikasi SFTP yang direkomendasikan:
 
-        <Frame>
-          ![Masukin Pass](/images/masukin-pass.png)
-        </Frame>
+        | Aplikasi | Android | iOS |
+        | --- | --- | --- |
+        | **Termius** | ✅ | ✅ |
+        | **FileZilla Mobile** | ✅ | ❌ |
+        | **FTPManager** | ✅ | ✅ |
+        | **FE File Explorer** | ❌ | ✅ |
+        | **Mobile SFTP** | ✅ | ❌ |
 
         <Info>
-          Jika kamu login menggunakan Google pada website, maka kamu bisa atur password disini: [https://clients.raehost.com/profile](https://clients.raehost.com/profile)
+          Panduan di bawah menggunakan **Termius** sebagai contoh karena tersedia di Android & iOS dan tampilannya paling mudah dipahami.
         </Info>
+      </Step>
+      <Step title="Ambil Data SFTP dari Panel">
+        Login ke [panel.raehost.com](https://panel.raehost.com/) lewat browser HP kamu, pilih server, masuk ke tab **Settings**, lalu klik **SFTP Access** untuk melihat **Connection Details**.
+      </Step>
+      <Step title="Tambah Host Baru di Termius">
+        Buka Termius, tap tombol **\+** untuk menambah host baru, lalu isi:
+
+        <Frame>
+          <img
+            src="/images/image_2026-08-05_051242603.png"
+            alt="Isi Alias, Hostname, Port, Username, dan Password host baru di Termius"
+            title="Tambah Host Baru di Termius"
+            className="mx-auto"
+          />
+        </Frame>
+
+        | Field | Isi dengan |
+        | --- | --- |
+        | Address | `Server Address` pada panel (tanpa port) |
+        | Port | `Port Number` pada panel |
+        | Username | Username panel |
+        | Password | Password panel |
+
+        <Info>
+          Pastikan protokol yang dipilih adalah **SFTP**, bukan SSH biasa.
+        </Info>
+      </Step>
+      <Step title="Hubungkan ke Host">
+        Klik tombol **\+** yang ada di atas, lalu klik **Connect Via SFTP**.
+
+        <Frame>
+          ![Klik tombol \+ lalu pilih Connect Via SFTP](/images/image-109.png "Connect Via SFTP")
+        </Frame>
+      </Step>
+      <Step title="Pilih Host">
+        Pilih host yang sudah kamu setup sebelumnya.
+
+        <Frame>
+          ![Pilih host yang sudah di setup](/images/image-113.png "Pilih Host")
+        </Frame>
+      </Step>
+      <Step title="Upload File">
+        Tap host yang baru dibuat untuk terhubung. Setelah masuk, tap ikon upload lalu pilih file `.zip` dari HP kamu untuk diupload ke server.
+
+        <Frame>
+          ![Upload file zip ke server via Termius](/images/image-111.png "Upload File")
+        </Frame>
       </Step>
     </Steps>
 
-    ## Manual
-
-    Buka software SFTP. Isi informasi yang di dapat di `Panel > Settings` pada bagian `SFTP DETAILS`
-
-    <Frame>
-      ![Connect Acc](/images/connect-acc.png)
-    </Frame>
-
-    1. Isi `Host name` dengan `Server Address` pada panel. Ditulis tanpa port.
-    2. Port dimasukkan pada bagian `Port Number`
-    3. `Username` diisi sesuai dengan username panel
-    4. `Password` yang dimasukkan juga sesuai dengan password panel
-
     <Info>
-      Jika kamu login menggunakan Google pada website, maka kamu bisa atur password disini: [https://clients.raehost.com/profile](https://clients.raehost.com/profile)
+      Upload file besar lewat mobile data bisa lambat dan boros kuota. Disarankan pakai WiFi.
     </Info>
-
-    5. Klik tombol `Login`
-  </Step>
-  <Step title="Drag and Drop File zip ke SFTP Server">
-    <Frame>
-      ![Upload File](/images/upload_file.png)
-    </Frame>
-  </Step>
-  <Step title="Buka Panel > Files">
-    Cari folder yang sudah di upload, kemudian klik `Unarchive`
-
-    <Frame>
-      ![Unarchive2](/images/unarchive2.png)
-    </Frame>
-
-    Folder sudah terunzip
-
-    <Frame>
-      ![Tutorial](/images/tutorial.png)
-    </Frame>
-
-    <Info>
-      Untuk Java world bisa langsung di direktori utama. Sedangkan untuk Bedrock, world harus diletakkan di folder `worlds`.
-    </Info>
-  </Step>
-  <Step title="Set Level Name ">
-    Masuk ke tab `MC Config`, isi `LEVEL NAME` dengan nama folder yang diupload. Karena tadi folder bernama `tutorial` maka isi `tutorial`.
-
-    <Frame>
-      ![Set Level Name](/images/set-level-name.png)
-    </Frame>
-  </Step>
-  <Step title="Start Server">
-    Kembali ke tab `Console` seperti pada nomor 1. 
-
-    <Frame>
-      ![Image](/images/image-99.png)
-    </Frame>
-  </Step>
-</Steps>
+  </Tab>
+</Tabs>
 
 <iframe src="https://www.youtube.com/embed/u3FhJgZrZwA" title="YouTube video player" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />

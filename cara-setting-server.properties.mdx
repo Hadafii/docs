@@ -11,391 +11,122 @@ Langsung lompat ke referensi properti yang kamu butuhkan:
 
 ---
 
+Ada **dua cara** untuk mengatur server.properties di RaeHost:
+
+---
+
+## Cara 1: Melalui MC Configs (Direkomendasikan)
+
+RaeHost menyediakan tampilan visual untuk mengubah pengaturan server tanpa perlu membuka file secara langsung.
+
+<Frame>
+  ![Image](/images/image-105.png)
+</Frame>
+
+<Steps>
+  <Step title="Buka MC Configs">
+    Di sidebar Panel, klik menu **MC Configs**.
+  </Step>
+  <Step title="Pilih Server Properties">
+    Pada dropdown pertama, pilih **Server Properties**. Pada dropdown kedua, pilih tampilan **Visual** untuk tampilan form yang lebih mudah dibaca.
+  </Step>
+  <Step title="Ubah Pengaturan">
+    Kamu bisa langsung mengubah pengaturan melalui form yang tersedia — dropdown, toggle, dan input field — tanpa perlu mengedit file secara manual.
+  </Step>
+  <Step title="Simpan">
+    Setelah selesai, klik tombol **Save** dan **restart server** agar perubahan berlaku.
+  </Step>
+</Steps>
+
+<Note>
+  Tampilan **Visual** di MC Configs menampilkan semua opsi dalam bentuk form yang lebih mudah dipahami. Jika ingin mengedit file mentahnya langsung, pilih tampilan **Text**.
+</Note>
+
+---
+
+## Cara 2: Edit File Langsung via File Manager
+
+Cara manual dengan membuka file `server.properties` di **Panel → Files**, yang berada di root direktori server kamu.
+
 <Tabs>
   <Tab title="Java Edition">
     ## Minecraft Java Edition
-    ## Tahapan
-    <Frame>
-      ![Image](/images/server-properties/tutorial.png)
-    </Frame>
-    Berikut adalah tahapan pengisian:
-    1. Masuk ke tab `Properties`
-    2. Secara default, yang tampil adalah bentuk visual (lebih mudah untuk dimengerti). Jika ingin menampilkan raw code, klik tombol `File View`.
-    3. Isi pengaturan sesuai yang kamu inginkan.
-    4. Klik `Save Changes` untuk menyimpan pengaturan yang sudah kamu ubah
 
-    ## Pengaturan Umum
+    ### Pengaturan Umum
 
-    ### `motd`
-
-    Pesan yang muncul di bawah nama server pada daftar server.
-
-    ```text
-    motd=A Minecraft Server
-    ```
-
-    > Mendukung warna dengan kode `\u00A7` (§), contoh: `motd=\u00A7aServer Saya`
+    | Properti | Default | Keterangan |
+    | --- | --- | --- |
+    | `motd` | `A Minecraft Server` | Pesan di bawah nama server pada daftar server. Mendukung kode warna `\u00A7` (§) |
+    | `max-players` | `20` | Jumlah maksimal pemain yang bisa join bersamaan |
+    | `gamemode` | `survival` | `survival` \| `creative` \| `adventure` \| `spectator` |
+    | `difficulty` | `easy` | `peaceful` \| `easy` \| `normal` \| `hard` |
+    | `hardcore` | `false` | Jika aktif, pemain yang mati akan di-ban permanen |
+    | `force-gamemode` | `false` | Jika `true`, pemain selalu kembali ke gamemode default saat join |
 
     ---
 
-    ### `max-players`
+    ### Dunia
 
-    Jumlah maksimal pemain yang bisa join ke server secara bersamaan.
-
-    ```text
-    max-players=20
-    ```
-
-    ---
-
-    ### `gamemode`
-
-    Mode permainan default untuk pemain yang baru join.
-
-    | Nilai | Mode |
-    | --- | --- |
-    | `survival` | Survival |
-    | `creative` | Creative |
-    | `adventure` | Adventure |
-    | `spectator` | Spectator |
-
-    ```text
-    gamemode=survival
-    ```
+    | Properti | Default | Keterangan |
+    | --- | --- | --- |
+    | `level-name` | `world` | Nama folder dunia. Dibuat otomatis jika belum ada |
+    | `level-seed` | _(kosong)_ | Seed untuk generate dunia baru. Kosongkan untuk acak |
+    | `level-type` | `minecraft\:normal` | `minecraft\:normal` \| `minecraft\:flat` \| `minecraft\:large_biomes` \| `minecraft\:amplified`. Tanda `\` sebelum `:` wajib ada |
+    | `generate-structures` | `true` | Generate struktur seperti desa, dungeon, dll |
+    | `view-distance` | `10` | Jarak render chunk ke client (chunk). Makin besar, makin berat |
+    | `simulation-distance` | `10` | Jarak entitas & redstone aktif. Lebih kecil dari `view-distance` = performa lebih baik |
+    | `max-world-size` | `29999984` | Batas ukuran dunia (radius block dari titik 0,0) |
 
     ---
 
-    ### `difficulty`
+    ### Keamanan & Akses
 
-    Tingkat kesulitan server.
-
-    | Nilai | Keterangan |
-    | --- | --- |
-    | `peaceful` | Tidak ada mob musuh |
-    | `easy` | Mob musuh ada, damage rendah |
-    | `normal` | Standar |
-    | `hard` | Damage lebih tinggi, kelaparan lebih berbahaya |
-
-    ```text
-    difficulty=easy
-    ```
-
-    ---
-
-    ### `hardcore`
-
-    Jika diaktifkan, pemain yang mati akan di-ban permanen dari server.
-
-    ```text
-    hardcore=false
-    ```
-
-    ---
-
-    ### `force-gamemode`
-
-    Jika `true`, pemain akan selalu kembali ke gamemode default saat join, meskipun sebelumnya sudah di-set manual.
-
-    ```text
-    force-gamemode=false
-    ```
-
-    ---
-
-    ## Dunia
-
-    ### `level-name`
-
-    Nama folder dunia yang akan digunakan. Jika folder tidak ada, server akan membuatnya otomatis.
-
-    ```text
-    level-name=world
-    ```
-
-    ---
-
-    ### `level-seed`
-
-    Seed untuk generate dunia baru. Kosongkan untuk seed acak.
-
-    ```text
-    level-seed=
-    ```
-
-    ---
-
-    ### `level-type`
-
-    Tipe dunia yang akan di-generate.
-
-    | Nilai | Keterangan |
-    | --- | --- |
-    | `minecraft:normal` | Dunia normal |
-    | `minecraft:flat` | Dunia datar |
-    | `minecraft:large_biomes` | Biome lebih besar |
-    | `minecraft:amplified` | Terrain lebih ekstrem |
-
-    ```text
-    level-type=minecraft\:normal
-    ```
-
-    <Note>
-      Tanda `\` sebelum `:` adalah escape character, jangan dihapus.
-    </Note>
-
-    ---
-
-    ### `generate-structures`
-
-    Apakah struktur seperti desa, dungeon, dll akan di-generate.
-
-    ```text
-    generate-structures=true
-    ```
-
-    ---
-
-    ### `view-distance`
-
-    Jarak render chunk yang dikirim ke client (dalam chunk). Makin besar, makin berat di RAM.
-
-    ```text
-    view-distance=10
-    ```
-
-    ---
-
-    ### `simulation-distance`
-
-    Jarak di mana entitas dan redstone aktif secara aktif. Lebih kecil dari `view-distance` dapat meningkatkan performa.
-
-    ```text
-    simulation-distance=10
-    ```
-
-    ---
-
-    ### `max-world-size`
-
-    Batas ukuran dunia dalam radius block dari titik 0,0.
-
-    ```text
-    max-world-size=29999984
-    ```
-
-    ---
-
-    ## Keamanan & Akses
-
-    ### `online-mode`
-
-    Jika `true`, server akan memverifikasi akun pemain ke server Mojang. Matikan jika server kamu menggunakan mode cracked.
-
-    ```text
-    online-mode=true
-    ```
+    | Properti | Default | Keterangan |
+    | --- | --- | --- |
+    | `online-mode` | `true` | Verifikasi akun ke Mojang. Matikan hanya untuk mode cracked \+ plugin auth seperti **AuthMe** |
+    | `white-list` | `false` | Hanya pemain di whitelist yang bisa join. Lihat [Cara Whitelist](/cara-whitelist) |
+    | `enforce-whitelist` | `false` | Pemain di luar whitelist langsung di-kick meski sudah join |
+    | `spawn-protection` | `16` | Radius spawn yang tak bisa diubah non-OP. `0` = nonaktif. Lihat [caranya](/cara-menonaktifkan-spawn-protection-di-server-minecraft) |
+    | `op-permission-level` | `4` | `1` bypass spawn protection · `2` cheat commands · `3` manage player · `4` akses penuh (`/stop`) |
+    | `player-idle-timeout` | `0` | Menit sebelum pemain idle di-kick. `0` = tanpa batas |
+    | `allow-flight` | `false` | Izinkan terbang tanpa mod/plugin |
 
     <Warning>
-      Mematikan `online-mode` membuka server untuk pemain cracked. Gunakan plugin autentikasi seperti **AuthMe** jika online-mode dinonaktifkan.
+      Mematikan `online-mode` membuka server untuk pemain cracked. Gunakan plugin autentikasi seperti **AuthMe** jika dinonaktifkan.
     </Warning>
 
     ---
 
-    ### `white-list`
+    ### Resource Pack
 
-    Aktifkan whitelist agar hanya pemain tertentu yang bisa join.
-
-    ```text
-    white-list=false
-    ```
-
-    > Cara setup whitelist bisa dilihat di [Cara Whitelist](/cara-whitelist).
+    | Properti | Default | Keterangan |
+    | --- | --- | --- |
+    | `resource-pack` | _(kosong)_ | URL resource pack yang dikirim ke pemain saat join |
+    | `require-resource-pack` | `false` | Pemain yang menolak resource pack tidak bisa masuk |
+    | `resource-pack-prompt` | _(kosong)_ | Pesan saat resource pack ditawarkan |
 
     ---
 
-    ### `enforce-whitelist`
+    ### Jaringan
 
-    Jika `true`, pemain yang tidak ada di whitelist akan langsung di-kick meski sudah terlanjur join.
-
-    ```text
-    enforce-whitelist=false
-    ```
-
-    ---
-
-    ### `spawn-protection`
-
-    Radius area spawn yang tidak bisa diubah oleh pemain biasa (non-OP). Set ke `0` untuk menonaktifkan.
-
-    ```text
-    spawn-protection=16
-    ```
-
-    > Cara menonaktifkan spawn protection bisa dilihat di [Cara Menonaktifkan Spawn Protection](/cara-menonaktifkan-spawn-protection-di-server-minecraft).
+    | Properti | Default | Keterangan |
+    | --- | --- | --- |
+    | `server-port` | `25565` | Port server Java |
+    | `network-compression-threshold` | `256` | Ukuran paket (bytes) minimum sebelum dikompresi |
+    | `prevent-proxy-connections` | `false` | Blokir pemain VPN/proxy |
+    | `rate-limit` | `0` | Batas paket/detik per koneksi. `0` = tanpa batas |
 
     ---
 
-    ### `op-permission-level`
+    ### Fitur Lanjutan
 
-    Level permission untuk OP.
-
-    | Nilai | Keterangan |
-    | --- | --- |
-    | `1` | Bisa bypass spawn protection |
-    | `2` | Bisa gunakan cheat commands |
-    | `3` | Bisa manage player (ban, kick, dll) |
-    | `4` | Akses penuh termasuk `/stop` |
-
-    ```text
-    op-permission-level=4
-    ```
-
-    ---
-
-    ### `player-idle-timeout`
-
-    Waktu (dalam menit) sebelum pemain idle di-kick. Set ke `0` untuk tidak ada batas.
-
-    ```text
-    player-idle-timeout=0
-    ```
-
-    ---
-
-    ### `allow-flight`
-
-    Izinkan pemain terbang tanpa plugin/mod. Aktifkan jika server kamu menggunakan Creative atau mod yang membutuhkan flight.
-
-    ```text
-    allow-flight=false
-    ```
-
-    ---
-
-    ## Resource Pack
-
-    ### `resource-pack`
-
-    URL resource pack yang akan dikirim ke pemain saat join.
-
-    ```text
-    resource-pack=
-    ```
-
-    ---
-
-    ### `require-resource-pack`
-
-    Jika `true`, pemain yang menolak resource pack tidak bisa masuk ke server.
-
-    ```text
-    require-resource-pack=false
-    ```
-
-    ---
-
-    ### `resource-pack-prompt`
-
-    Pesan yang ditampilkan ke pemain saat ditawarkan resource pack.
-
-    ```text
-    resource-pack-prompt=
-    ```
-
-    ---
-
-    ## Jaringan
-
-    ### `server-port`
-
-    Port yang digunakan server. Default Minecraft Java adalah `25565`.
-
-    ```text
-    server-port=25565
-    ```
-
-    ---
-
-    ### `network-compression-threshold`
-
-    Ukuran paket (bytes) minimum sebelum dikompresi. Naikkan jika koneksi lambat, turunkan untuk koneksi cepat.
-
-    ```text
-    network-compression-threshold=256
-    ```
-
-    ---
-
-    ### `prevent-proxy-connections`
-
-    Blokir pemain yang menggunakan VPN atau proxy.
-
-    ```text
-    prevent-proxy-connections=false
-    ```
-
-    ---
-
-    ### `rate-limit`
-
-    Batas paket per detik per koneksi. `0` = tidak ada batas.
-
-    ```text
-    rate-limit=0
-    ```
-
-    ---
-
-    ## Fitur Lanjutan
-
-    ### `enable-rcon`
-
-    Aktifkan RCON untuk kontrol server jarak jauh via aplikasi eksternal.
-
-    ```text
-    enable-rcon=false
-    ```
-
-    ---
-
-    ### `rcon.port` & `rcon.password`
-
-    Port dan password untuk koneksi RCON.
-
-    ```text
-    rcon.port=25575
-    rcon.password=
-    ```
-
-    ---
-
-    ### `enable-query`
-
-    Aktifkan query protocol untuk melihat info server dari luar.
-
-    ```text
-    enable-query=false
-    ```
-
-    ---
-
-    ### `max-tick-time`
-
-    Waktu maksimal (ms) per tick sebelum server dianggap hang dan di-restart otomatis. Set ke `-1` untuk menonaktifkan.
-
-    ```text
-    max-tick-time=60000
-    ```
-
-    ---
-
-    ### `sync-chunk-writes`
-
-    Tulis chunk ke disk secara sinkron. Matikan untuk performa lebih baik, tapi berisiko korupsi data jika server crash.
-
-    ```text
-    sync-chunk-writes=true
-    ```
+    | Properti | Default | Keterangan |
+    | --- | --- | --- |
+    | `enable-rcon` | `false` | Kontrol server jarak jauh via aplikasi eksternal |
+    | `rcon.port` / `rcon.password` | `25575` / _(kosong)_ | Port & password koneksi RCON |
+    | `enable-query` | `false` | Aktifkan query protocol untuk info server dari luar |
+    | `max-tick-time` | `60000` | Batas ms per tick sebelum server dianggap hang & auto-restart. `-1` = nonaktif |
+    | `sync-chunk-writes` | `true` | Tulis chunk ke disk sinkron. Matikan = performa naik, risiko korupsi data saat crash |
   </Tab>
   <Tab title="Bedrock Edition">
     ## Minecraft Bedrock Edition
@@ -510,9 +241,16 @@ Langsung lompat ke referensi properti yang kamu butuhkan:
 
     Verifikasi akun pemain ke server Microsoft/Xbox. Matikan untuk mode cracked.
 
-    ```text
-    online-mode=true
-    ```
+    | Properti | Default | Keterangan |
+    | --- | --- | --- |
+    | `server-name` | `Bedrock Dedicated Server` | Nama server di daftar server pemain |
+    | `gamemode` | `survival` | `survival` \| `creative` \| `adventure` |
+    | `difficulty` | `easy` | `peaceful` \| `easy` \| `normal` \| `hard` |
+    | `force-gamemode` | `false` | Pemain selalu kembali ke gamemode default saat join |
+    | `allow-cheats` | `false` | Izinkan cheat command seperti `/give`, `/tp` |
+    | `max-players` | `10` | Jumlah maksimal pemain bersamaan |
+    | `online-mode` | `true` | Verifikasi akun ke Microsoft/Xbox. Matikan untuk mode cracked |
+    | `allow-list` | `false` | Hanya pemain di whitelist yang bisa join |
 
     <Warning>
       Mematikan `online-mode` membuka server untuk pemain tanpa akun resmi. Pastikan kamu paham risikonya.
@@ -520,288 +258,69 @@ Langsung lompat ke referensi properti yang kamu butuhkan:
 
     ---
 
-    ### `allow-list`
+    ### Dunia
 
-    Aktifkan whitelist agar hanya pemain tertentu yang bisa join.
-
-    ```text
-    allow-list=false
-    ```
-
-    ---
-
-    ## Dunia
-
-    ### `level-name`
-
-    Nama folder dunia yang digunakan.
-
-    ```text
-    level-name=default
-    ```
+    | Properti | Default | Keterangan |
+    | --- | --- | --- |
+    | `level-name` | `default` | Nama folder dunia yang digunakan |
+    | `level-seed` | _(kosong)_ | Seed untuk generate dunia baru. Kosongkan untuk acak |
+    | `default-player-permission-level` | `member` | `visitor` (lihat saja) \| `member` (biasa) \| `operator` (akses OP) |
 
     ---
 
-    ### `level-seed`
+    ### Render & Performa
 
-    Seed untuk generate dunia baru. Kosongkan untuk seed acak.
-
-    ```text
-    level-seed=
-    ```
-
-    ---
-
-    ### `default-player-permission-level`
-
-    Level permission default untuk pemain baru.
-
-    | Nilai | Keterangan |
-    | --- | --- |
-    | `visitor` | Hanya bisa melihat |
-    | `member` | Pemain biasa |
-    | `operator` | Akses OP |
-
-    ```text
-    default-player-permission-level=member
-    ```
+    | Properti | Default | Keterangan |
+    | --- | --- | --- |
+    | `view-distance` | `32` | Jarak render chunk (chunk). Makin besar, makin berat |
+    | `tick-distance` | `4` | Jarak chunk aktif secara simulasi (mob, redstone, dll) |
+    | `max-threads` | `8` | Jumlah thread CPU yang digunakan. `0` = otomatis |
+    | `client-side-chunk-generation-enabled` | `true` | Izinkan client generate chunk sendiri untuk performa lebih baik |
 
     ---
 
-    ## Render & Performa
+    ### Jaringan
 
-    ### `view-distance`
-
-    Jarak render chunk (dalam chunk). Makin besar, makin berat.
-
-    ```text
-    view-distance=32
-    ```
-
-    ---
-
-    ### `tick-distance`
-
-    Jarak di mana chunk aktif secara simulasi (mob, redstone, dll).
-
-    ```text
-    tick-distance=4
-    ```
+    | Properti | Default | Keterangan |
+    | --- | --- | --- |
+    | `server-port` | `25668`\* | Port IPv4. Default Bedrock `19132`, RaeHost pakai port custom |
+    | `server-portv6` | `19133` | Port IPv6 |
+    | `enable-lan-visibility` | `true` | Tampilkan server di daftar LAN pemain |
+    | `player-idle-timeout` | `30` | Menit sebelum pemain idle di-kick. `0` = tanpa batas |
+    | `compression-threshold` | `1` | Ukuran paket minimum (bytes) sebelum dikompresi |
+    | `compression-algorithm` | `zlib` | `zlib` (kompatibel) \| `snappy` (lebih cepat, ukuran lebih besar) |
 
     ---
 
-    ### `max-threads`
+    ### Keamanan & Custom Skin
 
-    Jumlah thread CPU yang digunakan server. `0` = otomatis sesuai CPU.
-
-    ```text
-    max-threads=8
-    ```
-
-    ---
-
-    ### `client-side-chunk-generation-enabled`
-
-    Izinkan client generate chunk sendiri untuk performa lebih baik.
-
-    ```text
-    client-side-chunk-generation-enabled=true
-    ```
+    | Properti | Default | Keterangan |
+    | --- | --- | --- |
+    | `texturepack-required` | `false` | Paksa pemain pakai texture pack server |
+    | `disable-custom-skins` | `false` | Nonaktifkan custom skin, ganti ke skin default |
+    | `disable-persona` | `false` | Nonaktifkan skin Persona (Marketplace) |
+    | `chat-restriction` | `None` | `None` bebas \| `Dropped` pesan tak terkirim \| `Disabled` UI chat disembunyikan |
+    | `disable-player-interaction` | `false` | Nonaktifkan interaksi antar pemain (PvP, dll) |
 
     ---
 
-    ## Jaringan
+    ### Anti-Cheat (Server Authoritative Movement)
 
-    ### `server-port`
-
-    Port untuk koneksi IPv4. Default Bedrock adalah `19132`, tapi RaeHost menggunakan port custom.
-
-    ```text
-    server-port=25668
-    ```
+    | Properti | Default | Keterangan |
+    | --- | --- | --- |
+    | `server-authoritative-movement-strict` | `false` | Validasi pergerakan pemain di server untuk mencegah cheat |
+    | `player-position-acceptance-threshold` | `0.5` | Toleransi jarak posisi (blok) sebelum dianggap invalid |
+    | `server-authoritative-block-breaking-pick-range-scalar` | `1.5` | Pengali jarak maksimal menghancurkan blok dari server (`1.5` = 50% lebih jauh) |
 
     ---
 
-    ### `server-portv6`
-
-    Port untuk koneksi IPv6.
-
-    ```text
-    server-portv6=19133
-    ```
-
-    ---
-
-    ### `enable-lan-visibility`
-
-    Tampilkan server di daftar LAN pemain.
-
-    ```text
-    enable-lan-visibility=true
-    ```
-
-    ---
-
-    ### `player-idle-timeout`
-
-    Waktu (menit) sebelum pemain idle di-kick. `0` = tidak ada batas.
-
-    ```text
-    player-idle-timeout=30
-    ```
-
-    ---
-
-    ### `compression-threshold`
-
-    Ukuran paket minimum (bytes) sebelum dikompresi.
-
-    ```text
-    compression-threshold=1
-    ```
-
-    ---
-
-    ### `compression-algorithm`
-
-    Algoritma kompresi yang digunakan.
-
-    | Nilai | Keterangan |
-    | --- | --- |
-    | `zlib` | Kompresi standar, lebih kompatibel |
-    | `snappy` | Lebih cepat, ukuran sedikit lebih besar |
-
-    ```text
-    compression-algorithm=zlib
-    ```
-
-    ---
-
-    ## Keamanan & Custom Skin
-
-    ### `texturepack-required`
-
-    Paksa pemain untuk menggunakan texture pack server.
-
-    ```text
-    texturepack-required=false
-    ```
-
-    ---
-
-    ### `disable-custom-skins`
-
-    Nonaktifkan custom skin pemain dan ganti dengan skin default.
-
-    ```text
-    disable-custom-skins=false
-    ```
-
-    ---
-
-    ### `disable-persona`
-
-    Nonaktifkan skin Persona (karakter dari Marketplace).
-
-    ```text
-    disable-persona=false
-    ```
-
-    ---
-
-    ### `chat-restriction`
-
-    Batasi chat pemain.
-
-    | Nilai | Keterangan |
-    | --- | --- |
-    | `None` | Chat bebas |
-    | `Dropped` | Pesan chat tidak terkirim |
-    | `Disabled` | UI chat disembunyikan |
-
-    ```text
-    chat-restriction=None
-    ```
-
-    ---
-
-    ### `disable-player-interaction`
-
-    Nonaktifkan interaksi antar pemain (PvP, dll).
-
-    ```text
-    disable-player-interaction=false
-    ```
-
-    ---
-
-    ## Anti-Cheat (Server Authoritative Movement)
-
-    ### `server-authoritative-movement-strict`
-
-    Aktifkan validasi pergerakan pemain di sisi server untuk mencegah cheat.
-
-    ```text
-    server-authoritative-movement-strict=false
-    ```
-
-    ---
-
-    ### `player-position-acceptance-threshold`
-
-    Toleransi jarak posisi pemain (dalam blok) sebelum dianggap invalid.
-
-    ```text
-    player-position-acceptance-threshold=0.5
-    ```
-
-    ---
-
-    ### `server-authoritative-block-breaking-pick-range-scalar`
-
-    Pengali jarak maksimal pemain bisa menghancurkan blok dari server. `1.5` = 50% lebih jauh dari standar.
-
-    ```text
-    server-authoritative-block-breaking-pick-range-scalar=1.5
-    ```
-
-    ---
-
-    ## Logging
-
-    ### `content-log-file-enabled`
-
-    Simpan log error konten (addon/behavior pack) ke file.
-
-    ```text
-    content-log-file-enabled=false
-    ```
-
-    ---
-
-    ### `content-log-console-output-enabled`
-
-    Tampilkan log konten di console server.
-
-    ```text
-    content-log-console-output-enabled=false
-    ```
-
-    ---
-
-    ### `content-log-level`
-
-    Level detail log konten.
-
-    | Nilai | Keterangan |
-    | --- | --- |
-    | `info` | Informasi umum |
-    | `warning` | Peringatan saja |
-    | `error` | Error saja |
-
-    ```text
-    content-log-level=info
-    ```
+    ### Logging
+
+    | Properti | Default | Keterangan |
+    | --- | --- | --- |
+    | `content-log-file-enabled` | `false` | Simpan log error konten (addon/behavior pack) ke file |
+    | `content-log-console-output-enabled` | `false` | Tampilkan log konten di console server |
+    | `content-log-level` | `info` | `info` \| `warning` \| `error` |
   </Tab>
 </Tabs>
 
