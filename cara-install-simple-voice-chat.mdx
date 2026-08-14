@@ -3,98 +3,78 @@ title: "Cara Install Simple Voice Chat"
 ---
 
 <Note>
-  Fitur ini hanya dapat dijalankan di Minecraft Java Edition
+  Fitur ini hanya dapat dijalankan di Minecraft Java Edition.
 </Note>
 
-Ikuti langkah berikut untuk mengaktifkan fitur voice chat di server Minecraft kamu menggunakan plugin Simple Voice Chat.
+Ikuti langkah berikut untuk mengaktifkan fitur voice chat di server Minecraft kamu menggunakan plugin/mod Simple Voice Chat. Caranya tetap sama. 
 
 <Steps>
   <Step title="Login ke Panel">
-    Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu.
+    Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/). Pastikan server kamu offline.
 
     <Frame>
       <img
-        src="/images/image-57.png"
+        src="/images/plugin/stop-server.png"
         alt="Image"
         title="Image"
         className="mx-auto"
       />
     </Frame>
   </Step>
+  <Step title="Install Plugin/Mod">
+    <Frame>
+      ![Image](/images/simple/search.png)
+    </Frame>
+
+    1. Masuk ke tab `Plugins` atau `Minecraft Mods`
+    2. Cari `Simple Voice Chat`
+    3. Klik `Install`
+  </Step>
+  <Step title="Pilih Sesuai Versi Server Kamu">
+    <Frame>
+      ![Image](/images/simple/install.png)
+    </Frame>
+  </Step>
+  <Step title="Start Server Kembali">
+    <Frame>
+      ![Image](/images/simple/installed.png)
+    </Frame>
+  </Step>
   <Step title="Stop Server">
-    Klik tombol `Stop` seperti yang ditampilkan oleh nomor 1. Jika sudah di stop, maka server akan `offline` seperti yang ditampilkan oleh nomor 2.
+    Jika server sudah berstatus `running`, stop kembali server nya.
 
     <Frame>
-      ![Image](/images/image-86.png)
-    </Frame>
-  </Step>
-  <Step title="Install Plugin">
-    Masuk ke tab `Plugin` seperti yang ditampilkan oleh nomor 1. Kemudian cari plugin simple voice chat seperti yang ditampilkan oleh nomor 2.
-
-    <Frame>
-      ![Image](/images/image-87.png)
-    </Frame>
-
-    Kemudian klik plugin tersebut. Pilih versi yang kamu butuhkan pada nomor 1. Kemudian klik `Install Plugin`  pada nomor 2.
-
-    <Frame>
-      <img
-        src="/images/image-88.png"
-        alt="Image"
-        className="mx-auto"
-        style={{ width:"87%" }}
-      />
-    </Frame>
-  </Step>
-  <Step title="Start Server">
-    Akses `Panel > Console`. Kemudian start server.
-
-    <Frame>
-      ![Image](/images/image-36.png)
+      ![Image](/images/plugin/stop-server.png)
     </Frame>
   </Step>
   <Step title="Cari Port Voice">
-    Masuk ke tab`Network`. Pastikan kamu memiliki 2 port. Copy port yang kedua.
+    Masuk ke tab `Network`. Pastikan kamu memiliki 2 port. Copy port yang kedua (ditandai dengan tulisan `Make Primary`).
 
     <Frame>
-      ![Image](/images/image-90.png)
+      ![Image](/images/simple/network.png)
     </Frame>
 
     <Note>
       Jika kamu hanya memiliki 1 port pada tab `Network` silahkan buat tiket untuk meminta port tambahan. 
     </Note>
   </Step>
-  <Step title="Konfigurasi File ">
+  <Step title="Konfigurasi File">
     Masuk ke tab `Files` kemudian cari file `plugins` seperti yang ditampilkan gambar berikut:
 
     <Frame>
-      ![Image](/images/image-92.png)
+      ![Image](/images/simple/config.png)
     </Frame>
 
-    Kemudian masuk ke file `voicechat` seperti yang ditunjukkan oleh gambar berikut:
-
-    <Frame>
-      ![Image](/images/image-93.png)
-    </Frame>
-
-    Masuk ke file `voicechat-server.properties` seperti yang ditunjukkan oleh gambar berikut:
-
-    <Frame>
-      ![Image](/images/image-95.png)
-    </Frame>
-  </Step>
-  <Step title="Update Port">
-    Ubah port yang ditunjuk oleh nomor 1 dengan port yang sudah di copy sebelumnya. Kemudian klik `save content` seperti yang ditunjuk oleh nomor 2.
-
-    <Frame>
-      ![Image](/images/image-91.png)
-    </Frame>
+    1. Masuk ke tab `Files`
+    2. Masuk ke file `voicechat-server.properties`
+    3. Masukkan port kedua mu
+    4. Klik tombol `Save`
   </Step>
   <Step title="Restart Server">
-    Setelah `restore` selesai, pergi ke tab `Console` seperti yang ditunjukkan pada nomor 1. Kemudian klik `Restart` seperti yang ditunjukkan pada nomor 2.
+    Kemudian klik tombol `Restart`pada console. Voice chat sudah running di port kedua kamu.
 
     <Frame>
-      ![Image](/images/image-60.png)
+      ![Image](/images/simple/works.png)
     </Frame>
   </Step>
   <Step title="Cek di Minecraft">

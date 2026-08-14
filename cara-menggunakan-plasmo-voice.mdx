@@ -2,179 +2,86 @@
 title: "Cara Menggunakan Plasmo Voice"
 ---
 
-Plasmo Voice adalah plugin voice chat untuk Minecraft yang memungkinkan pemain berkomunikasi secara langsung di dalam game. Plugin ini mendukung fitur **proximity voice chat**, sehingga suara pemain akan terdengar berdasarkan jarak antar pemain di dalam dunia Minecraft. Dengan Plasmo Voice, pemain tidak perlu menggunakan aplikasi pihak ketiga seperti Discord untuk berkomunikasi saat bermain. Fitur ini hanya berjalan di Minecraft Java Edition.
+Plasmo Voice adalah plugin voice chat untuk Minecraft yang memungkinkan pemain berkomunikasi secara langsung di dalam game. Plugin ini mendukung fitur **proximity voice chat**, sehingga suara pemain akan terdengar berdasarkan jarak antar pemain di dalam dunia Minecraft. Dengan Plasmo Voice, pemain tidak perlu menggunakan aplikasi pihak ketiga seperti Discord untuk berkomunikasi saat bermain. 
 
-## Plugin Based
-
-> Tutorial ini akan works jika kamu menggunakan **Paper, Purpur, Spigot, dan Bukkit.**
+<Note>
+  Fitur ini hanya berjalan di Minecraft Java Edition. Gunakan `mods` jika kamu menggunakan **Forge**, **NeoForge**, dan **Fabric**. Gunakan `plugin` jika kamu menggunakan **Bukkit**, **Spigot**, **Paper**, dan **Purpur**.  Jika folder `plugins` belum ada, pastikan server sudah pernah di-start minimal sekali dengan software yang mendukung plugin (Paper, Spigot, dll).
+</Note>
 
 <Steps>
   <Step title="Login ke Panel">
-    Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu.
+    Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/). Pastikan server kamu offline.
 
     <Frame>
       <img
-        src="/images/image-57.png"
+        src="/images/plugin/stop-server.png"
         alt="Image"
         title="Image"
         className="mx-auto"
       />
     </Frame>
   </Step>
-  <Step title="Stop Server">
-    Klik tombol `Stop` seperti yang ditampilkan oleh nomor 1. Jika sudah di stop, maka server akan `offline` seperti yang ditampilkan oleh nomor 2.
-
-    <Frame>
-      ![Offline Server](/images/offline-server.png)
-    </Frame>
-  </Step>
-  <Step title="Cari Plugin Plasmo Voice">
-    Masuk ke tab `Plugin` kemudian cari `Plasmo Voice` seperti berikut
-
-    <Frame>
-      ![Search Plasmo](/images/search-plasmo.png)
-    </Frame>
-  </Step>
-  <Step title="Install Plugin">
-    Pilih versi yang sesuai dan klik `Install` seperti yang ditunjuk oleh nomor 2
-
+  <Step title="Install Plugin/Mods">
     <Frame>
       <img
-        src="/images/install-plugin-plasmo.png"
+        src="/images/plasmo/install.png"
         alt="Install Plugin Plasmo"
         title="Install Plugin Plasmo"
-        style={{ width:"55%" }}
-      />
-    </Frame>
-  </Step>
-  <Step title="Start Server">
-    Tunggu hingga server running agar file plugin terkonfigurasi
-
-    <Frame>
-      ![Start Plasmo](/images/start-plasmo.png)
-    </Frame>
-  </Step>
-  <Step title="Stop Server">
-    Jika sudah running, stop server kembali
-
-    <Frame>
-      ![Offline Server](/images/offline-server-1.png)
-    </Frame>
-  </Step>
-  <Step title="Masuk ke file Plasmo Voice">
-    Masuk ke tab `Files` , lalu buka file
-
-    `/home/container/plugins/PlasmoVoice/config.toml`
-
-    <Frame>
-      ![Config](/images/config.png)
-    </Frame>
-
-    Ikuti steps berikut ini:
-
-    <Frame>
-      ![Edit Config](/images/edit-config.png)
-    </Frame>
-
-    1. **Masukkan port kedua server kamu.** Port tersebut dapat ditemukan pada tab **Network**. Jika server kamu hanya memiliki **1 port**, silakan buat tiket melalui Discord maupun website untuk mendapatkan port tambahan.
-    2. **Sesuaikan pengaturan** `voice.proximity `**sesuai kebutuhan.** Pada bagian `distances`, kamu dapat menambahkan daftar jarak yang tersedia untuk pemain. Sedangkan `default_distance` digunakan untuk menentukan jarak voice chat default yang akan digunakan.
-    3. Klik `Save Content` untuk menyimpan perubahan.
-
-    contoh:
-
-    ```text
-    distances = [4, 8, 16, 32]
-    default_distance = 8
-    ```
-  </Step>
-  <Step title="Start Kembali Server">
-    Plasmo Voice sudah dapat digunakan.
-
-    <Frame>
-      ![Start Plasmo](/images/start-plasmo-1.png)
-    </Frame>
-
-    <Info>
-      Pastikan Minecraft kamu sudah terpasang mod **Plasmo Voice**. Jika mod tersebut tidak terinstal di sisi client, fitur voice chat tidak akan berfungsi meskipun plugin Plasmo Voice sudah terpasang dan dikonfigurasi dengan benar di server.
-    </Info>
-  </Step>
-</Steps>
-
-## Mod Based
-
-> Tutorial ini akan works jika kamu menggunakan **Fabric, Forge, atau NeoForge.**
-
-<Steps>
-  <Step title="Login ke Panel">
-    Untuk melakukan ini, kamu perlu login ke panel melalui [https://panel.raehost.com/](https://panel.raehost.com/) Kemudian pilih servermu.
-
-    <Frame>
-      <img
-        src="/images/image-57.png"
-        alt="Image"
-        title="Image"
         className="mx-auto"
       />
     </Frame>
-  </Step>
-  <Step title="Stop Server">
-    Klik tombol `Stop` seperti yang ditampilkan oleh nomor 1. Jika sudah di stop, maka server akan `offline` seperti yang ditampilkan oleh nomor 2.
 
+    1. Klik tab `Plugins` atau `Mods`
+    2. Cari plugin/mod `Plasmo Voice` dengan menggunakan fitur pencarian
+    3. Klik tombol `Install`
+  </Step>
+  <Step title="Pilih Sesuai Versi Server Kamu">
     <Frame>
-      ![Offline Server](/images/offline-server.png)
+      ![Image](/images/plasmo/version.png)
     </Frame>
   </Step>
-  <Step title="Cari Mod Plasmo Voice">
-    Masuk ke tab `Mods`kemudian cari `Plasmo Voice` seperti berikut
-
+  <Step title="Start Server Kembali">
     <Frame>
-      ![Mod Plasmo](/images/mod-plasmo.png)
-    </Frame>
-  </Step>
-  <Step title="Install Mod">
-    Pilih versi sesuai mod loader yang kamu gunakan dan klik `Install` seperti yang ditunjuk oleh nomor 2
-
-    <Frame>
-      <img
-        src="/images/choose-version-plasmo.png"
-        alt="Choose Version Plasmo"
-        title="Choose Version Plasmo"
-        style={{ width:"59%" }}
-      />
-    </Frame>
-  </Step>
-  <Step title="Start Server">
-    Tunggu hingga server running
-
-    <Frame>
-      ![Start Plasmo](/images/start-plasmo.png)
+      ![Image](/images/plasmo/installed.png)
     </Frame>
   </Step>
   <Step title="Stop Server">
-    Jika sudah runinng, stop server kembali
+    Jika server sudah berstatus `running`, stop kembali server nya.
 
     <Frame>
-      ![Offline Server](/images/offline-server-1.png)
+      ![Image](/images/plugin/stop-server.png)
     </Frame>
+  </Step>
+  <Step title="Cari Port Voice">
+    Masuk ke tab `Network`. Pastikan kamu memiliki 2 port. Copy port yang kedua (ditandai dengan tulisan `Make Primary`).
+
+    <Frame>
+      ![Image](/images/simple/network.png)
+    </Frame>
+
+    <Note>
+      Jika kamu hanya memiliki 1 port pada tab `Network` silahkan buat tiket untuk meminta port tambahan. 
+    </Note>
   </Step>
   <Step title="Masuk ke file Plasmo Voice">
     Masuk ke tab `Files` , lalu buka file
 
-    `/home/container/plasmovoice/server/config.toml`
+    
 
     <Frame>
-      ![Mod Config](/images/mod-config.png)
+      ![Config](/images/plasmo/config.png)
+    </Frame>
+
+    <Frame>
+      ![Edit Config](/images/plasmo/config-2.png)
     </Frame>
 
     Ikuti steps berikut ini:
-
-    <Frame>
-      ![Screenshot 2026 06 18 172307](/images/Screenshot-2026-06-18-172307.png)
-    </Frame>
-
-    1. **Masukkan port kedua server kamu.** Port tersebut dapat ditemukan pada tab **Network**. Jika server kamu hanya memiliki **1 port**, silakan buat tiket melalui Discord maupun website untuk mendapatkan port tambahan.
-    2. **Sesuaikan pengaturan** `voice.proximity `**sesuai kebutuhan.** Pada bagian `distances`, kamu dapat menambahkan daftar jarak yang tersedia untuk pemain. Sedangkan `default_distance` digunakan untuk menentukan jarak voice chat default yang akan digunakan.
-    3. Klik `Save Content` untuk menyimpan perubahan.
+    1. Masuk ke tab `Files`
+    2. Buka file ini `/home/container/plugins/PlasmoVoice/config.toml`
+    3 **Masukkan port kedua server kamu.** 
+    4. **Sesuaikan pengaturan** `voice.proximity `**sesuai kebutuhan.** Pada bagian `distances`, kamu dapat menambahkan daftar jarak yang tersedia untuk pemain. Sedangkan `default_distance` digunakan untuk menentukan jarak voice chat default yang akan digunakan.
+    5. Klik `Save` untuk menyimpan perubahan.
 
     contoh:
 
@@ -187,7 +94,7 @@ Plasmo Voice adalah plugin voice chat untuk Minecraft yang memungkinkan pemain b
     Plasmo Voice sudah dapat digunakan.
 
     <Frame>
-      ![Start Plasmo](/images/start-plasmo-1.png)
+      ![Start Plasmo](/images/plasmo/works.png)
     </Frame>
 
     <Info>
