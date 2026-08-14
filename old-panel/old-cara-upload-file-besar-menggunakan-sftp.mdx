@@ -1,0 +1,164 @@
+---
+title: "Cara Menggunakan SFTP/FTP"
+---
+
+Kalau kamu mau upload file besar (di atas 100 MB) atau banyak file sekaligus, pakai **SFTP** jauh lebih cepat dan stabil daripada File Manager di panel.
+
+<Tabs>
+  <Tab title="Desktop">
+    <Steps>
+      <Step title="Download Software SFTP">
+        Contoh:
+
+        - FileZilla
+        - WinSCP
+        - Termius
+      </Step>
+      <Step title="Login ke Panel">
+        Login ke panel melalui [panel.raehost.com](https://panel.raehost.com/), lalu pilih servermu.
+
+        <Frame>
+          <img
+            src="/images/image_2026-08-05_043825469.png"
+            alt="Login ke Panel Raehost"
+            title="Login ke Panel"
+            className="mx-auto"
+          />
+        </Frame>
+      </Step>
+      <Step title="Masuk ke Tab Settings">
+        Pada halaman server, klik tab **Settings**.
+      </Step>
+      <Step title="Klik SFTP Access">
+        <Frame>
+          ![Klik SFTP Access](/images/image_2026-08-05_045537619.png "Klik SFTP Access")
+        </Frame>
+      </Step>
+      <Step title="Hubungkan SFTP dengan Panel">
+        <Tabs>
+          <Tab title="Instan">
+            <Steps>
+              <Step title="Klik Open pada pop up">
+                <Frame>
+                  ![Pop up konfirmasi buka software SFTP](/images/pop-up.png "Pop Up")
+                </Frame>
+              </Step>
+              <Step title="Isi Password Panel">
+                Masukkan password panel kamu, lalu klik **OK**.
+
+                <Frame>
+                  ![Masukkan password panel](/images/masukin-pass.png "Masukin Pass")
+                </Frame>
+
+                <Info>
+                  Login dengan Google? Atur password di [clients.raehost.com/profile](https://clients.raehost.com/profile).
+                </Info>
+              </Step>
+            </Steps>
+          </Tab>
+          <Tab title="Manual">
+            Buka software SFTP, lalu isi informasi berikut sesuai data pada **Panel → Settings → SFTP Details**.
+
+            <Frame>
+              ![Isi data koneksi SFTP secara manual](/images/connect-acc.png "Connect Acc")
+            </Frame>
+
+            | Field | Isi dengan |
+            | --- | --- |
+            | Host name | `Server Address` pada panel (tanpa port) |
+            | Port | `Port Number` pada panel |
+            | Username | Username panel |
+            | Password | Password panel |
+
+            <Info>
+              Login dengan Google? Atur password di [clients.raehost.com/profile](https://clients.raehost.com/profile).
+            </Info>
+
+            Setelah semua terisi, klik **Login**.
+          </Tab>
+        </Tabs>
+      </Step>
+      <Step title="Drag & Drop File ke SFTP">
+        Drag and drop file `.zip` kamu ke SFTP server.
+
+        <Frame>
+          ![Drag and drop file ke SFTP server](/images/upload_file.png "Upload File")
+        </Frame>
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Mobile">
+    Di HP, kamu bisa pakai aplikasi seperti **Termius** (Android & iOS) atau **FileZilla Mobile** untuk terhubung ke SFTP.
+
+    <Steps>
+      <Step title="Download Aplikasi SFTP">
+        Beberapa aplikasi SFTP yang direkomendasikan:
+
+        | Aplikasi | Android | iOS |
+        | --- | --- | --- |
+        | **Termius** | ✅ | ✅ |
+        | **FileZilla Mobile** | ✅ | ❌ |
+        | **FTPManager** | ✅ | ✅ |
+        | **FE File Explorer** | ❌ | ✅ |
+        | **Mobile SFTP** | ✅ | ❌ |
+
+        <Info>
+          Panduan di bawah menggunakan **Termius** sebagai contoh karena tersedia di Android & iOS dan tampilannya paling mudah dipahami.
+        </Info>
+      </Step>
+      <Step title="Ambil Data SFTP dari Panel">
+        Login ke [panel.raehost.com](https://panel.raehost.com/) lewat browser HP kamu, pilih server, masuk ke tab **Settings**, lalu klik **SFTP Access** untuk melihat **Connection Details**.
+      </Step>
+      <Step title="Tambah Host Baru di Termius">
+        Buka Termius, tap tombol **\+** untuk menambah host baru, lalu isi:
+
+        <Frame>
+          <img
+            src="/images/image_2026-08-05_051242603.png"
+            alt="Isi Alias, Hostname, Port, Username, dan Password host baru di Termius"
+            title="Tambah Host Baru di Termius"
+            className="mx-auto"
+          />
+        </Frame>
+
+        | Field | Isi dengan |
+        | --- | --- |
+        | Address | `Server Address` pada panel (tanpa port) |
+        | Port | `Port Number` pada panel |
+        | Username | Username panel |
+        | Password | Password panel |
+
+        <Info>
+          Pastikan protokol yang dipilih adalah **SFTP**, bukan SSH biasa.
+        </Info>
+      </Step>
+      <Step title="Hubungkan ke Host">
+        Klik tombol **\+** yang ada di atas, lalu klik **Connect Via SFTP**.
+
+        <Frame>
+          ![Klik tombol \+ lalu pilih Connect Via SFTP](/images/image-109.png "Connect Via SFTP")
+        </Frame>
+      </Step>
+      <Step title="Pilih Host">
+        Pilih host yang sudah kamu setup sebelumnya.
+
+        <Frame>
+          ![Pilih host yang sudah di setup](/images/image-113.png "Pilih Host")
+        </Frame>
+      </Step>
+      <Step title="Upload File">
+        Tap host yang baru dibuat untuk terhubung. Setelah masuk, tap ikon upload lalu pilih file `.zip` dari HP kamu untuk diupload ke server.
+
+        <Frame>
+          ![Upload file zip ke server via Termius](/images/image-111.png "Upload File")
+        </Frame>
+      </Step>
+    </Steps>
+
+    <Info>
+      Upload file besar lewat mobile data bisa lambat dan boros kuota. Disarankan pakai WiFi.
+    </Info>
+  </Tab>
+</Tabs>
+
+<iframe src="https://www.youtube.com/embed/u3FhJgZrZwA" title="YouTube video player" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
