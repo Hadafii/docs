@@ -1,84 +1,86 @@
 ---
-title: "Cara Pasang Mod "
+title: "Cara Pasang Mod"
 ---
 
 > Panduan ini berlaku untuk server dengan software **Forge, Fabric, atau NeoForge**.
 
 <Steps>
-  <Step title="Pastikan Server Support Mod">
+  <Step title="Pastikan Server Mendukung Mod">
     <Steps>
       <Step title="Buka panel server RaeHost kamu">
       </Step>
       <Step title="Cek bagian Egg Changer pada server">
-        Pastikan server menggunakan:
+        Pastikan server menggunakan salah satu dari:
 
         - Forge
         - Fabric
         - NeoForge
 
-        Jika masih menggunakan Vanilla/Paper/Purpur, lakukan reinstall server lalu pilih software yang mendukung mod
+        Kalau server masih memakai Vanilla, Paper, atau Purpur, ganti dulu ke software yang mendukung mod lewat `Egg Changer`.
       </Step>
     </Steps>
 
   </Step>
   <Step title="Buka Folder Mods">
     <Steps>
-      <Step title="Masuk ke menu File Manager di panel">
+      <Step title="Masuk ke tab Files di panel">
       </Step>
       <Step title="Cari folder bernama mods">
-        Folder ini biasanya otomatis tersedia jika server menggunakan Forge/Fabric/NeoForge.
+        Folder ini biasanya otomatis tersedia kalau server memakai Forge, Fabric, atau NeoForge.
       </Step>
-      <Step title="Jika folder belum ada, buat folder baru dengan nama">
-        `mods`
+      <Step title="Kalau folder belum ada, buat folder baru bernama `mods`">
       </Step>
     </Steps>
   </Step>
   <Step title="Upload File Mod">
     <Steps>
-      <Step title="Download Mod">
-        > Disarankan menggunakan website yang credible ya. Jangan yang **ilegal**. Contoh web yang dapat digunakan adalah \[[https://www.curseforge.com/\](https://www.curseforge.com/)](https://www.curseforge.com/]\(https://www.curseforge.com/\))
+      <Step title="Download mod">
+        Gunakan website yang terpercaya, seperti [CurseForge](https://www.curseforge.com/) atau [Modrinth](https://modrinth.com/). Hindari mod bajakan atau dari sumber yang tidak jelas.
       </Step>
-      <Step title="Cek Versi">
+      <Step title="Cek versi">
         Pastikan versi mod sesuai dengan:
 
         - Versi Minecraft server
         - Versi Forge/Fabric/NeoForge yang digunakan
       </Step>
-      <Step title="Upload file mod berformat .jar ke dalam folder mods">
-        Kamu bisa upload dengan:
+      <Step title="Upload file mod berformat .jar ke folder mods">
+        Kamu bisa upload dengan cara:
 
         - Drag & drop langsung ke panel
-        - Menggunakan SFTP jika ukuran file besar (lebih dari 100MB)
+        - Menggunakan SFTP kalau ukuran file besar (lebih dari 100MB). Lihat [cara upload file besar menggunakan SFTP](/cara-upload-file-besar-menggunakan-sftp).
       </Step>
     </Steps>
 
   </Step>
   <Step title="Restart Server">
     <Steps>
-      <Step title="Setelah semua mod selesai di-upload, klik tombol Restart pada panel">
+      <Step title="Setelah semua mod selesai di-upload, klik tombol Restart di panel">
       </Step>
-      <Step title="Tunggu hingga server menyala kembali">
+      <Step title="Tunggu sampai server menyala kembali">
       </Step>
-      <Step title="Jika mod berhasil dimuat, daftar mod biasanya akan muncul di log console saat startup">
+      <Step title="Cek daftar mod di console">
+        Kalau mod berhasil dimuat, daftar mod biasanya muncul di log console saat server startup.
       </Step>
     </Steps>
   </Step>
 </Steps>
 
 <Info>
-  ## Tips Penting
+## Tips Penting
 
 - Gunakan mod dengan versi yang sesuai dengan server.
-- Jangan mencampur mod dengan loader berbeda:
-  - Forge ≠ Fabric
-  - Fabric ≠ NeoForge
-- Jika server crash setelah memasang mod: 1. Buka menu **Console** 2. Cek error log 3. Biasanya terdapat mod yang konflik atau tidak kompatibel
-  </Info>
+- Jangan mencampur mod dari loader yang berbeda. Mod Forge, Fabric, dan NeoForge tidak bisa dipakai bersamaan.
+- Kalau server crash setelah memasang mod:
+  1. Buka tab **Console**
+  2. Cek error log
+  3. Biasanya ada mod yang konflik atau tidak kompatibel
+
+</Info>
 
 <Tip>
   Mod yang tidak tersedia di panel, atau yang kamu dapat dari luar (misalnya
-  dari website lain), bisa dipasang secara manual atau gunakan jasa tim kami
-  melalui [Setupin](https://setupin.com).
+  dari website lain), bisa dipasang secara manual. Kalau butuh bantuan, tim kami
+  siap membantu lewat [Setupin](https://setupin.com).
 </Tip>
 
 <Warning>
