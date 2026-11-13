@@ -5,7 +5,9 @@ title: "Cara Install Plugin"
 Plugin digunakan untuk menambahkan fitur tambahan ke server Minecraft Java kamu, seperti ekonomi, proteksi wilayah, mini-games, dan banyak lagi.
 
 <Warning>
-  Plugin hanya bisa digunakan di server dengan software **Bukkit**, **Spigot**, **Paper**, atau turunannya. Plugin **tidak bisa** digunakan di server Vanilla, Fabric, atau Forge.
+  Plugin hanya bisa digunakan di server dengan software **Bukkit**, **Spigot**,
+  **Paper**, atau turunannya. Plugin **tidak bisa** digunakan di server Vanilla,
+  Fabric, atau Forge.
 </Warning>
 
 Pilih cara install yang ingin kamu gunakan:
@@ -45,6 +47,7 @@ Cara termudah untuk install plugin langsung dari Panel tanpa perlu download file
     | **SpigotMC** | Sumber terbesar dan terlama untuk plugin Bukkit/Spigot/Paper |
     | **CurseForge** | Populer untuk mod dan plugin berbagai platform |
     | **Hangar** | Platform resmi dari tim PaperMC |
+
   </Step>
   <Step title="Install Sesuai Versi">
     Klik tombol **Install Plugin** dan tunggu hingga proses selesai.
@@ -52,6 +55,7 @@ Cara termudah untuk install plugin langsung dari Panel tanpa perlu download file
     <Frame>
       ![Install Plugin](/images/plugin/install-version.png)
     </Frame>
+
   </Step>
   <Step title="Restart Server">
     Setelah instalasi selesai, **restart server** dan plugin akan muncul di console.
@@ -59,12 +63,30 @@ Cara termudah untuk install plugin langsung dari Panel tanpa perlu download file
     <Frame>
       ![It works](/images/plugin/installed.png)
     </Frame>
+
   </Step>
 </Steps>
 
 ---
 
 ## Manual via File Manager
+
+<Tip>
+  Plugin yang tidak tersedia di panel, atau yang kamu dapat dari luar (misalnya
+  file `.jar` dari website lain), bisa dipasang secara manual. Ikuti tutorial
+  pemasangan manual di bawah ini, atau gunakan jasa tim kami melalui
+  [Setupin](https://setupin.com).
+</Tip>
+
+<Warning>
+  Jangan mendownload atau memasang plugin bajakan (*crack*) maupun dari sumber
+  yang tidak jelas. Plugin seperti ini sering mengandung malware, backdoor, atau
+  script *crypto mining*. Sesuai [Terms of
+  Service](/terms-of-service#langgaran-pengguna), server yang terbukti
+  menjalankan file ilegal atau tidak aman dapat **dihentikan (terminate) tanpa
+  pemberitahuan dan tanpa refund**. Semua file yang dijalankan di server menjadi
+  tanggung jawab kamu sepenuhnya.
+</Warning>
 
 Install plugin secara manual dengan mengupload file `.jar` langsung melalui File Manager di Panel.
 
@@ -79,6 +101,7 @@ Install plugin secara manual dengan mengupload file `.jar` langsung melalui File
     <Warning>
       Pastikan versi plugin sesuai dengan versi Minecraft dan software server kamu (Spigot, Paper, dll).
     </Warning>
+
   </Step>
   <Step title="Buka File Manager">
     Di Panel, pergi ke **Files** lalu masuk ke folder `plugins`.
@@ -90,6 +113,7 @@ Install plugin secara manual dengan mengupload file `.jar` langsung melalui File
     <Note>
       Jika folder `plugins` belum ada, pastikan server sudah pernah di-start minimal sekali dengan software yang mendukung plugin (Paper, Spigot, dll).
     </Note>
+
   </Step>
   <Step title="Upload File Plugin">
     Klik tombol **Upload** lalu pilih file `.jar` plugin yang sudah kamu download.
@@ -112,11 +136,13 @@ Cocok untuk mengupload banyak plugin sekaligus atau file berukuran besar.
     - [SpigotMC](https://www.spigotmc.org/resources/)
     - [Modrinth](https://modrinth.com/plugins)
     - [Hangar](https://hangar.papermc.io/)
+
   </Step>
   <Step title="Hubungkan SFTP ke Server">
     Sambungkan aplikasi SFTP (FileZilla, WinSCP, atau Termius) ke server kamu.
 
     Panduan lengkap cara menghubungkan SFTP bisa dilihat di sini: [Cara Upload File Besar Menggunakan SFTP](/cara-upload-file-besar-menggunakan-sftp)
+
   </Step>
   <Step title="Navigasi ke Folder plugins">
     Setelah terhubung, masuk ke folder `plugins` di direktori server.
